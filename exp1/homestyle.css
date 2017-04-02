@@ -1,0 +1,142 @@
+html { 
+  margin:0;
+  padding:0;
+  background: url(images2/imagHome.jpg) no-repeat center fixed; 
+
+  background-size: cover; /* version standardisÃ©e */
+}
+
+
+
+body {
+   	font-family: Arial;
+   	text-align : center
+   	}
+	h1 {
+    color: #EEC000;
+    font-family: Arial
+       }
+    h2 {
+    color: #CC0202 
+    }
+    
+    
+<!-- 
+a.link { color: white; }
+a.link:hover { color: #EEC000;}
+a.link:visited {color: #CAC8CD}
+-->
+
+
+    	/* Navigation */
+ a {
+	color: #69C;
+	text-decoration: none;
+}
+a:hover {
+	color: #CAC8CD;
+}
+
+
+/* nav */
+.nav {
+	margin: 10% 0;
+}
+.nav ul {
+	margin: 0;
+	padding: 0;
+}
+.nav li {
+	float: center; 
+    position: relative; 
+	list-style: none;
+	display: inline-block;
+	}
+.nav a {
+	padding: 3px 12px;
+	text-decoration: none;
+	color: #C8C8C2;
+	line-height: 100%;
+}
+.nav a:hover {
+	color: #EEC000;
+}
+.nav .current a {
+	background: #EEC000;
+	color: #000;
+	border-radius: 5px;
+}
+
+
+/* center nav */
+.nav.center ul {
+	text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+	.nav {
+		position: relative;
+		min-height: 40px;
+	}	
+	.nav ul {
+		width: 180px;
+		padding: 5px 0;
+		position: absolute;
+		top: 0;
+		left: 0;
+		border: solid 1px #aaa;
+		background: #fff url(images/icon-menu.png) no-repeat 6px 8px;
+		border-radius: 5px;
+		box-shadow: 0 1px 2px rgba(0,0,0,.3);
+	}
+	.nav li {
+		display: none; /* hide all <li> items */
+		margin: 0;
+	}
+	.nav .current {
+		display: block; /* show only current <li> item */
+	}
+	.nav a {
+		display: block;
+		padding: 5px 5px 5px 32px;
+		text-align: left;
+	}
+	.nav .current a {
+		background: none;
+		color: #666;
+	}
+
+	/* on nav hover */
+	.nav ul:hover {
+		background-image: none;
+	}
+	.nav ul:hover li {
+		display: block;
+		margin: 0 0 5px;
+	}
+	.nav ul:hover .current {
+		background: url(images/icon-check.png) no-repeat 7px 4.5px;
+	}
+
+	/* center nav */
+	.nav.center ul {
+		left: 50%;
+		margin-left: -90px;
+	}
+	
+}
+
+	/* Navigation FIN */
+	
+	img {
+	max-width: 100%;
+	height: auto;
+	width: auto; 
+	box-sizing: border-box
+	
+}
+	
+footer {
+    color: #000000;
+    background-color: #339900;
+    	}

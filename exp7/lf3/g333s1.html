@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html slick-uniqueid="3" xml:lang="en-gb" lang="en-gb"><head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="keywords" content="PokerTH, Software, Open Source, Poker, Online Poker, Download, Texas Holdem">
+  <meta name="author" content="doitux">
+  <meta name="description" content="PokerTH - The Open Source Texas Holden Engine Community Portal">
+  <meta name="generator" content="Joomla! - Open Source Content Management">
+  <title>Log file analysis - PokerTH - Community Portal</title>
+  <link href="http://pokerth.net/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+  <link rel="stylesheet" href="Log%20file%20analysis%20-%20PokerTH%20-%20Community%20Portal_fichiers/2clicksocialbuttons.css" type="text/css">
+  <link rel="stylesheet" href="Log%20file%20analysis%20-%20PokerTH%20-%20Community%20Portal_fichiers/rokbox.css" type="text/css">
+  <link rel="stylesheet" href="Log%20file%20analysis%20-%20PokerTH%20-%20Community%20Portal_fichiers/grid-responsive.css" type="text/css">
+  <link rel="stylesheet" href="falaf/master-ecab71dbb50733aede52bc858cef6e60.css" type="text/css">
+  <link rel="stylesheet" href="Log%20file%20analysis%20-%20PokerTH%20-%20Community%20Portal_fichiers/mediaqueries.css" type="text/css">
+  <link rel="stylesheet" href="Log%20file%20analysis%20-%20PokerTH%20-%20Community%20Portal_fichiers/fusionmenu.css" type="text/css">
+  <link rel="stylesheet" href="Log%20file%20analysis%20-%20PokerTH%20-%20Community%20Portal_fichiers/thirdparty-k2-ecab71dbb50733aede52bc858cef6e60.css" type="text/css">
+  <link rel="stylesheet" href="Log%20file%20analysis%20-%20PokerTH%20-%20Community%20Portal_fichiers/rt_graffito-custom.css" type="text/css">
+  <link rel="stylesheet" href="Log%20file%20analysis%20-%20PokerTH%20-%20Community%20Portal_fichiers/kunenalatest.css" type="text/css">
+
+</head>
+<body>
+
+
+
+
+
+
+	<link rel="stylesheet" href="falaf/format.css" type="text/css" media="all">
+	
+
+    <div style="width:100%;text-align:center">
+
+		<!-- select game -->
+		
+
+		
+	
+
+	<div id="print_area">
+
+		<table style="border:0px;width:100%;padding:0px;margin:0px;border-spacing:0px">
+			<tbody><tr style="font-size:30px;font-weight:400;height:45px;font-family: 'ArvoRegular',Helvetica,Arial,sans-serif;vertical-align:middle;text-align:center">
+				<td style="background-image: url('/log_file_analysis/pic/h_background_left.png');background-repeat:no-repeat; background-position:right;min-width:50px;"></td>
+				<td style="background-image: url('/log_file_analysis/pic/h_background.png');">
+					Game 1				</td>
+				<td style="background-image: url('/log_file_analysis/pic/h_background_right.png');background-repeat:no-repeat; background-position:left;min-width:50px;text-align:right">
+					<span class="icon-print" style="font-size:24px;cursor:pointer;" onclick="printdiv('print_area')"></span>
+				</td>
+			</tr>
+			<tr style="height:20px;"><td></td><td></td></tr>
+		</tbody></table>
+
+
+<!-- basic data -->
+		<div style="max-width: 836px;" class="element">
+			<h2>Basic data</h2>
+			<table style="text-align:left;margin:auto auto">
+				<tbody><tr>
+					<td><b>Number of players:</b></td>
+					<td style="text-align:right">10</td>
+				</tr>
+				<tr>
+					<td><b>Winner:</b></td>
+					<td style="text-align:right">l0stman</td>
+				</tr>
+				<tr>
+					<td><b>Hands:</b></td>
+					<td style="text-align:right">178</td>
+				</tr>
+				<tr>
+					<td><b>Startmoney:</b></td>
+					<td style="text-align:right">$3000</td>
+				</tr>
+				<tr>
+					<td><b>Start big blind:</b></td>
+					<td style="text-align:right">$30</td>
+				</tr>
+				<tr>
+					<td><b>End big blind:</b></td>
+					<td style="text-align:right">$1200</td>
+				</tr>
+				<tr><td style="height:20px"></td></tr>
+				<tr>
+					<td colspan="2" style="text-align:center">
+						<div id="div_expand_collapse" onclick="javascript:expand_collapse()" class="collapse"><span id="span_expand_collapse">collapse all<span class="icon-resize-small" style="font-size:14px;padding-left:10px;"></span></span>
+							
+						</div>
+					</td>
+				</tr>
+			</tbody></table>
+			<table>
+				<tbody><tr>
+					<td>
+						
+						<br>
+						<div style="margin-top:-30px; width:320px; height:50px; border-style:dotted; border-color:#2C2C2C; border-width:1px;">
+						</div>
+					</td>
+				</tr>
+			</tbody></table>
+		</div>
+
+<!-- ranking -->
+			<div style="max-width: 836px;" class="element">
+			<h2>Ranking</h2>
+			<table style="font-size: 14px;" class="data">
+				<tbody><tr>
+					<th></th>
+					<th class="player">Player</th>
+					<th class="hand">Hand</th>
+					<th></th>
+					<th></th>
+				</tr>
+				<tr class="player_4">
+					<td class="rank">1.</td>
+					<td style="white-space: nowrap;" class="player" onclick="javascript:select_player(4)">l0stman</td>
+					<td class="hand">178</td>
+					<td style="padding-right:10px"><img style="visibility: visible;" class="line" src="falaf/square1.png"></td>
+					<td style="font-size:11px;padding-right:10px">
+					wins with [K<span style="font-size:13px">â¦</span>,J<span style="font-size:13px">â¥</span>] One Pair					</td>
+					
+				</tr><tr class="player_9">
+					<td class="rank">2.</td>
+					<td style="white-space: nowrap;" class="player" onclick="javascript:select_player(9)">joanna1</td>
+					<td class="hand">178</td>
+					<td style="padding-right:10px"><img style="visibility: visible;" class="line" src="falaf/square2.png"></td>
+					<td style="font-size:11px;padding-right:10px">
+					eliminated by l0stman					</td>
+					
+				</tr><tr class="player_3">
+					<td class="rank">3.</td>
+					<td style="white-space: nowrap;" class="player" onclick="javascript:select_player(3)">Darts501</td>
+					<td class="hand">173</td>
+					<td style="padding-right:10px"><img style="visibility: visible;" class="line" src="falaf/square3.png"></td>
+					<td style="font-size:11px;padding-right:10px">
+					eliminated by l0stman					</td>
+					
+				</tr><tr class="player_8">
+					<td class="rank">4.</td>
+					<td style="white-space: nowrap;" class="player" onclick="javascript:select_player(8)">Nelly</td>
+					<td class="hand">171</td>
+					<td style="padding-right:10px"><img style="visibility: visible;" class="line" src="falaf/square4.png"></td>
+					<td style="font-size:11px;padding-right:10px">
+					eliminated by joanna1					</td>
+					
+				</tr><tr class="player_1">
+					<td class="rank">5.</td>
+					<td style="white-space: nowrap;" class="player" onclick="javascript:select_player(1)">HighMelting</td>
+					<td class="hand">157</td>
+					<td style="padding-right:10px"><img style="visibility: visible;" class="line" src="falaf/square5.png"></td>
+					<td style="font-size:11px;padding-right:10px">
+					eliminated by Darts501					</td>
+					
+				</tr><tr class="player_2">
+					<td class="rank">6.</td>
+					<td style="white-space: nowrap;" class="player" onclick="javascript:select_player(2)">mimim</td>
+					<td class="hand">151</td>
+					<td style="padding-right:10px"><img style="visibility: visible;" class="line" src="falaf/square6.png"></td>
+					<td style="font-size:11px;padding-right:10px">
+					eliminated by joanna1					</td>
+					
+				</tr><tr class="player_6">
+					<td class="rank">7.</td>
+					<td style="white-space: nowrap;" class="player" onclick="javascript:select_player(6)">gohgpobn</td>
+					<td class="hand">89</td>
+					<td style="padding-right:10px"><img style="visibility: visible;" class="line" src="falaf/square7.png"></td>
+					<td style="font-size:11px;padding-right:10px">
+					eliminated by mimim					</td>
+					
+				</tr><tr class="player_5">
+					<td class="rank">8.</td>
+					<td style="white-space: nowrap;" class="player" onclick="javascript:select_player(5)">behnambabak</td>
+					<td class="hand">85</td>
+					<td style="padding-right:10px"><img style="visibility: visible;" class="line" src="falaf/square8.png"></td>
+					<td style="font-size:11px;padding-right:10px">
+					has left the game					</td>
+					
+				</tr><tr class="player_10">
+					<td class="rank">9.</td>
+					<td style="white-space: nowrap;" class="player" onclick="javascript:select_player(10)">Paolo ITA</td>
+					<td class="hand">54</td>
+					<td style="padding-right:10px"><img style="visibility: visible;" class="line" src="falaf/square9.png"></td>
+					<td style="font-size:11px;padding-right:10px">
+					eliminated by joanna1					</td>
+					
+				</tr><tr class="player_7">
+					<td class="rank">10.</td>
+					<td style="white-space: nowrap;" class="player" onclick="javascript:select_player(7)">Safavid</td>
+					<td class="hand">32</td>
+					<td style="padding-right:10px"><img style="visibility: visible;" class="line" src="falaf/square10.png"></td>
+					<td style="font-size:11px;padding-right:10px">
+					eliminated by HighMelting					</td>
+					
+				</tr>
+			</tbody></table>
+		</div>
+
+<!-- course of the game -->
+		<div style="width: 836px; max-width: 836px;" id="div_course_game" class="element">
+			<span onclick="javascript:toggle_table('table_course_game','icon_course_game')" style="cursor:pointer">
+				<h2>Course of the game</h2>
+				<span id="icon_course_game" class="icon-chevron-up" style="font-size:12px;padding-left:10px;vertical-align:top"></span>
+			</span>
+			<table style="visibility: visible; position: relative;" id="table_course_game" class="toggle">
+				<tbody><tr>
+					<td>
+						<div style="margin-left:20px">
+							<div id="hand_cash_line" style="width: 60px; background-image: url(&quot;log_file_analysis/pic/hand_cash_top.png&quot;); text-align: center; float: left;">
+								<a href="javascript:hand_cash_line()" onfocus="if(this.blur)this.blur()">line</a>
+							</div>
+							<div id="hand_cash_stacked" style="width: 60px; background-image: url(&quot;log_file_analysis/pic/hand_cash_top_inactive.png&quot;); text-align: center; float: left;">
+								<a href="javascript:hand_cash_stacked()" onfocus="if(this.blur)this.blur()">stacked</a>
+							</div>
+						</div>
+						<div style="clear:left">
+							<img name="hand_cash" src="g333s1_hand_cash.png">
+						</div>
+						<div style="clear:left">
+							<img name="pot_size" src="g333s1_pot_size.png">
+						</div>
+					</td>
+				</tr>
+			</tbody></table>
+			
+		</div>
+
+
+<!-- hands played -->
+		<div style="max-width: 836px;" id="div_played_hands" class="element">
+			<span onclick="javascript:toggle_table('table_played_hands','icon_played_hands')" style="cursor:pointer">
+				<h2>Most hands played</h2>
+				<span id="icon_played_hands" class="icon-chevron-up" style="font-size:12px;padding-left:10px;vertical-align:top"></span>
+			</span>
+			<table style="font-size: 14px; visibility: visible; position: relative;" id="table_played_hands" class="data toggle">
+				<tbody><tr>
+					<th></th>
+					<th class="player">Player</th>
+					<th id="played_hands_count_head_1" class="hand" colspan="2" style="text-align:left">Count</th>
+					<th id="played_hands_count_head_2" colspan="2">10&nbsp;to&nbsp;7<br>player</th>
+					<th id="played_hands_count_head_3" colspan="2">6&nbsp;to&nbsp;4<br>player</th>
+					<th id="played_hands_count_head_4" colspan="2">3&nbsp;to&nbsp;1<br>player</th>
+				</tr>				<tr class="player_9">
+					<td style="padding-right:15px;padding-left:10px;text-align:right;">1.</td>
+					<td style="white-space: nowrap;" class="player" onclick="javascript:select_player(9)">joanna1</td>
+					<td style="text-align:right;font-weight:bold">66%</td>
+					<td class="played_hands_count_data" style="font-size: 10px; text-align: left; padding-left: 5px; display: block;">(118/178 hands)</td>
+					<td style="padding-left:20px;text-align:right">67%</td>
+					<td class="played_hands_count_data" style="font-size: 10px; text-align: left; padding-left: 5px; display: block;">(60/89)</td>
+					<td style="padding-left:20px;text-align:right">63%</td>
+					<td class="played_hands_count_data" style="font-size: 10px; text-align: left; padding-left: 5px; display: block;">(52/82)</td>
+					<td style="padding-left:20px;text-align:right">86%</td>
+					<td class="played_hands_count_data" style="font-size: 10px; text-align: left; padding-left: 5px; display: block;">(6/7)</td>
+				</tr>				<tr class="player_7">
+					<td style="padding-right:15px;padding-left:10px;text-align:right;">2.</td>
+					<td style="white-space: nowrap;" class="player" onclick="javascript:select_player(7)">Safavid</td>
+					<td style="text-align:right;font-weight:bold">66%</td>
+					<td class="played_hands_count_data" style="font-size: 10px; text-align: left; padding-left: 5px; display: block;">(21/32 hands)</td>
+					<td style="padding-left:20px;text-align:right">66%</td>
+					<td class="played_hands_count_data" style="font-size: 10px; text-align: left; padding-left: 5px; display: block;">(21/32)</td>
+					<td style="padding-left:20px;text-align:right">-</td>
+					<td class="played_hands_count_data" style="font-size: 10px; text-align: left; padding-left: 5px; display: block;">&nbsp;</td>
+					<td style="padding-left:20px;text-align:right">-</td>
+					<td class="played_hands_count_data" style="font-size: 10px; text-align: left; padding-left: 5px; display: block;">&nbsp;</td>
+				</tr>				<tr class="player_4">
+					<td style="padding-right:15px;padding-left:10px;text-align:right;">3.</td>
+					<td style="white-space: nowrap;" class="player" onclick="javascript:select_player(4)">l0stman</td>
+					<td style="text-align:right;font-weight:bold">48%</td>
+					<td class="played_hands_count_data" style="font-size: 10px; text-align: left; padding-left: 5px; display: block;">(85/178 hands)</td>
+					<td style="padding-left:20px;text-align:right">37%</td>
+					<td class="played_hands_count_data" style="font-size: 10px; text-align: left; padding-left: 5px; display: block;">(33/89)</td>
+					<td style="padding-left:20px;text-align:right">55%</td>
+					<td class="played_hands_count_data" style="font-size: 10px; text-align: left; padding-left: 5px; display: block;">(45/82)</td>
+					<td style="padding-left:20px;text-align:right">100%</td>
+					<td class="played_hands_count_data" style="font-size: 10px; text-align: left; padding-left: 5px; display: block;">(7/7)</td>
+				</tr>				<tr class="player_2">
+					<td style="padding-right:15px;padding-left:10px;text-align:right;">4.</td>
+					<td style="white-space: nowrap;" class="player" onclick="javascript:select_player(2)">mimim</td>
+					<td style="text-align:right;font-weight:bold">44%</td>
+					<td class="played_hands_count_data" style="font-size: 10px; text-align: left; padding-left: 5px; display: block;">(67/151 hands)</td>
+					<td style="padding-left:20px;text-align:right">46%</td>
+					<td class="played_hands_count_data" style="font-size: 10px; text-align: left; padding-left: 5px; display: block;">(41/89)</td>
+					<td style="padding-left:20px;text-align:right">42%</td>
+					<td class="played_hands_count_data" style="font-size: 10px; text-align: left; padding-left: 5px; display: block;">(26/62)</td>
+					<td style="padding-left:20px;text-align:right">-</td>
+					<td class="played_hands_count_data" style="font-size: 10px; text-align: left; padding-left: 5px; display: block;">&nbsp;</td>
+				</tr>				<tr class="player_3">
+					<td style="padding-right:15px;padding-left:10px;text-align:right;">5.</td>
+					<td style="white-space: nowrap;" class="player" onclick="javascript:select_player(3)">Darts501</td>
+					<td style="text-align:right;font-weight:bold">43%</td>
+					<td class="played_hands_count_data" style="font-size: 10px; text-align: left; padding-left: 5px; display: block;">(74/173 hands)</td>
+					<td style="padding-left:20px;text-align:right">34%</td>
+					<td class="played_hands_count_data" style="font-size: 10px; text-align: left; padding-left: 5px; display: block;">(30/89)</td>
+					<td style="padding-left:20px;text-align:right">51%</td>
+					<td class="played_hands_count_data" style="font-size: 10px; text-align: left; padding-left: 5px; display: block;">(42/82)</td>
+					<td style="padding-left:20px;text-align:right">100%</td>
+					<td class="played_hands_count_data" style="font-size: 10px; text-align: left; padding-left: 5px; display: block;">(2/2)</td>
+				</tr>				<tr class="player_10">
+					<td style="padding-right:15px;padding-left:10px;text-align:right;">6.</td>
+					<td style="white-space: nowrap;" class="player" onclick="javascript:select_player(10)">Paolo ITA</td>
+					<td style="text-align:right;font-weight:bold">43%</td>
+					<td class="played_hands_count_data" style="font-size: 10px; text-align: left; padding-left: 5px; display: block;">(23/54 hands)</td>
+					<td style="padding-left:20px;text-align:right">43%</td>
+					<td class="played_hands_count_data" style="font-size: 10px; text-align: left; padding-left: 5px; display: block;">(23/54)</td>
+					<td style="padding-left:20px;text-align:right">-</td>
+					<td class="played_hands_count_data" style="font-size: 10px; text-align: left; padding-left: 5px; display: block;">&nbsp;</td>
+					<td style="padding-left:20px;text-align:right">-</td>
+					<td class="played_hands_count_data" style="font-size: 10px; text-align: left; padding-left: 5px; display: block;">&nbsp;</td>
+				</tr>				<tr class="player_1">
+					<td style="padding-right:15px;padding-left:10px;text-align:right;">7.</td>
+					<td style="white-space: nowrap;" class="player" onclick="javascript:select_player(1)">HighMelting</td>
+					<td style="text-align:right;font-weight:bold">42%</td>
+					<td class="played_hands_count_data" style="font-size: 10px; text-align: left; padding-left: 5px; display: block;">(66/157 hands)</td>
+					<td style="padding-left:20px;text-align:right">39%</td>
+					<td class="played_hands_count_data" style="font-size: 10px; text-align: left; padding-left: 5px; display: block;">(35/89)</td>
+					<td style="padding-left:20px;text-align:right">46%</td>
+					<td class="played_hands_count_data" style="font-size: 10px; text-align: left; padding-left: 5px; display: block;">(31/68)</td>
+					<td style="padding-left:20px;text-align:right">-</td>
+					<td class="played_hands_count_data" style="font-size: 10px; text-align: left; padding-left: 5px; display: block;">&nbsp;</td>
+				</tr>				<tr class="player_8">
+					<td style="padding-right:15px;padding-left:10px;text-align:right;">8.</td>
+					<td style="white-space: nowrap;" class="player" onclick="javascript:select_player(8)">Nelly</td>
+					<td style="text-align:right;font-weight:bold">41%</td>
+					<td class="played_hands_count_data" style="font-size: 10px; text-align: left; padding-left: 5px; display: block;">(70/171 hands)</td>
+					<td style="padding-left:20px;text-align:right">38%</td>
+					<td class="played_hands_count_data" style="font-size: 10px; text-align: left; padding-left: 5px; display: block;">(34/89)</td>
+					<td style="padding-left:20px;text-align:right">44%</td>
+					<td class="played_hands_count_data" style="font-size: 10px; text-align: left; padding-left: 5px; display: block;">(36/82)</td>
+					<td style="padding-left:20px;text-align:right">-</td>
+					<td class="played_hands_count_data" style="font-size: 10px; text-align: left; padding-left: 5px; display: block;">&nbsp;</td>
+				</tr>				<tr class="player_6">
+					<td style="padding-right:15px;padding-left:10px;text-align:right;">9.</td>
+					<td style="white-space: nowrap;" class="player" onclick="javascript:select_player(6)">gohgpobn</td>
+					<td style="text-align:right;font-weight:bold">35%</td>
+					<td class="played_hands_count_data" style="font-size: 10px; text-align: left; padding-left: 5px; display: block;">(31/89 hands)</td>
+					<td style="padding-left:20px;text-align:right">35%</td>
+					<td class="played_hands_count_data" style="font-size: 10px; text-align: left; padding-left: 5px; display: block;">(31/89)</td>
+					<td style="padding-left:20px;text-align:right">-</td>
+					<td class="played_hands_count_data" style="font-size: 10px; text-align: left; padding-left: 5px; display: block;">&nbsp;</td>
+					<td style="padding-left:20px;text-align:right">-</td>
+					<td class="played_hands_count_data" style="font-size: 10px; text-align: left; padding-left: 5px; display: block;">&nbsp;</td>
+				</tr>				<tr class="player_5">
+					<td style="padding-right:15px;padding-left:10px;text-align:right;">10.</td>
+					<td style="white-space: nowrap;" class="player" onclick="javascript:select_player(5)">behnambabak</td>
+					<td style="text-align:right;font-weight:bold">27%</td>
+					<td class="played_hands_count_data" style="font-size: 10px; text-align: left; padding-left: 5px; display: block;">(23/85 hands)</td>
+					<td style="padding-left:20px;text-align:right">27%</td>
+					<td class="played_hands_count_data" style="font-size: 10px; text-align: left; padding-left: 5px; display: block;">(23/85)</td>
+					<td style="padding-left:20px;text-align:right">-</td>
+					<td class="played_hands_count_data" style="font-size: 10px; text-align: left; padding-left: 5px; display: block;">&nbsp;</td>
+					<td style="padding-left:20px;text-align:right">-</td>
+					<td class="played_hands_count_data" style="font-size: 10px; text-align: left; padding-left: 5px; display: block;">&nbsp;</td>
+				</tr>			</tbody></table>
+			
+		</div>
+
+
+<!-- best hands -->
+		<div style="width: 534px; max-width: 836px;" id="div_best_hands" class="element">
+			<span onclick="javascript:toggle_table('table_best_hands','icon_best_hands')" style="cursor:pointer">
+				<h2>Best hands</h2>
+				<span id="icon_best_hands" class="icon-chevron-up" style="font-size:12px;padding-left:10px;vertical-align:top"></span>
+			</span>
+			<table style="font-size: 14px; visibility: visible; position: relative;" id="table_best_hands" class="toggle data">
+				<tbody><tr>
+					<th></th>
+					<th style="text-align:left">Cards</th>
+					<th class="player">Player</th>
+					<th class="hand">Hand</th>
+					<th style="padding-right:10px">Result</th>
+				</tr>				<tr class="player_3">
+					<td style="padding-right:15px;padding-left:10px;text-align:right;">1.</td>
+					<td class="hand_name" style="font-weight: bold; white-space: nowrap;">Full House, Aces full of Tens</td>
+					<td style="white-space: nowrap;" class="player" onclick="javascript:select_player(3)">Darts501</td>
+					<td class="hand">157</td>
+					<td class="result">
+					wins $1753					</td>
+				</tr>				<tr class="player_2">
+					<td style="padding-right:15px;padding-left:10px;text-align:right;">2.</td>
+					<td class="hand_name" style="font-weight: bold; white-space: nowrap;">Full House, Queens full of Nines</td>
+					<td style="white-space: nowrap;" class="player" onclick="javascript:select_player(2)">mimim</td>
+					<td class="hand">119</td>
+					<td class="result">
+					wins $1490					</td>
+				</tr>				<tr class="player_8">
+					<td style="padding-right:15px;padding-left:10px;text-align:right;">3.</td>
+					<td class="hand_name" style="font-weight: bold; white-space: nowrap;">Full House, Queens full of Fives</td>
+					<td style="white-space: nowrap;" class="player" onclick="javascript:select_player(8)">Nelly</td>
+					<td class="hand">119</td>
+					<td class="result">
+					<span style="color:red">loses $430</span>					</td>
+				</tr>				<tr class="player_4">
+					<td style="padding-right:15px;padding-left:10px;text-align:right;">4.</td>
+					<td class="hand_name" style="font-weight: bold; white-space: nowrap;">Full House, Queens full of Threes</td>
+					<td style="white-space: nowrap;" class="player" onclick="javascript:select_player(4)">l0stman</td>
+					<td class="hand">119</td>
+					<td class="result">
+					<span style="color:red">loses $430</span>					</td>
+				</tr>				<tr class="player_9">
+					<td style="padding-right:15px;padding-left:10px;text-align:right;">5.</td>
+					<td class="hand_name" style="font-weight: bold; white-space: nowrap;">Full House, Queens full of Deuces</td>
+					<td style="white-space: nowrap;" class="player" onclick="javascript:select_player(9)">joanna1</td>
+					<td class="hand">16</td>
+					<td class="result">
+					wins $75					</td>
+				</tr>				<tr class="player_4">
+					<td style="padding-right:15px;padding-left:10px;text-align:right;">6.</td>
+					<td class="hand_name" style="font-weight: bold; white-space: nowrap;">Full House, Tens full of Fours</td>
+					<td style="white-space: nowrap;" class="player" onclick="javascript:select_player(4)">l0stman</td>
+					<td class="hand">127</td>
+					<td class="result">
+					wins $3000					</td>
+				</tr>				<tr class="player_1">
+					<td style="padding-right:15px;padding-left:10px;text-align:right;">7.</td>
+					<td class="hand_name" style="font-weight: bold; white-space: nowrap;">Full House, Sevens full of Queens</td>
+					<td style="white-space: nowrap;" class="player" onclick="javascript:select_player(1)">HighMelting</td>
+					<td class="hand">53</td>
+					<td class="result">
+					wins $2929					</td>
+				</tr>				<tr class="player_10">
+					<td style="padding-right:15px;padding-left:10px;text-align:right;">8.</td>
+					<td class="hand_name" style="font-weight: bold; white-space: nowrap;">Full House, Sevens full of Sixes</td>
+					<td style="white-space: nowrap;" class="player" onclick="javascript:select_player(10)">Paolo ITA</td>
+					<td class="hand">53</td>
+					<td class="result">
+					<span style="color:red">loses $2779</span>					</td>
+				</tr>				<tr class="player_10">
+					<td style="padding-right:15px;padding-left:10px;text-align:right;">9.</td>
+					<td class="hand_name" style="font-weight: bold; white-space: nowrap;">Flush, Ace high</td>
+					<td style="white-space: nowrap;" class="player" onclick="javascript:select_player(10)">Paolo ITA</td>
+					<td class="hand">41</td>
+					<td class="result">
+					wins $605					</td>
+				</tr>				<tr class="player_1">
+					<td style="padding-right:15px;padding-left:10px;text-align:right;">10.</td>
+					<td class="hand_name" style="font-weight: bold; white-space: nowrap;">Flush, Ace high</td>
+					<td style="white-space: nowrap;" class="player" onclick="javascript:select_player(1)">HighMelting</td>
+					<td class="hand">32</td>
+					<td class="result">
+					wins $1489					</td>
+				</tr>			</tbody></table>
+			
+		</div>
+
+<!-- most wins -->
+		<div style="width: 306px; max-width: 836px;" id="div_most_wins" class="element">
+			<span onclick="javascript:toggle_table('table_most_wins','icon_most_wins')" style="cursor:pointer">
+				<h2>Most wins</h2>
+				<span id="icon_most_wins" class="icon-chevron-up" style="font-size:12px;padding-left:10px;vertical-align:top"></span>
+			</span>
+			<table style="font-size: 14px; visibility: visible; position: relative;" id="table_most_wins" class="data toggle">
+				<tbody><tr>
+					<th></th>
+					<th class="player">Player</th>
+					<th class="hand" colspan="2">Count&nbsp;*</th>
+					<th class="amount">Highest</th>
+				</tr>				<tr class="player_9">
+					<td style="padding-right:15px;padding-left:10px;text-align:right;">1.</td>
+					<td style="white-space: nowrap;" class="player" onclick="javascript:select_player(9)">joanna1</td>
+					<td style="text-align:right;font-weight:bold;padding-right:5px">39</td>
+					<td style="text-align:left;padding-left:5px;padding-right:15px">(33%)</td>
+					<td class="amount">$4536</td>
+					</tr>				<tr class="player_3">
+					<td style="padding-right:15px;padding-left:10px;text-align:right;">2.</td>
+					<td style="white-space: nowrap;" class="player" onclick="javascript:select_player(3)">Darts501</td>
+					<td style="text-align:right;font-weight:bold;padding-right:5px">31</td>
+					<td style="text-align:left;padding-left:5px;padding-right:15px">(42%)</td>
+					<td class="amount">$3180</td>
+					</tr>				<tr class="player_4">
+					<td style="padding-right:15px;padding-left:10px;text-align:right;">3.</td>
+					<td style="white-space: nowrap;" class="player" onclick="javascript:select_player(4)">l0stman</td>
+					<td style="text-align:right;font-weight:bold;padding-right:5px">28</td>
+					<td style="text-align:left;padding-left:5px;padding-right:15px">(33%)</td>
+					<td class="amount">$8560</td>
+					</tr>				<tr class="player_1">
+					<td style="padding-right:15px;padding-left:10px;text-align:right;">4.</td>
+					<td style="white-space: nowrap;" class="player" onclick="javascript:select_player(1)">HighMelting</td>
+					<td style="text-align:right;font-weight:bold;padding-right:5px">23</td>
+					<td style="text-align:left;padding-left:5px;padding-right:15px">(35%)</td>
+					<td class="amount">$2929</td>
+					</tr>				<tr class="player_8">
+					<td style="padding-right:15px;padding-left:10px;text-align:right;">5.</td>
+					<td style="white-space: nowrap;" class="player" onclick="javascript:select_player(8)">Nelly</td>
+					<td style="text-align:right;font-weight:bold;padding-right:5px">23</td>
+					<td style="text-align:left;padding-left:5px;padding-right:15px">(33%)</td>
+					<td class="amount">$2520</td>
+					</tr>				<tr class="player_2">
+					<td style="padding-right:15px;padding-left:10px;text-align:right;">6.</td>
+					<td style="white-space: nowrap;" class="player" onclick="javascript:select_player(2)">mimim</td>
+					<td style="text-align:right;font-weight:bold;padding-right:5px">17</td>
+					<td style="text-align:left;padding-left:5px;padding-right:15px">(25%)</td>
+					<td class="amount">$1490</td>
+					</tr>				<tr class="player_10">
+					<td style="padding-right:15px;padding-left:10px;text-align:right;">7.</td>
+					<td style="white-space: nowrap;" class="player" onclick="javascript:select_player(10)">Paolo ITA</td>
+					<td style="text-align:right;font-weight:bold;padding-right:5px">8</td>
+					<td style="text-align:left;padding-left:5px;padding-right:15px">(35%)</td>
+					<td class="amount">$605</td>
+					</tr>				<tr class="player_7">
+					<td style="padding-right:15px;padding-left:10px;text-align:right;">8.</td>
+					<td style="white-space: nowrap;" class="player" onclick="javascript:select_player(7)">Safavid</td>
+					<td style="text-align:right;font-weight:bold;padding-right:5px">7</td>
+					<td style="text-align:left;padding-left:5px;padding-right:15px">(33%)</td>
+					<td class="amount">$295</td>
+					</tr>				<tr class="player_5">
+					<td style="padding-right:15px;padding-left:10px;text-align:right;">9.</td>
+					<td style="white-space: nowrap;" class="player" onclick="javascript:select_player(5)">behnambabak</td>
+					<td style="text-align:right;font-weight:bold;padding-right:5px">1</td>
+					<td style="text-align:left;padding-left:5px;padding-right:15px">(4%)</td>
+					<td class="amount">$280</td>
+					</tr>				<tr class="player_6">
+					<td style="padding-right:15px;padding-left:10px;text-align:right;">10.</td>
+					<td style="white-space: nowrap;" class="player" onclick="javascript:select_player(6)">gohgpobn</td>
+					<td style="text-align:right;font-weight:bold;padding-right:5px">1</td>
+					<td style="text-align:left;padding-left:5px;padding-right:15px">(3%)</td>
+					<td class="amount">$270</td>
+					</tr>			</tbody></table>
+			
+		</div>
+
+<!-- highest wins -->
+		<div style="width: 244px; max-width: 836px;" id="div_highest_wins" class="element">
+			<span onclick="javascript:toggle_table('table_highest_wins','icon_highest_wins')" style="cursor:pointer">
+				<h2>Highest wins</h2>
+				<span id="icon_highest_wins" class="icon-chevron-up" style="font-size:12px;padding-left:10px;vertical-align:top"></span>
+			</span>
+			<table style="font-size: 14px; visibility: visible; position: relative;" id="table_highest_wins" class="data toggle">
+				<tbody><tr>
+					<th></th>
+					<th class="amount">Amount</th>
+					<th class="player">Player</th>
+					<th></th>
+					<th class="hand">Hand</th>
+				</tr>				<tr class="player_4">
+					<td style="padding-right:15px;padding-left:10px;text-align:right;">1.</td>
+					<td class="amount" style="font-weight:bold">$8560</td>
+					<td style="white-space: nowrap;" class="player" onclick="javascript:select_player(4)">l0stman</td>
+					<td style="font-size:8px;vertical-align:top">
+					&nbsp;</td>
+					<td class="hand">178</td>
+				</tr>				<tr class="player_4">
+					<td style="padding-right:15px;padding-left:10px;text-align:right;">2.</td>
+					<td class="amount" style="font-weight:bold">$7983</td>
+					<td style="white-space: nowrap;" class="player" onclick="javascript:select_player(4)">l0stman</td>
+					<td style="font-size:8px;vertical-align:top">
+					&nbsp;</td>
+					<td class="hand">173</td>
+				</tr>				<tr class="player_4">
+					<td style="padding-right:15px;padding-left:10px;text-align:right;">3.</td>
+					<td class="amount" style="font-weight:bold">$4800</td>
+					<td style="white-space: nowrap;" class="player" onclick="javascript:select_player(4)">l0stman</td>
+					<td style="font-size:8px;vertical-align:top">
+					&nbsp;</td>
+					<td class="hand">172</td>
+				</tr>				<tr class="player_4">
+					<td style="padding-right:15px;padding-left:10px;text-align:right;">4.</td>
+					<td class="amount" style="font-weight:bold">$4750</td>
+					<td style="white-space: nowrap;" class="player" onclick="javascript:select_player(4)">l0stman</td>
+					<td style="font-size:8px;vertical-align:top">
+					&nbsp;</td>
+					<td class="hand">146</td>
+				</tr>				<tr class="player_9">
+					<td style="padding-right:15px;padding-left:10px;text-align:right;">5.</td>
+					<td class="amount" style="font-weight:bold">$4536</td>
+					<td style="white-space: nowrap;" class="player" onclick="javascript:select_player(9)">joanna1</td>
+					<td style="font-size:8px;vertical-align:top">
+					&nbsp;</td>
+					<td class="hand">171</td>
+				</tr>				<tr class="player_9">
+					<td style="padding-right:15px;padding-left:10px;text-align:right;">6.</td>
+					<td class="amount" style="font-weight:bold">$4446</td>
+					<td style="white-space: nowrap;" class="player" onclick="javascript:select_player(9)">joanna1</td>
+					<td style="font-size:8px;vertical-align:top">
+					&nbsp;</td>
+					<td class="hand">133</td>
+				</tr>				<tr class="player_9">
+					<td style="padding-right:15px;padding-left:10px;text-align:right;">7.</td>
+					<td class="amount" style="font-weight:bold">$4280</td>
+					<td style="white-space: nowrap;" class="player" onclick="javascript:select_player(9)">joanna1</td>
+					<td style="font-size:8px;vertical-align:top">
+					&nbsp;</td>
+					<td class="hand">177</td>
+				</tr>				<tr class="player_4">
+					<td style="padding-right:15px;padding-left:10px;text-align:right;">8.</td>
+					<td class="amount" style="font-weight:bold">$3600</td>
+					<td style="white-space: nowrap;" class="player" onclick="javascript:select_player(4)">l0stman</td>
+					<td style="font-size:8px;vertical-align:top">
+					&nbsp;</td>
+					<td class="hand">175</td>
+				</tr>				<tr class="player_9">
+					<td style="padding-right:15px;padding-left:10px;text-align:right;">9.</td>
+					<td class="amount" style="font-weight:bold">$3240</td>
+					<td style="white-space: nowrap;" class="player" onclick="javascript:select_player(9)">joanna1</td>
+					<td style="font-size:8px;vertical-align:top">
+					&nbsp;</td>
+					<td class="hand">151</td>
+				</tr>				<tr class="player_3">
+					<td style="padding-right:15px;padding-left:10px;text-align:right;">10.</td>
+					<td class="amount" style="font-weight:bold">$3180</td>
+					<td style="white-space: nowrap;" class="player" onclick="javascript:select_player(3)">Darts501</td>
+					<td style="font-size:8px;vertical-align:top">
+					&nbsp;</td>
+					<td class="hand">92</td>
+				</tr>			</tbody></table>			
+		</div>
+
+<!-- longest series of wins -->
+		<div style="width: 359px; max-width: 836px;" id="div_series_wins" class="element">
+			<span onclick="javascript:toggle_table('table_series_wins','icon_series_wins')" style="cursor:pointer">
+				<h2>Longest series of wins</h2>
+				<span id="icon_series_wins" class="icon-chevron-up" style="font-size:12px;padding-left:10px;vertical-align:top"></span>
+			</span>
+			<table style="font-size: 14px; visibility: visible; position: relative;" id="table_series_wins" class="data toggle">
+				<tbody><tr>
+					<th></th>
+					<th class="hand">Duration</th>
+					<th class="player">Player</th>
+					<th colspan="3" class="hands">Hands</th>
+					<th class="amount">Total gain</th>
+				</tr>				<tr class="player_10">
+					<td style="padding-right:15px;padding-left:10px;text-align:right;">1.</td>
+					<td class="hand" style="font-weight:bold;padding-right:25px">3</td>
+					<td style="white-space: nowrap;" class="player" onclick="javascript:select_player(10)">Paolo ITA</td>
+					<td class="hand" style="padding-right:2px">41</td>
+					<td>-</td>
+					<td class="hand" style="padding-right:20px;">43</td>
+					<td class="amount">$925</td>
+				</tr>				<tr class="player_4">
+					<td style="padding-right:15px;padding-left:10px;text-align:right;">2.</td>
+					<td class="hand" style="font-weight:bold;padding-right:25px">2</td>
+					<td style="white-space: nowrap;" class="player" onclick="javascript:select_player(4)">l0stman</td>
+					<td class="hand" style="padding-right:2px">172</td>
+					<td>-</td>
+					<td class="hand" style="padding-right:20px;">173</td>
+					<td class="amount">$12783</td>
+				</tr>				<tr class="player_9">
+					<td style="padding-right:15px;padding-left:10px;text-align:right;">3.</td>
+					<td class="hand" style="font-weight:bold;padding-right:25px">2</td>
+					<td style="white-space: nowrap;" class="player" onclick="javascript:select_player(9)">joanna1</td>
+					<td class="hand" style="padding-right:2px">170</td>
+					<td>-</td>
+					<td class="hand" style="padding-right:20px;">171</td>
+					<td class="amount">$6336</td>
+				</tr>				<tr class="player_4">
+					<td style="padding-right:15px;padding-left:10px;text-align:right;">4.</td>
+					<td class="hand" style="font-weight:bold;padding-right:25px">2</td>
+					<td style="white-space: nowrap;" class="player" onclick="javascript:select_player(4)">l0stman</td>
+					<td class="hand" style="padding-right:2px">175</td>
+					<td>-</td>
+					<td class="hand" style="padding-right:20px;">176</td>
+					<td class="amount">$4200</td>
+				</tr>				<tr class="player_9">
+					<td style="padding-right:15px;padding-left:10px;text-align:right;">5.</td>
+					<td class="hand" style="font-weight:bold;padding-right:25px">2</td>
+					<td style="white-space: nowrap;" class="player" onclick="javascript:select_player(9)">joanna1</td>
+					<td class="hand" style="padding-right:2px">167</td>
+					<td>-</td>
+					<td class="hand" style="padding-right:20px;">168</td>
+					<td class="amount">$3472</td>
+				</tr>				<tr class="player_3">
+					<td style="padding-right:15px;padding-left:10px;text-align:right;">6.</td>
+					<td class="hand" style="font-weight:bold;padding-right:25px">2</td>
+					<td style="white-space: nowrap;" class="player" onclick="javascript:select_player(3)">Darts501</td>
+					<td class="hand" style="padding-right:2px">147</td>
+					<td>-</td>
+					<td class="hand" style="padding-right:20px;">148</td>
+					<td class="amount">$3200</td>
+				</tr>				<tr class="player_8">
+					<td style="padding-right:15px;padding-left:10px;text-align:right;">7.</td>
+					<td class="hand" style="font-weight:bold;padding-right:25px">2</td>
+					<td style="white-space: nowrap;" class="player" onclick="javascript:select_player(8)">Nelly</td>
+					<td class="hand" style="padding-right:2px">155</td>
+					<td>-</td>
+					<td class="hand" style="padding-right:20px;">156</td>
+					<td class="amount">$2500</td>
+				</tr>				<tr class="player_3">
+					<td style="padding-right:15px;padding-left:10px;text-align:right;">8.</td>
+					<td class="hand" style="font-weight:bold;padding-right:25px">2</td>
+					<td style="white-space: nowrap;" class="player" onclick="javascript:select_player(3)">Darts501</td>
+					<td class="hand" style="padding-right:2px">165</td>
+					<td>-</td>
+					<td class="hand" style="padding-right:20px;">166</td>
+					<td class="amount">$2000</td>
+				</tr>				<tr class="player_9">
+					<td style="padding-right:15px;padding-left:10px;text-align:right;">9.</td>
+					<td class="hand" style="font-weight:bold;padding-right:25px">2</td>
+					<td style="white-space: nowrap;" class="player" onclick="javascript:select_player(9)">joanna1</td>
+					<td class="hand" style="padding-right:2px">120</td>
+					<td>-</td>
+					<td class="hand" style="padding-right:20px;">121</td>
+					<td class="amount">$1600</td>
+				</tr>				<tr class="player_4">
+					<td style="padding-right:15px;padding-left:10px;text-align:right;">10.</td>
+					<td class="hand" style="font-weight:bold;padding-right:25px">2</td>
+					<td style="white-space: nowrap;" class="player" onclick="javascript:select_player(4)">l0stman</td>
+					<td class="hand" style="padding-right:2px">130</td>
+					<td>-</td>
+					<td class="hand" style="padding-right:20px;">131</td>
+					<td class="amount">$1500</td>
+				</tr>			</tbody></table>
+			
+		</div>
+
+<!-- longest series of losses -->
+		<div style="width: 391px; max-width: 836px;" id="div_series_losses" class="element">
+			<span onclick="javascript:toggle_table('table_series_losses','icon_series_losses')" style="cursor:pointer">
+				<h2>Longest series of losses</h2>
+				<span id="icon_series_losses" class="icon-chevron-up" style="font-size:12px;padding-left:10px;vertical-align:top"></span>
+			</span>
+			<table style="font-size: 14px; visibility: visible; position: relative;" id="table_series_losses" class="data toggle">
+				<tbody><tr>
+					<th></th>
+					<th class="hand">Duration</th>
+					<th class="player">Player</th>
+					<th colspan="3" class="hands">Hands</th>
+					<th class="amount">Total Loss</th>
+				</tr>				<tr class="player_5">
+					<td style="padding-right:15px;padding-left:10px;text-align:right;">1.</td>
+					<td class="hand" style="font-weight:bold;padding-right:25px">83</td>
+					<td style="white-space: nowrap;" class="player" onclick="javascript:select_player(5)">behnambabak</td>
+					<td class="hand" style="padding-right:2px">3</td>
+					<td>-</td>
+					<td class="hand" style="padding-right:20px">85</td>
+					<td class="amount">$3280</td>
+				</tr>				<tr class="player_6">
+					<td style="padding-right:15px;padding-left:10px;text-align:right;">2.</td>
+					<td class="hand" style="font-weight:bold;padding-right:25px">56</td>
+					<td style="white-space: nowrap;" class="player" onclick="javascript:select_player(6)">gohgpobn</td>
+					<td class="hand" style="padding-right:2px">34</td>
+					<td>-</td>
+					<td class="hand" style="padding-right:20px">89</td>
+					<td class="amount">$2580</td>
+				</tr>				<tr class="player_6">
+					<td style="padding-right:15px;padding-left:10px;text-align:right;">3.</td>
+					<td class="hand" style="font-weight:bold;padding-right:25px">32</td>
+					<td style="white-space: nowrap;" class="player" onclick="javascript:select_player(6)">gohgpobn</td>
+					<td class="hand" style="padding-right:2px">1</td>
+					<td>-</td>
+					<td class="hand" style="padding-right:20px">32</td>
+					<td class="amount">$690</td>
+				</tr>				<tr class="player_2">
+					<td style="padding-right:15px;padding-left:10px;text-align:right;">4.</td>
+					<td class="hand" style="font-weight:bold;padding-right:25px">30</td>
+					<td style="white-space: nowrap;" class="player" onclick="javascript:select_player(2)">mimim</td>
+					<td class="hand" style="padding-right:2px">20</td>
+					<td>-</td>
+					<td class="hand" style="padding-right:20px">49</td>
+					<td class="amount">$1670</td>
+				</tr>				<tr class="player_10">
+					<td style="padding-right:15px;padding-left:10px;text-align:right;">5.</td>
+					<td class="hand" style="font-weight:bold;padding-right:25px">30</td>
+					<td style="white-space: nowrap;" class="player" onclick="javascript:select_player(10)">Paolo ITA</td>
+					<td class="hand" style="padding-right:2px">11</td>
+					<td>-</td>
+					<td class="hand" style="padding-right:20px">40</td>
+					<td class="amount">$225</td>
+				</tr>				<tr class="player_2">
+					<td style="padding-right:15px;padding-left:10px;text-align:right;">6.</td>
+					<td class="hand" style="font-weight:bold;padding-right:25px">27</td>
+					<td style="white-space: nowrap;" class="player" onclick="javascript:select_player(2)">mimim</td>
+					<td class="hand" style="padding-right:2px">92</td>
+					<td>-</td>
+					<td class="hand" style="padding-right:20px">118</td>
+					<td class="amount">$4200</td>
+				</tr>				<tr class="player_4">
+					<td style="padding-right:15px;padding-left:10px;text-align:right;">7.</td>
+					<td class="hand" style="font-weight:bold;padding-right:25px">24</td>
+					<td style="white-space: nowrap;" class="player" onclick="javascript:select_player(4)">l0stman</td>
+					<td class="hand" style="padding-right:2px">63</td>
+					<td>-</td>
+					<td class="hand" style="padding-right:20px">86</td>
+					<td class="amount">$1200</td>
+				</tr>				<tr class="player_8">
+					<td style="padding-right:15px;padding-left:10px;text-align:right;">8.</td>
+					<td class="hand" style="font-weight:bold;padding-right:25px">21</td>
+					<td style="white-space: nowrap;" class="player" onclick="javascript:select_player(8)">Nelly</td>
+					<td class="hand" style="padding-right:2px">116</td>
+					<td>-</td>
+					<td class="hand" style="padding-right:20px">136</td>
+					<td class="amount">$3130</td>
+				</tr>				<tr class="player_8">
+					<td style="padding-right:15px;padding-left:10px;text-align:right;">9.</td>
+					<td class="hand" style="font-weight:bold;padding-right:25px">20</td>
+					<td style="white-space: nowrap;" class="player" onclick="javascript:select_player(8)">Nelly</td>
+					<td class="hand" style="padding-right:2px">49</td>
+					<td>-</td>
+					<td class="hand" style="padding-right:20px">68</td>
+					<td class="amount">$910</td>
+				</tr>				<tr class="player_2">
+					<td style="padding-right:15px;padding-left:10px;text-align:right;">10.</td>
+					<td class="hand" style="font-weight:bold;padding-right:25px">18</td>
+					<td style="white-space: nowrap;" class="player" onclick="javascript:select_player(2)">mimim</td>
+					<td class="hand" style="padding-right:2px">1</td>
+					<td>-</td>
+					<td class="hand" style="padding-right:20px">18</td>
+					<td class="amount">$485</td>
+				</tr>			</tbody></table>
+			
+		</div>
+
+<!-- most bet / raise -->
+		<div style="width: 245px; max-width: 836px;" id="div_most_raise" class="element">
+			<span onclick="javascript:toggle_table('table_most_raise','icon_most_raise')" style="cursor:pointer">
+				<h2>Most bet/raise</h2>
+				<span id="icon_most_raise" class="icon-chevron-up" style="font-size:12px;padding-left:10px;vertical-align:top"></span>
+			</span>
+			<table style="font-size: 14px; visibility: visible; position: relative;" id="table_most_raise" class="data toggle">
+				<tbody><tr>
+					<th></th>
+					<th class="player">Player</th>
+					<th class="hand" colspan="2">Count&nbsp;**</th>
+				</tr>				<tr class="player_3">
+					<td style="padding-right:15px;padding-left:10px;text-align:right;">1.</td>
+					<td style="white-space: nowrap;" class="player" onclick="javascript:select_player(3)">Darts501</td>
+					<td style="text-align:right;font-weight:bold;padding-right:5px;padding-left:15px">51</td>
+					<td style="text-align:left;padding-left:5px;padding-right:10px">(41%)</td>
+					
+				</tr>				<tr class="player_4">
+					<td style="padding-right:15px;padding-left:10px;text-align:right;">2.</td>
+					<td style="white-space: nowrap;" class="player" onclick="javascript:select_player(4)">l0stman</td>
+					<td style="text-align:right;font-weight:bold;padding-right:5px;padding-left:15px">41</td>
+					<td style="text-align:left;padding-left:5px;padding-right:10px">(33%)</td>
+					
+				</tr>				<tr class="player_1">
+					<td style="padding-right:15px;padding-left:10px;text-align:right;">3.</td>
+					<td style="white-space: nowrap;" class="player" onclick="javascript:select_player(1)">HighMelting</td>
+					<td style="text-align:right;font-weight:bold;padding-right:5px;padding-left:15px">37</td>
+					<td style="text-align:left;padding-left:5px;padding-right:10px">(44%)</td>
+					
+				</tr>				<tr class="player_9">
+					<td style="padding-right:15px;padding-left:10px;text-align:right;">4.</td>
+					<td style="white-space: nowrap;" class="player" onclick="javascript:select_player(9)">joanna1</td>
+					<td style="text-align:right;font-weight:bold;padding-right:5px;padding-left:15px">37</td>
+					<td style="text-align:left;padding-left:5px;padding-right:10px">(26%)</td>
+					
+				</tr>				<tr class="player_8">
+					<td style="padding-right:15px;padding-left:10px;text-align:right;">5.</td>
+					<td style="white-space: nowrap;" class="player" onclick="javascript:select_player(8)">Nelly</td>
+					<td style="text-align:right;font-weight:bold;padding-right:5px;padding-left:15px">24</td>
+					<td style="text-align:left;padding-left:5px;padding-right:10px">(27%)</td>
+					
+				</tr>				<tr class="player_10">
+					<td style="padding-right:15px;padding-left:10px;text-align:right;">6.</td>
+					<td style="white-space: nowrap;" class="player" onclick="javascript:select_player(10)">Paolo ITA</td>
+					<td style="text-align:right;font-weight:bold;padding-right:5px;padding-left:15px">15</td>
+					<td style="text-align:left;padding-left:5px;padding-right:10px">(43%)</td>
+					
+				</tr>				<tr class="player_7">
+					<td style="padding-right:15px;padding-left:10px;text-align:right;">7.</td>
+					<td style="white-space: nowrap;" class="player" onclick="javascript:select_player(7)">Safavid</td>
+					<td style="text-align:right;font-weight:bold;padding-right:5px;padding-left:15px">14</td>
+					<td style="text-align:left;padding-left:5px;padding-right:10px">(52%)</td>
+					
+				</tr>				<tr class="player_2">
+					<td style="padding-right:15px;padding-left:10px;text-align:right;">8.</td>
+					<td style="white-space: nowrap;" class="player" onclick="javascript:select_player(2)">mimim</td>
+					<td style="text-align:right;font-weight:bold;padding-right:5px;padding-left:15px">14</td>
+					<td style="text-align:left;padding-left:5px;padding-right:10px">(21%)</td>
+					
+				</tr>				<tr class="player_5">
+					<td style="padding-right:15px;padding-left:10px;text-align:right;">9.</td>
+					<td style="white-space: nowrap;" class="player" onclick="javascript:select_player(5)">behnambabak</td>
+					<td style="text-align:right;font-weight:bold;padding-right:5px;padding-left:15px">1</td>
+					<td style="text-align:left;padding-left:5px;padding-right:10px">(4%)</td>
+					
+				</tr>				<tr class="player_6">
+					<td style="padding-right:15px;padding-left:10px;text-align:right;">10.</td>
+					<td style="white-space: nowrap;" class="player" onclick="javascript:select_player(6)">gohgpobn</td>
+					<td style="text-align:right;font-weight:bold;padding-right:5px;padding-left:15px">1</td>
+					<td style="text-align:left;padding-left:5px;padding-right:10px">(3%)</td>
+					
+				</tr>			</tbody></table>
+			
+		</div>
+
+<!-- most all in -->
+		<div style="width: 397px; max-width: 836px;" id="div_most_all_in" class="element">
+			<span onclick="javascript:toggle_table('table_most_all_in','icon_most_all_in')" style="cursor:pointer">
+				<h2>Most all in</h2>
+				<span id="icon_most_all_in" class="icon-chevron-up" style="font-size:12px;padding-left:10px;vertical-align:top"></span>
+			</span>
+			<table style="font-size: 14px; visibility: visible; position: relative;" id="table_most_all_in" class="data toggle">
+				<tbody><tr>
+					<th></th>
+					<th class="player">Player</th>
+					<th class="hand" style="white-space:normal;padding-left:10px" colspan="2">Total count&nbsp;*</th>
+					<th class="hand" style="white-space:normal">In preflop</th>
+					<th class="hand" style="white-space:normal">First 5&nbsp;hands</th>
+					<th class="hand" style="white-space:normal">Total won</th>
+				</tr>				<tr class="player_3">
+					<td style="padding-right:15px;padding-left:10px;text-align:right;">1.</td>
+					<td style="white-space: nowrap;" class="player" onclick="javascript:select_player(3)">Darts501</td>
+					<td style="text-align:right;font-weight:bold;padding-left:15px">9</td>
+					<td style="text-align:left;padding-left:5px">(12%)</td>
+					<td class="hand" style="padding-right:30px">7</td>
+					<td class="hand" style="padding-right:25px">0</td>
+					<td class="hand" style="padding-right:20px">8</td>
+				</tr>				<tr class="player_2">
+					<td style="padding-right:15px;padding-left:10px;text-align:right;">2.</td>
+					<td style="white-space: nowrap;" class="player" onclick="javascript:select_player(2)">mimim</td>
+					<td style="text-align:right;font-weight:bold;padding-left:15px">8</td>
+					<td style="text-align:left;padding-left:5px">(12%)</td>
+					<td class="hand" style="padding-right:30px">7</td>
+					<td class="hand" style="padding-right:25px">0</td>
+					<td class="hand" style="padding-right:20px">7</td>
+				</tr>				<tr class="player_8">
+					<td style="padding-right:15px;padding-left:10px;text-align:right;">3.</td>
+					<td style="white-space: nowrap;" class="player" onclick="javascript:select_player(8)">Nelly</td>
+					<td style="text-align:right;font-weight:bold;padding-left:15px">9</td>
+					<td style="text-align:left;padding-left:5px">(13%)</td>
+					<td class="hand" style="padding-right:30px">7</td>
+					<td class="hand" style="padding-right:25px">0</td>
+					<td class="hand" style="padding-right:20px">7</td>
+				</tr>				<tr class="player_10">
+					<td style="padding-right:15px;padding-left:10px;text-align:right;">4.</td>
+					<td style="white-space: nowrap;" class="player" onclick="javascript:select_player(10)">Paolo ITA</td>
+					<td style="text-align:right;font-weight:bold;padding-left:15px">5</td>
+					<td style="text-align:left;padding-left:5px">(22%)</td>
+					<td class="hand" style="padding-right:30px">4</td>
+					<td class="hand" style="padding-right:25px">0</td>
+					<td class="hand" style="padding-right:20px">2</td>
+				</tr>				<tr class="player_9">
+					<td style="padding-right:15px;padding-left:10px;text-align:right;">5.</td>
+					<td style="white-space: nowrap;" class="player" onclick="javascript:select_player(9)">joanna1</td>
+					<td style="text-align:right;font-weight:bold;padding-left:15px">4</td>
+					<td style="text-align:left;padding-left:5px">(3%)</td>
+					<td class="hand" style="padding-right:30px">1</td>
+					<td class="hand" style="padding-right:25px">0</td>
+					<td class="hand" style="padding-right:20px">3</td>
+				</tr>				<tr class="player_4">
+					<td style="padding-right:15px;padding-left:10px;text-align:right;">6.</td>
+					<td style="white-space: nowrap;" class="player" onclick="javascript:select_player(4)">l0stman</td>
+					<td style="text-align:right;font-weight:bold;padding-left:15px">3</td>
+					<td style="text-align:left;padding-left:5px">(4%)</td>
+					<td class="hand" style="padding-right:30px">1</td>
+					<td class="hand" style="padding-right:25px">0</td>
+					<td class="hand" style="padding-right:20px">3</td>
+				</tr>				<tr class="player_1">
+					<td style="padding-right:15px;padding-left:10px;text-align:right;">7.</td>
+					<td style="white-space: nowrap;" class="player" onclick="javascript:select_player(1)">HighMelting</td>
+					<td style="text-align:right;font-weight:bold;padding-left:15px">2</td>
+					<td style="text-align:left;padding-left:5px">(3%)</td>
+					<td class="hand" style="padding-right:30px">2</td>
+					<td class="hand" style="padding-right:25px">0</td>
+					<td class="hand" style="padding-right:20px">1</td>
+				</tr>				<tr class="player_5">
+					<td style="padding-right:15px;padding-left:10px;text-align:right;">8.</td>
+					<td style="white-space: nowrap;" class="player" onclick="javascript:select_player(5)">behnambabak</td>
+					<td style="text-align:right;font-weight:bold;padding-left:15px">1</td>
+					<td style="text-align:left;padding-left:5px">(4%)</td>
+					<td class="hand" style="padding-right:30px">1</td>
+					<td class="hand" style="padding-right:25px">1</td>
+					<td class="hand" style="padding-right:20px">1</td>
+				</tr>				<tr class="player_7">
+					<td style="padding-right:15px;padding-left:10px;text-align:right;">9.</td>
+					<td style="white-space: nowrap;" class="player" onclick="javascript:select_player(7)">Safavid</td>
+					<td style="text-align:right;font-weight:bold;padding-left:15px">1</td>
+					<td style="text-align:left;padding-left:5px">(5%)</td>
+					<td class="hand" style="padding-right:30px">0</td>
+					<td class="hand" style="padding-right:25px">0</td>
+					<td class="hand" style="padding-right:20px">0</td>
+				</tr>				<tr class="player_6">
+					<td style="padding-right:15px;padding-left:10px;text-align:right;">10.</td>
+					<td style="white-space: nowrap;" class="player" onclick="javascript:select_player(6)">gohgpobn</td>
+					<td style="text-align:right;font-weight:bold;padding-left:15px">1</td>
+					<td style="text-align:left;padding-left:5px">(3%)</td>
+					<td class="hand" style="padding-right:30px">1</td>
+					<td class="hand" style="padding-right:25px">0</td>
+					<td class="hand" style="padding-right:20px">0</td>
+				</tr>			</tbody></table>
+			
+		</div>
+			<!-- footnode -->
+		<div style="display:inline-block">
+			<table style="border:0px;text-align:left;font-size:10px;color:rgb(80,80,80);padding:0px;margin:0px;border-spacing:0px">
+				<tbody><tr><td>*)</td><td>percental value: absolute value in relation to hands played</td></tr>
+				<tr><td>**)</td><td>percental value: number of hands with at least one bet/raise in relation to all hands played</td></tr>
+
+</tbody></table>
+</div></div></div></div></div>
+</body></html>
