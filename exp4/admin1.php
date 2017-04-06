@@ -41,7 +41,13 @@ include "exp5/nav1.php";
 
 <table border=1>
 <tr><td>Avatar</td><td>Name</td></tr>
+
+<!--
 <tr><td><img src="exp1/images2/wallst.jpg" alt="Nelly" title="Nelly" width=50 height=50 /></td><td>Nelly</td></tr>
+Long-time superadmin...
+-->
+
+
 <tr><td><img src="exp1/images2/Nahajasaki.png" alt="Nahajasaki" title="Nahajasaki" width=50 height=50 /></td><td>Nahajasaki</td></tr>
 <tr><td><img src="exp1/images2/l0stman.jpg" alt="l0stman" title="l0stman" width=50 height=50 /></td><td>l0stman</td></tr>
 <tr><td><img src="exp1/images2/MasterG84.jpg" alt="MasterG84" title="MasterG84" width=50 height=50 /></td><td>MasterG84</td></tr>
