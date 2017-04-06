@@ -1,8 +1,13 @@
 <?php
+ini_set('include_path', '/home/www/bbc/');
+
+//error_reporting(E_ALL);
+//ini_set("display_errors", 1);
+
 //mysql_connect("localhost","bbcpoker","baguette")or die ("Internal MYSQL-ERROR");
 //mysql_select_db("bbcpoker") or die ("The Database does not exist");
 print '<!DOCTYPE html><html>';
-ini_set('include_path', '/home/www/bbc/');
+
 include "head.php";
 $regulartaskcount = 1;
 include "exp2/regulartasks.php";
@@ -60,7 +65,7 @@ if ($_GET["step"] == 1 or $_GET["step"] == 2 or $_GET["step"] == 3 or $_GET["ste
 ?>
 <p><a href="<?= $url ?>?sa=1&step=<?= $step ?>">Show all</a> entries on one site
 		or divided into <a href="<?= $url ?>?step=<?= $step ?>">pages</a>.</p>
-<?
+<?php
   print "<table border=1>";
   print $pagination_links;
   print "<tr><th>#</th><th>S</th>";

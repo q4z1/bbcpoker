@@ -143,7 +143,7 @@ if($adminmode==3)
 <p>Please check the following table and decide for each player, if she/he can play:</p>
 <form action="exp5/reg8.php" method="post">
 <table border=1>
-<tr><th>#</th><th>Name</th><th>poker-heroes</th><th>IP</th><th>Confirm</th><th>Reject</th></tr>
+<tr><th>#</th><th>Name</th><th>PokerTh</th><th>IP</th><th>Confirm</th><th>Reject</th></tr>
 ';
 	for($i1=0;$i1<count($conarray);$i1++)
 	{
@@ -152,7 +152,7 @@ if($adminmode==3)
 		print "</td><td>";
 		$pn2 = $conarray[$i1];
 		print $pn2;
-		print "</td><td><a href=\"http://poker-heroes.com/profile.html?user=$pn2\">Link</a></td>";
+		print "</td><td><a href=\"https://www.pokerth.net/leaderboard/$pn2\">Link</a></td>";
 		print "<td><small>$conipa[$i1]</small></td>";
 		print '<td><input type="radio" name="c';
 		print $cida[$i1];

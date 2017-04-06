@@ -41,16 +41,17 @@ function fp()
 <h1> Registration for BBC Games </h1>
 <!--<p><font color="red">Please note that if you are not invited by an official BBC admin (<a href="exp4/admin1.php">you can see the list of bbc admins here</a>)
 the game will probably not count. So make sure that you only join the right games</font></p>-->
+<!--
 <p><font color="red">ATTENTION! in order to use the new server, you maybe need a new account!
 If you already have a forum account on pokerth.net, log in and then go <a href="http://pokerth.net/component/pthranking/?view=activategame">here</a> to activate gaming for your acccount.
 If you do not have a forum account on pokerth.net, you can create a gaming account <a href="http://pokerth.net/component/pthranking/?view=registration">HERE</a>.
 Take care to use the same nick as your BBC nick during registration.
 </font> </p>
-
+-->
 <form action="exp5/reg2.php" method="post">
 <input type="hidden" name="fp" id="fp" />
 <table>
-<tr><td>Enter your poker-heroes Nickname: </td><td>
+<tr><td>Enter your pokerth Nickname: </td><td>
 <?php
 include "exp5/func1.php";
 $name = $_COOKIE['user1'];
@@ -106,6 +107,7 @@ print "<input type=\"hidden\" name=\"plan$i1\" value=\"$retarray[0]\"></td></tr>
 <input type="submit" name="submit" value="submit registration!">
 </form>
 <p>Registration will open 36 hours(for step 1) or 7 days(for step 2) before the game. Registration will close 10 minutes before game.</p>
+<p><font color="red">Please be in lobby about 5 minutes before the game. If NO player is missing and the table is full the game might start before :30 - if a player is missing the game will start exactly at :30 - admins may decide to wait a few minutes for a missing player though - but that is not guaranteed!</font></p>
 <p>Step 1, 2, 3 and 4 start with 10 players, including an admin (or co-admin). </p>
 <p>Please: if admins or co-admins ask you to quit the game because of not having enough players on the table (players disconnected at the start or wrong start) do it ... the game won't be reported and so no tickets for the winners. </p>
 

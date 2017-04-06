@@ -198,7 +198,7 @@ for($i1=1;$i1*10< $i2+11 or $i1==1;$i1++) // $i1 is the table number
 		if($settings==32) print "<span style=\"color:#ff00ff\">admin</span>";
 		print "</td><td>";
 		if($pid!=999) print "<a href=\"exp5/players1.php?id=$pid\">$pname</a>";
-		if($pid==999) print "<a href=\"http://poker-heroes.com/profile.html?user=$pname\">$pname</a>";
+		if($pid==999) print "<a href=\"https://www.pokerth.net/leaderboard/$pname\">$pname</a>";
 		//print "<td><a href=\"http://poker-heroes.com/profile.html?user=$pname\">Poker-Heroes profile</a>";
 		print "</td></tr>";
 	}

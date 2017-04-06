@@ -1351,8 +1351,8 @@ E;
   if($mailtext!="")
   {
     mail("super.noob1@aol.com", "HUSC", $mailtext, "From: BBC <automail@bbcpoker.bplaced.net>");
-	mail("nelly.lecoent@orange.fr", "HUSC", $mailtext, "From: BBC <automail@bbcpoker.bplaced.net>");
-	mail("nelly.lecoent@gmail.com", "HUSC", $mailtext, "From: BBC <automail@bbcpoker.bplaced.net>");
+	//mail("nelly.lecoent@orange.fr", "HUSC", $mailtext, "From: BBC <automail@bbcpoker.bplaced.net>");
+	//mail("nelly.lecoent@gmail.com", "HUSC", $mailtext, "From: BBC <automail@bbcpoker.bplaced.net>");
   }
 }
 

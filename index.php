@@ -17,6 +17,7 @@ include "exp5/nav1.php";
 
 	<h1>Welcome to the BBC website!</h1>
 	<p><a href="http://www.pokerth.net/" title="Visit PokerTH" ><img src="exp1/NavBBC/pokerthLogo.png" /></a><br><br>
+	<a href="http://bbc.pokerth.net/login.php" title="Login"  class="link">Login</a><br><br />
 	<a href="http://www.pokerth.net/download.html" class="link" title="Download">PokerTH download</a>
 	</p>
 	<a href="/exp1/BBChalloffame3.php" title="Hall of Fame" ><img src="exp1/NavBBC/HoF.png" /></a> 

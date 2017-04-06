@@ -76,7 +76,7 @@ else
 print "<p>We couldnt find your game</p>";
 
 ?>
-
+<h3><a href="https://www.pokerth.net">www.PokerTh.net</a></h3>
 
 
 

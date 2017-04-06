@@ -145,7 +145,7 @@ OR (alltimegames=$ascore AND alltimegames=$agames AND (saisonscore>$sscore OR (s
 	if($i2<19 and $beststep==0) $beststep=1;
 	print <<<E
 <table>
-<tr><td>Poker-Heroes Nickname:</td><td>$pname</td></tr>
+<tr><td>PokerTh Nickname:</td><td>$pname</td></tr>
 <tr><td>PokerTH Ranking Profile:</td><td><a href="https:/www.pokerth.net/leaderboard/$pname" target="_blank">Click Here</a></td></tr>
 <tr><td>Tickets to Step 2:</td><td>$ts2</td></tr>
 <tr><td>Tickets to Step 3:</td><td>$ts3</td></tr>
