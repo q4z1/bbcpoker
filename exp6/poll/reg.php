@@ -246,12 +246,12 @@ E;
 E;
 
 	$bbconlytext="";
-	if($bbconly==1) $bbconlytext=" poker-heroes nickname";
+	if($bbconly==1) $bbconlytext=" pokerth nickname";
 	$printtext1= <<<E
 	
 	
 	<form method="post" action="exp6/poll/reg.php?p=$p&r=1">
-	<p>Saturday, Feb 13st 21:00 CET<br><br>Enter your poker-heroes nickname $bbconlytext: <input type="text" name="pname" value="$user"></p>
+	<p>Saturday, Feb 13st 21:00 CET<br><br>Enter your pokerth nickname $bbconlytext: <input type="text" name="pname" value="$user"></p>
 	
 E;
 
