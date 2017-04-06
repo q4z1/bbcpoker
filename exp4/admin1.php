@@ -51,7 +51,6 @@ include "exp5/nav1.php";
 <tr><td><img src="exp1/images2/akia.png" alt="akia" title="akia" width=50 height=50 /></td><td>akia</td></tr>
 <tr><td><img src="exp1/images2/Pagol.png" alt="Pagol" title="Pagol" width=50 height=50 /></td><td>Pagol</td></tr>
 <!--<tr><td><img src="exp1/images2/Jro.gif" alt="Jro" title="Jro" width=50 height=50 /></td><td>Jro</td></tr>-->
-<tr><td><img src="http://pokerth.net/avatardav/27e13afd888654c98880fc69a1be44dd.jpg" alt="soocki" title="soocki" width=50 height=50 /></td><td>soocki</td></tr>
 </table>
 
 <p>Former Admins who want to become active admins again, should send a PM to supernoob in pokerth forum</p>
