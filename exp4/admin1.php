@@ -41,7 +41,13 @@ include "exp5/nav1.php";
 
 <table border=1>
 <tr><td>Avatar</td><td>Name</td></tr>
+
+<!--
 <tr><td><img src="exp1/images2/wallst.jpg" alt="Nelly" title="Nelly" width=50 height=50 /></td><td>Nelly</td></tr>
+Long-time superadmin...
+-->
+
+
 <tr><td><img src="exp1/images2/Nahajasaki.png" alt="Nahajasaki" title="Nahajasaki" width=50 height=50 /></td><td>Nahajasaki</td></tr>
 <tr><td><img src="exp1/images2/l0stman.jpg" alt="l0stman" title="l0stman" width=50 height=50 /></td><td>l0stman</td></tr>
 <tr><td><img src="exp1/images2/MasterG84.jpg" alt="MasterG84" title="MasterG84" width=50 height=50 /></td><td>MasterG84</td></tr>
@@ -51,7 +57,6 @@ include "exp5/nav1.php";
 <tr><td><img src="exp1/images2/akia.png" alt="akia" title="akia" width=50 height=50 /></td><td>akia</td></tr>
 <tr><td><img src="exp1/images2/Pagol.png" alt="Pagol" title="Pagol" width=50 height=50 /></td><td>Pagol</td></tr>
 <!--<tr><td><img src="exp1/images2/Jro.gif" alt="Jro" title="Jro" width=50 height=50 /></td><td>Jro</td></tr>-->
-<tr><td><img src="http://pokerth.net/avatardav/27e13afd888654c98880fc69a1be44dd.jpg" alt="soocki" title="soocki" width=50 height=50 /></td><td>soocki</td></tr>
 </table>
 
 <p>Former Admins who want to become active admins again, should send a PM to supernoob in pokerth forum</p>
