@@ -1,0 +1,11 @@
+
+(note: public)
+-- TODO file for BBC
+
+
+-- BUGS
+
+- msg from brak: rating points stay constant
+- msg #13659, #13655, negative rating points (perhaps table unsigned)
+- msg #13643 , pic1.php buggy for some inputs (maybe floating point problems)
+
