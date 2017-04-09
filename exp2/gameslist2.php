@@ -1,5 +1,6 @@
 <?php
-ini_set('include_path', '/home/www/bbc/');
+require_once($_SERVER['DOCUMENT_ROOT'].'/defines.php');
+ini_set('include_path', ROOT_DIR);
 
 //error_reporting(E_ALL);
 //ini_set("display_errors", 1);

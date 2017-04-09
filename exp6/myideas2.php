@@ -8,7 +8,8 @@ if ($_COOKIE['PHPSESSID'] != "") {
 
 print '<!DOCTYPE html>
 <html>';
-ini_set('include_path', '/home/www/bbc/');
+require_once($_SERVER['DOCUMENT_ROOT'].'/defines.php');
+ini_set('include_path', ROOT_DIR);
 include "head.php";
 $regulartaskcount=1;
 include "exp2/regulartasks.php";

@@ -101,7 +101,8 @@ function tickedit($action, $pid, $gameno = -1,$newval = -1, $reason=-1)
 	// return value: 1 - ok, 0 - error
 	if($action < 3 or $action==4 or $action ==10 or $action==15) return 0;
 	if($pid < 1025) return 1;
-	chdir("/home/www/bbc/");
+	require_once $_SERVER['DOCUMENT_ROOT'].'/defines.php';
+chdir(ROOT_DIR);
 	$file = fopen("exp4/ticketlog1.txt","a");
 	if($action <18)
 	{

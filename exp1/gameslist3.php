@@ -1,7 +1,8 @@
 <?php
 print '<!DOCTYPE html>
 <html>';
-ini_set('include_path', '/home/www/bbc/');
+require_once($_SERVER['DOCUMENT_ROOT'].'/defines.php');
+ini_set('include_path', ROOT_DIR);
 include "head.php";
 $regulartaskcount=1;
 include "exp2/regulartasks.php";
@@ -85,7 +86,8 @@ else
 	else $dtt = "unknown";
 	print "Input: $dtt</p>";
 	$lfname="logfiles/BBC$gameno" . "Step$step.html";
-	chdir("/home/www/bbc/");
+	require_once $_SERVER['DOCUMENT_ROOT'].'/defines.php';
+chdir(ROOT_DIR);
 	if(!file_exists($lfname))$lfname="exp6/lf3/g$gameno"."s$step.html";
 	if(file_exists($lfname)) print "<iframe src=\"$lfname\" height=600 style=\"width:90%; \"></iframe>";
 	else print "<p>We could not find the Logfile Analysis</p>";

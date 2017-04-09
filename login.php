@@ -6,7 +6,9 @@ ini_set('session.gc_maxlifetime', 60 * 60 * 24 * 13);
 //ini_set('session.save_path', '/home/yoursite/sessions');
 session_start();
 
-ini_set('include_path', '/home/www/bbc/');
+require_once($_SERVER['DOCUMENT_ROOT'].'/defines.php');
+ini_set('include_path', ROOT_DIR);
+
 $regulartaskcount=1;
 include "exp2/regulartasks.php";
 

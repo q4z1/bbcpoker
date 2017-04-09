@@ -1,7 +1,8 @@
 <?php
 print '<!DOCTYPE html>
 <html>';
-ini_set('include_path', '/home/www/bbc/');
+require_once($_SERVER['DOCUMENT_ROOT'].'/defines.php');
+ini_set('include_path', ROOT_DIR);
 include "head.php";
 $regulartaskcount=1;
 include "exp2/regulartasks.php";
@@ -19,7 +20,8 @@ include "exp6/func2.php";
 	//already have connection to DB
 	if($action < 3 or $action==4 or $action ==10) return 0;
 	if($pid < 1025) return 0;
-	chdir("/home/www/bbc/");
+	require_once $_SERVER['DOCUMENT_ROOT'].'/defines.php';
+chdir(ROOT_DIR);
 	$file = fopen("exp4/ticketlog1.txt","a");
 	if($action <13)
 	{

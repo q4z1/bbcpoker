@@ -11,7 +11,8 @@ if ($_GET['deleted']==1 and $amode==1)
   $amode = 3; // show deleted messages
 
 // keine Ausgabe vor dem Ende!
-ini_set('include_path', '/home/www/bbc/');
+require_once($_SERVER['DOCUMENT_ROOT'].'/defines.php');
+ini_set('include_path', ROOT_DIR);
 //include "head.php";
 $regulartaskcount = 2;
 include "exp2/regulartasks.php";

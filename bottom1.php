@@ -5,7 +5,8 @@
 
 <?php
 //print "check";
-chdir("/home/www/bbc/");
+require_once $_SERVER['DOCUMENT_ROOT'].'/defines.php';
+chdir(ROOT_DIR);
 if(file_exists("exp2/visitorcount.txt"))
 {
 	$file = fopen("exp2/visitorcount.txt","r");

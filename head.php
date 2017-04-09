@@ -1,6 +1,5 @@
-
 <head>
-<base href="http://bbc.pokerth.net/">
+<base href="http://<?php echo $_SERVER["HTTP_HOST"] ?>/">
 <title>BBC POKER</title>
 <meta http-equiv="content-type" content="text/html; charset=utf8">
 <!-- <meta charset="ISO-8859-1"> -->

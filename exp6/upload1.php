@@ -9,7 +9,8 @@ if ($_COOKIE['PHPSESSID'] != "") {
 
 print '<!DOCTYPE html>
 <html>';
-ini_set('include_path', '/home/www/bbc/');
+require_once($_SERVER['DOCUMENT_ROOT'].'/defines.php');
+ini_set('include_path', ROOT_DIR);
 include "head.php";
 $regulartaskcount=1;
 include "exp2/regulartasks.php";
@@ -63,7 +64,8 @@ $gn[7]=$gn[8];
 $gn[8]=$gn[9];
 $gn[9]=$gn[11];
 
-chdir('/home/www/bbc/');
+require_once $_SERVER['DOCUMENT_ROOT'].'/defines.php';
+chdir(ROOT_DIR);
 function isalready($step,$gameno,$blockedarray)
 {
 	if(isblocked($blockedarray,$step,$gameno)==1) return "blocked";

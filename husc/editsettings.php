@@ -6,7 +6,8 @@ if ($_COOKIE['PHPSESSID'] != "") {
     $auth = 1;
 } //$_COOKIE['PHPSESSID'] != ""
 $regulartaskcount=1;
-ini_set('include_path', '/home/www/bbc/');
+require_once($_SERVER['DOCUMENT_ROOT'].'/defines.php');
+ini_set('include_path', ROOT_DIR);
 include "exp2/regulartasks.php";
 print '<!DOCTYPE html>
 <html>';

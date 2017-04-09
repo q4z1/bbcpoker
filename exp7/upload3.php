@@ -1,7 +1,8 @@
 <?php
 print '<!DOCTYPE html>
 <html>';
-ini_set('include_path', '/home/www/bbc/');
+require_once($_SERVER['DOCUMENT_ROOT'].'/defines.php');
+ini_set('include_path', ROOT_DIR);
 include "head.php";
 $regulartaskcount=1;
 include "exp2/regulartasks.php";
@@ -40,7 +41,8 @@ for($step=1;$step<4;$step++)
 //	if(file_exists($filename)) break;
 }
 $gn[7]=$gn[8];
-chdir('/home/www/bbc/');
+require_once $_SERVER['DOCUMENT_ROOT'].'/defines.php';
+chdir(ROOT_DIR);
 function isalready($step,$gameno)
 {
 	if($gameno!==(int)$gameno) return "(input number)";

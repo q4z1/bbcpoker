@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
-<?php ini_set('include_path', '/home/www/bbc/');
+<?php require_once($_SERVER['DOCUMENT_ROOT'].'/defines.php');
+ini_set('include_path', ROOT_DIR);
 include "head.php";
 $regulartaskcount=1;
 include "exp2/regulartasks.php"; ?>

@@ -19,7 +19,8 @@ if ($_COOKIE['PHPSESSID'] != "") {
 <?php
 print '<!DOCTYPE html>
 <html>';
-ini_set('include_path', '/home/www/bbc/');
+require_once($_SERVER['DOCUMENT_ROOT'].'/defines.php');
+ini_set('include_path', ROOT_DIR);
 require "lib/pthlog.php";
 include "head.php";
 $regulartaskcount=1;
