@@ -74,12 +74,13 @@ if($auth1==1)
 		if($error==0 and $hcash_name!="hand_cash.png" and $hcash_name!="hand_cash.php" and $hcash_name!="hand_cash.php.png"){$error=408;$errorinfo1=$hcash_name;}
 		$psize_name=basename($_FILES['uf3']['name']);
 		if($error==0 and $psize_name!="pot_size.png" and $psize_name!="pot_size.php" and $psize_name!="pot_size.php.png" ){$error=409;$errorinfo1=$psize_name;}
+		*/
 		$fname2="exp6/lf3/g$gameno" . "s$step";
 		$fname3=$fname2 . ".html";
 		$new_hcash_path=$fname2 . "_hand_cash.png";
 		$new_psize_path=$fname2 . "_pot_size.png";
 		$fname6="exp6/lf3/temp1.html";
-		*/
+
 		//block game number
 		include_once "exp6/func2.php";
 		$blockedarray=blocker();
@@ -93,21 +94,26 @@ if($error==0)//checkk if expanded+upload png
 {
         // @XXX: parse log link
         $log = pthlog::process_log($url);
-        die("log=<pre>".var_export($log, true)."</pre>");
+				file_put_contents($fname6, $log["html"]);
         // @TODO: complete results are in array - pics are base64 encoded - html code is included - what next?
         
-		$fcontent1=file_get_contents($fname6);
-		$i1=strpos($fcontent1,"expand all");
-		$i2=strpos($fcontent1,"expand all",$i1+10);
-		if($i1===false or ($i2!==false and $i2>$i1)) $error=413;
-		$i1=strpos($fcontent1,"collapse all");
-		$i2=strpos($fcontent1,"collapse all",$i1+10);
-		if($i1===false or $i2===false) $error=413;
-		if(!move_uploaded_file($_FILES['uf2']['tmp_name'],$new_hcash_path)) $error=414;
-		if(!move_uploaded_file($_FILES['uf3']['tmp_name'],$new_psize_path)) $error=415;
+		//$fcontent1=file_get_contents($fname6);
+		$fcontent1 = $log["html"];
+		//$i1=strpos($fcontent1,"expand all");
+		//$i2=strpos($fcontent1,"expand all",$i1+10);
+		//if($i1===false or ($i2!==false and $i2>$i1)) $error=413;
+		//$i1=strpos($fcontent1,"collapse all");
+		//$i2=strpos($fcontent1,"collapse all",$i1+10);
+		//if($i1===false or $i2===false) $error=413;
+		//if(!move_uploaded_file($_FILES['uf2']['tmp_name'],$new_hcash_path)) $error=414;
+		//if(!move_uploaded_file($_FILES['uf3']['tmp_name'],$new_psize_path)) $error=415;
+		file_put_contents($new_hcash_path, base64_decode($log["pics"]["hand_cash"]));
+		file_put_contents($new_psize_path, base64_decode($log["pics"]["pot_size"]));
 }
 if($error==0)//clean logfile
 {
+		// @TODO: has to be completely rewritten - due to not collapsing - and results are already completey extracted in $log array => line 96
+		die("html and pics saved");
 		//START CREEPER PART
 		$file1 = fopen($fname6,"r");
 		$newcontents="";
