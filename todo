@@ -8,4 +8,5 @@
 - msg from brak: rating points stay constant
 - msg #13659, #13655, negative rating points (perhaps table unsigned)
 - msg #13643 , pic1.php buggy for some inputs (maybe floating point problems)
+- reupload fails(?) - html was correctly overwritten - but result in db keeps same
 
