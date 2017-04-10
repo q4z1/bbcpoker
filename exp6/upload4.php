@@ -1,7 +1,7 @@
 <?php
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
+//ini_set('display_errors', 1);
+//ini_set('display_startup_errors', 1);
+//error_reporting(E_ALL);
 
 $auth1=0;
 if ($_COOKIE['PHPSESSID'] != "") {
@@ -175,7 +175,6 @@ if($error==0 and $cont1==1)
 				}      
 				print "</table>\n";
 				foreach($log["result"] as $pos => $player) print "<input type=\"hidden\" name=\"pl[]\" value=\"".$player["player"]."\">\n";
-				print "<input type=\"hidden\" name=\"step\" value=\"$step\">\n";
 				//if($step > 1){ // @XXX maybe another time - onchange step radio above!
 					print '<p>Players that where reserved but missing and should loose tickets (<span style="color: red">Only if step > 1</span>):<br>'
 						. '<input type="Text" name="punish[]">'

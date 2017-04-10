@@ -95,6 +95,7 @@ if($goodlogin==1)
   if($upc==1)
   $li=<<<E
 <li><a href="exp6/upload1.php">Upload and Input a BBC Game</a></li>
+<li><a href="exp6/upload3.php"><span style="color:red">Log-Link only upload (!)</span></a></li>
 <li><a href="exp2/test1.php">Input without logfile</a></li>
 <li><a href="exp4/shoutbox1.php?admin=1">Talk to people</a></li>	
 <li><a href="exp5/reg8.php">Check registrations</a></li>

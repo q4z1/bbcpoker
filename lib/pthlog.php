@@ -41,6 +41,7 @@ class pthlog
 		self::fetch_hand_cash();
 		self::fetch_pot_size();
 		self::fetch_result_table();
+		/*
 		self::fetch_most_hands_table();
 		self::fetch_best_hands_table();
 		self::fetch_most_wins_table();
@@ -49,6 +50,7 @@ class pthlog
 		self::fetch_longest_losses_table();
 		self::fetch_most_bets_table();
 		self::fetch_most_allin_table();
+		*/
 		self::strip_unneeded();
 		self::create_game();
 		return self::$game;
@@ -149,14 +151,14 @@ class pthlog
 		self::$game = array(
 			"html" => self::$log_html,
 			"result" => self::$result_table,
-			"most hands played" => self::$most_hands_table,
-			"best hands" => self::$best_hands_table,
-			"most wins" => self::$most_wins_table,
-			"highest wins" => self::$highest_wins_table,
-			"longest series of wins" => self::$longest_wins_table,
-			"longest series of losses" => self::$longest_losses_table,
-			"most bet/raise" => self::$most_bets_table,
-			"most all in" => self::$most_allin_table,
+			//"most hands played" => self::$most_hands_table,
+			//"best hands" => self::$best_hands_table,
+			//"most wins" => self::$most_wins_table,
+			//"highest wins" => self::$highest_wins_table,
+			//"longest series of wins" => self::$longest_wins_table,
+			//"longest series of losses" => self::$longest_losses_table,
+			//"most bet/raise" => self::$most_bets_table,
+			//"most all in" => self::$most_allin_table,
 			/*
 			"pics" => array(
 				"hand_cash" => base64_encode(file_get_contents(self::$hand_cash)),

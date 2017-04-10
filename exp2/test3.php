@@ -43,6 +43,7 @@ if($firsttime==0)  // first time defined this function (bad programming, you sho
 }
 
 $pnames=$_POST["pl"];
+//die(var_export($pnames, true));
 $step=(int)$_POST["step"];
 $newp1= $_POST["newplayer"];
 $newp2=array(0,0,0,0,0,0,0,0,0,0);
@@ -50,15 +51,7 @@ $pid=array(0,0,0,0,0,0,0,0,0,0);
 print " <br>";
 print "<h1>Upload done!</h1>";
 $error = 0;//no errors yet
-/*if($userpass!="nelly" and $userpass!="supernoob" and $userpass!="creeper"and $userpass!="nahajasaki" and 
- $userpass!="Jastura" and $userpass!="l0stman" and $userpass!="MasterG84" and
- $userpass!="SchlumpfineX" and $userpass!="akia" and $userpass!="ElmoEGO" and 
- $userpass!="joe4135" and $userpass!="Gary_Ch" and $userpass!="sp0ck" and $userpass!="Morfi" and
- $userpass!="Joe_East") // @TODO: replace this with php-session-login
-{ 	//if password is wrong
-	$error = 1;
-	$errorinfo1 = " - ";
-}*/
+
 if($auth1==0) 
 {
   $error=1;
@@ -71,9 +64,9 @@ if($error==0)
 {
 	if($step<1 or $step>4) $error =3; 
 	if(count($pnames) != 10) $error=2; // all rows should have an input
-	else if($pnames[1]=="0") $error=8; // second place not 0 player? (dont understand my code here...)
+	//else if($pnames[1]=="0") $error=8; // second place not 0 player? (dont understand my code here...)
 	if(count($pnames) ==0) $error=7; // different error
-	if($step>1 and count($newp1)>0) $error=6; // no new players in step2,3,4
+	//if($step>1 and count($newp1)>0) $error=6; // no new players in step2,3,4
 	//punish - errors
 	$punish = $_POST['punish'];
 	$date2 = $_POST['date'];
@@ -91,6 +84,7 @@ for($i=0;$i<10;$i++) $pnames[$i] = trim($pnames[$i]); // trim names
 for($i=0;$i<4;$i++) $punish[$i] = trim($punish[$i]); // trim punish names
 for($i=0;$i<4;$i++) if($punish[$i] == "0") $punish[$i]=""; //cannot punish player 0
 
+/* @XXX: not longer needed - bbcbot shows known players for step >1 / step = 1 new players will be handled differently
 $i2=0;  
 for($i=1;$i<=10;$i++) // set the entry to 1 in $newp2 if player was checked as new player
 {	
@@ -100,6 +94,8 @@ for($i=1;$i<=10;$i++) // set the entry to 1 in $newp2 if player was checked as n
 		$newp2[$i-1]=1;
 	}
 }
+*/
+/*
 //further error detecting without database: double usernames, 0 not at the end 
 for($i=0;$i<10 and $error==0;$i++)
 {
@@ -111,7 +107,7 @@ for($i=0;$i<10 and $error==0;$i++)
 	$i2=count($punish);
 	
 }
-	
+*/
 if($error==0)
 {
 	for($i=0;$i<10;$i++) 
@@ -136,12 +132,12 @@ if($error==0)
 			$ts4 = $row->ts4;
 		}
 		$errorinfo1=$pnames[$i];
-		if($c==0 and $newp2[$i]==0) $error=14; // not found in db and not new player
+		//if($c==0 and $newp2[$i]==0) $error=14; // not found in db and not new player
 		if($error==0 and $step==2 and $ts2 <1 and $pid[$i]>1024) $error=49; //
 		if($error==0 and $step==3 and $ts3 <1 and $pid[$i]>1024) $error=50;
 		if($error==0 and $step==4 and $ts4 <1 and $pid[$i]>1024) $error=50; // step4
 		//if($c==1 and $newp2[$i]==1) $error=15;//maybe not?
-		if($c>1) $error=16;
+		if($c>1) $error=16; // more than one result
 		if($error !=0) continue;
 		if($c!=0 ) continue;
 		// start creating new player
@@ -161,8 +157,8 @@ VALUES
 ($maxpid, '$pnames[$i]')"; // others are default
 		$result = mysql_query($request)OR die("Error: $request <br>".mysql_error());
 		if(!$result) $error = 17;
-		$newp2[$i]=0;//not a new player now
-		$i--; // do the loop again for that player, i dont know why
+		//$newp2[$i]=0;//not a new player now
+		$i--; // do the loop again for that player, i dont know why => @XXX: because of the error values?
 	}
 }
 //get punish id
@@ -244,14 +240,12 @@ if($error==0) //write in game result
 	}
 	$datetime = "$date2 $time2";
 	$now=date("Y-m-d H:i:s");
-    /*
 	$request = "INSERT INTO table1 
 (step, gameno,p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,datetime,season,inputtime)
 VALUES
 ($step, $gameno,$pid[0],$pid[1],$pid[2],$pid[3],$pid[4],$pid[5],$pid[6],$pid[7],$pid[8],$pid[9],'$datetime',$season,'$now')";
 	if($error==0) $result = mysql_query($request);// OR die("Error: $request <br>".mysql_error());
 	if($error==0 and !$result) $error = 18;
-	*/
 }
 if($error==0) // @TODO : calculate the new score with step4 also in controlpanel
 {
@@ -424,7 +418,6 @@ if($error==0) //input tickets new step4 tickets
 }
 if($error==0 and $step==4) //START a new SEASON after step4
 {
-    /*
 	$request="UPDATE table2 Set 
 s1placecount = '0,0,0,0,0,0,0,0,0,0',
 s2placecount = '0,0,0,0,0,0,0,0,0,0',
@@ -436,7 +429,6 @@ saisongames = 0
 WHERE playerid > 1023";
 		$result=mysql_query($request)OR die("Error: $request <br>".mysql_error());
 		if(!$result) $error = 19;
-		*/
 }
 
 if($error!=0) include("exp2/error.php");
@@ -449,9 +441,9 @@ if($error==0)
 	include_once("exp6/func3.php");
 	$stringstartmonththen=date("Y-m",time()-49*86400)."-01 00:00:00";
 	calcrating2($stringstartmonththen,0,0,1,0,0,0);
-	//$sfile=fopen("exp2/systemtodo.txt","a");
-	//fwrite($sfile,"bbcbotmakeminidb\n");
-	//fclose($sfile);
+	$sfile=fopen("exp2/systemtodo.txt","a");
+	fwrite($sfile,"bbcbotmakeminidb\n");
+	fclose($sfile);
 	print "<p>The server recalculated the rating</p>";
 	
 }
@@ -463,11 +455,13 @@ for($i=1;$i<=10;$i++)
 {
 	print "$i. Place: ";
 	print $pnames[$i-1];
+	/*
 	if((string)$i == $newp[$i2])
 	{	
 		$i2++;
 		print "<br>This is a new Player!";
 	}
+	*/
 	print "\n <br>";
 }
 print "<br>Players reserved but missing:";
