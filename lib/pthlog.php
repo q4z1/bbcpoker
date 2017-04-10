@@ -49,8 +49,100 @@ class pthlog
 		self::fetch_longest_losses_table();
 		self::fetch_most_bets_table();
 		self::fetch_most_allin_table();
+		self::strip_unneeded();
 		self::create_game();
 		return self::$game;
+	}
+	
+	private static function strip_unneeded(){
+		// <div class="menu-block">
+		//<div class="menu-block">
+		$header = self::$dom->find('header');
+		foreach($header as $entry){
+			$entry->outertext = "";
+		}
+		
+		$menu = self::$dom->find('div.menu-block');
+		foreach($menu as $entry){
+			$entry->outertext = "";
+		}
+		
+		$sidebar = self::$dom->find('div.rt-sidebar-wrapper');
+		foreach($sidebar as $entry){
+			$entry->outertext = "";
+		}
+		
+		$breadcrumbs = self::$dom->find('div#rt-content-top');
+		foreach($breadcrumbs as $entry){
+			$entry->outertext = "";
+		}
+		
+		$cookie = self::$dom->find('div#redim-cookiehint');
+		foreach($cookie as $entry){
+			$entry->outertext = "";
+		}
+		
+		$script = self::$dom->find('script');
+		foreach($script as $entry){
+			$entry->outertext = "";
+		}
+		
+		$foot = self::$dom->find('div#rt-foot-surround');
+		foreach($foot as $entry){
+			$entry->outertext = "";
+		}
+		
+		$toggle = self::$dom->find('table.toggle');
+		foreach($toggle as $entry){
+			$entry->style = "position: relative; visibility: visible;";
+			//$entry->style = "";
+		}
+		
+		$valid = self::$dom->find('p');
+		foreach($valid as $entry){
+			if(strpos($entry->innertext, "This log file analysis is still") !== false){
+				$entry->outertext = "";
+			}
+		}
+		
+		$select = self::$dom->find('select.game');
+		foreach($select as $entry){
+			$entry->outertext = "";
+		}
+		
+		$span1 = self::$dom->find('span.icon-chevron-down');
+		foreach($span1 as $entry){
+			$entry->outertext = "";
+		}
+		
+		$span2 = self::$dom->find('span.icon-print');
+		foreach($span2 as $entry){
+			$entry->outertext = "";
+		}
+		
+		$expand = self::$dom->find('div#div_expand_collapse');
+		foreach($expand as $entry){
+			$entry->outertext = "";
+		}		
+		
+		$stacked = self::$dom->find('table#table_course_game');
+		foreach($stacked as $entry){
+			$entry->children(0)->children(0)->children(0)->innertext = "";
+		}
+		
+		$hand_cash = self::$dom->find('img[name=hand_cash]');
+		foreach($hand_cash as $entry){
+			$entry->src = "data:image/png;base64," . base64_encode(file_get_contents(self::$hand_cash));
+		}
+		
+		$pot_size = self::$dom->find('img[name=pot_size]');
+		foreach($pot_size as $entry){
+			$entry->src = "data:image/png;base64," . base64_encode(file_get_contents(self::$pot_size));
+		}
+		// update dom for evtl further manipulation
+		self::$dom->load(self::$dom->save());
+		// update html code string after stripping
+		self::$log_html = self::$dom->save();
 	}
 	
 	private static function create_game(){
@@ -65,10 +157,12 @@ class pthlog
 			"longest series of losses" => self::$longest_losses_table,
 			"most bet/raise" => self::$most_bets_table,
 			"most all in" => self::$most_allin_table,
+			/*
 			"pics" => array(
 				"hand_cash" => base64_encode(file_get_contents(self::$hand_cash)),
 				"pot_size" => base64_encode(file_get_contents(self::$pot_size))
 			)
+			*/
 		);
 	}
 	

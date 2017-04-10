@@ -231,7 +231,8 @@ case 607:
 	print 'the programmer made a super noob mistake';break;
 case 608:
 	print 'the programmer made a super noob mistake';break;
-
+case 900:
+    print 'log-link is not valid!'; break;
 	
 	
 default: 
