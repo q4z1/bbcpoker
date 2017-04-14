@@ -104,21 +104,21 @@ if($goodlogin==1)
 <li><a href="exp5/awards/awinput1.php">Add Awards </a></li>
 <li><a href="exp4/admin2.php">Manage BBC Accounts</a></li>
 <li><a href="exp3/bbcbotmanual.php">View bbcbot commands</a></li>
-<li><a href="exp6/dates1.php">Create dates</></li>
-<li><a href="exp6/dates3.php?d=0">View dates</></li>
-<li><a href="exp6/dates3.php?d=1">Delete dates</></li>
-<li><a href="exp4/shoutbox3.php">View deleted Messages</li>
+<li><a href="exp6/dates1.php">Create dates<a/></li>
+<li><a href="exp6/dates3.php?d=0">View dates<a/></li>
+<li><a href="exp6/dates3.php?d=1">Delete dates<a/></li>
+<li><a href="exp4/shoutbox3.php">View deleted Messages</a></li>
 E;
   if($upc==2)
   $li=<<<E
 <li><a href="exp6/upload1.php">Upload and Input a BBC Game</a></li>
 <li><a href="exp2/test1.php">Input without logfile</a></li>
 <li><a href="exp4/shoutbox1.php?admin=1">Talk to people</a></li>
-<li><a href="exp6/dates1.php">Create dates</></li>
-<li><a href="exp6/dates3.php?d=0">View dates</></li>
-<li><a href="exp6/dates3.php?d=1">Delete dates</></li>
+<li><a href="exp6/dates1.php">Create dates<a/></li>
+<li><a href="exp6/dates3.php?d=0">View dates<a/></li>
+<li><a href="exp6/dates3.php?d=1">Delete dates<a/></li>
 <li><a href="exp3/bbcbotmanual.php">View bbcbot commands</a></li>
-<li><a href="exp4/shoutbox3.php">View deleted Messages</li>
+<li><a href="exp4/shoutbox3.php">View deleted Messages</a></li>
 E;
   if($upc==3)
   $li=<<<E
