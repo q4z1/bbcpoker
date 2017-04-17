@@ -48,21 +48,25 @@ $blockedarray=blocker();
 
 
 $gn=array();
-$sn=array(1,1,1,2,2,2,3,3,4,4); // length 10
+// $sn=array(1,1,1,2,2,2,3,3,4,4); // length 10
+$sn=array(1,1,2,2,3,3,4,4); // length 8
 for($step=1;$step<5;$step++)
 {
 	$request = "SELECT MAX(gameno) FROM table1 WHERE step='$step' ";
 	$result = mysql_query($request);
 	$row = mysql_fetch_array($result);
-	$gn[3*$step-2] = (int)$row[0];
+	/*$gn[3*$step-2] = (int)$row[0];
 	$gn[3*$step-1] = $row[0]+1;
 	$gn[3*$step-3]="<input type=\"text\" name=\"gs$step\" maxlength=4 size=2>";
+	$gn[3*$step-2] = (int)$row[0]; */
+	$gn[2*$step-1] = $row[0]+1;
+	$gn[2*$step-2]="<input type=\"text\" name=\"gs$step\" maxlength=4 size=2>";
 //	$filename = "logfiles/BBC" . $gameno . "Step$step.html";
 //	if(file_exists($filename)) break;
 }
-$gn[7]=$gn[8];
-$gn[8]=$gn[9];
-$gn[9]=$gn[11];
+// $gn[7]=$gn[8];
+// $gn[8]=$gn[9];
+// $gn[9]=$gn[11];
 
 require_once $_SERVER['DOCUMENT_ROOT'].'/defines.php';
 chdir(ROOT_DIR);
@@ -73,7 +77,7 @@ function isalready($step,$gameno,$blockedarray)
 	$filename1="logfiles/BBC$gameno" . "Step$step.html";
 	$filename2="exp6/lf3/g$gameno" . "s$step.html";
 	if(file_exists($filename1)) return "(no need)";
-	if(file_exists($filename2)) return "(reupload)";
+	if(file_exists($filename2)) return "(reupload)"; // TODO
 	return "(new)";
 }
 
