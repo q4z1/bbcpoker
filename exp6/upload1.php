@@ -115,6 +115,9 @@ print <<<E
 <!--<p>Password: <input type="password" name="pass">-->
 <input type="submit" value="Upload Files"></p>
 </form>
+
+<p>Note: if you choose a game that is marked with (reupload), it will only upload the new logfile (and remove the old logfile).
+If you also want to change the results of the game, contact a superadmin!</p>
 E;
 
 } // end Admin part
