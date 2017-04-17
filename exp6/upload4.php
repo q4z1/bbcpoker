@@ -145,8 +145,8 @@ if($error==0 )
 			print "Input: $dtt</p>";
 		}
 			
-		
-		if($cont1 == 0){
+		//die("cont1 = $cont1");
+		if($cont1 == 1){
 			print '<h2>New Game Input</h2><p> (with some error detection)</p>'
 				. '<form action="/exp2/test3.php" method="post"><p>Game start, Date:'; 
 		}else if($cont1 == 2){
