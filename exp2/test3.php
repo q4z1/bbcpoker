@@ -1,4 +1,7 @@
 <?php
+//ini_set('display_errors', 1);
+//ini_set('display_startup_errors', 1);
+//error_reporting(E_ALL);
 $auth1=0;
 if ($_COOKIE['PHPSESSID'] != "") {
   session_start();
@@ -217,35 +220,52 @@ if($error==0) //write in game result
 	$result=mysql_query($request);
 	$row=mysql_fetch_array($result);
 	$season = 19 + (int)$row[0]; // first season with step4 number is season 19
-	//get new gameno
-	$request = "SELECT IFNULL(MAX(gameno),0) FROM table1 WHERE step = '$step'";
-	$result=mysql_query($request);
-	$row=mysql_fetch_array($result);
-	$gameno = 1+(int)$row[0];
-	for($i=$gameno-1;$i>$gameno-5 and $i>0 and $error==0;$i--)//compare if identical to 4 previous games
-	// but they would need to have the exact same positions for the 10 players
-	{
-		$request= "SELECT * from table1 WHERE step = '$step' and gameno = '$i'";
+
+	if(array_key_exists("reupload", $_POST) && $_POST["reupload"] != $gameno-1){
+		$gameno = $_POST["reupload"];
+		$now=date("Y-m-d H:i:s");
+		$datetime = "$date2 $time2";
+		$result = mysql_query("SELECT * from table1 WHERE step = '$step' and gameno = '$gameno';");
+		$obj=mysql_fetch_object($result);
+		$request = "UPDATE table1 set step = $obj->step, gameno = $obj->gameno, p1 = $pid[0], p2 = $pid[1], p3 = $pid[2], p4 = $pid[3], p5 = $pid[4], p6 = $pid[5], p7 = $pid[6], p8 = $pid[7], p9 = $pid[8], p10 = $pid[9], datetime = '$datetime', season = '$season', inputtime = '$now'  WHERE `id` = '$obj->id';";
+			if($error==0) $result = mysql_query($request);// OR die("Error: $request <br>".mysql_error());
+			if($error==0 and !$result) $error = 18;
+			//echo $request."<hr />";
+			//die(var_export($request,true));
+	}else{
+		$reupload = "";
+		//get new gameno
+		$request = "SELECT IFNULL(MAX(gameno),0) FROM table1 WHERE step = '$step'";
 		$result=mysql_query($request);
-		$c=0;
-		while($row = mysql_fetch_object($result))
-		{
-			$c++;
-			if($row->p1 == $pid[0] and $row->p2 == $pid[1] and $row->p3 == $pid[2] and $row->p4 == $pid[3] 
-					and $row->p5 == $pid[4] and $row->p6 == $pid[5] and $row->p7 == $pid[6] 
-					and $row->p8 == $pid[7] and $row->p9 == $pid[8] and $row->p10 == $pid[9] ) $error=9;
-		}	
-		$errorinfo1="$i, $gameno";
-		if($error==0 and $c==0) $error = 23;
+		$row=mysql_fetch_array($result);
+		$gameno = 1+(int)$row[0];
+		for($i=$gameno-1;$i>$gameno-5 and $i>0 and $error==0;$i--)//compare if identical to 4 previous games
+			// but they would need to have the exact same positions for the 10 players
+			{
+				$request= "SELECT * from table1 WHERE step = '$step' and gameno = '$i'";
+				$result=mysql_query($request);
+				$c=0;
+				while($row = mysql_fetch_object($result))
+				{
+					$c++;
+					if($row->p1 == $pid[0] and $row->p2 == $pid[1] and $row->p3 == $pid[2] and $row->p4 == $pid[3] 
+							and $row->p5 == $pid[4] and $row->p6 == $pid[5] and $row->p7 == $pid[6] 
+							and $row->p8 == $pid[7] and $row->p9 == $pid[8] and $row->p10 == $pid[9]) $error=9;
+				}	
+				$errorinfo1="$i, $gameno";
+				if($error==0 and $c==0) $error = 23;
+			}
+
+			$datetime = "$date2 $time2";
+			$now=date("Y-m-d H:i:s");
+			
+			$request = "INSERT INTO table1 
+		(step, gameno,p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,datetime,season,inputtime)
+		VALUES
+		($step, $gameno,$pid[0],$pid[1],$pid[2],$pid[3],$pid[4],$pid[5],$pid[6],$pid[7],$pid[8],$pid[9],'$datetime',$season,'$now')";
+			if($error==0) $result = mysql_query($request);// OR die("Error: $request <br>".mysql_error());
+			if($error==0 and !$result) $error = 18;
 	}
-	$datetime = "$date2 $time2";
-	$now=date("Y-m-d H:i:s");
-	$request = "INSERT INTO table1 
-(step, gameno,p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,datetime,season,inputtime)
-VALUES
-($step, $gameno,$pid[0],$pid[1],$pid[2],$pid[3],$pid[4],$pid[5],$pid[6],$pid[7],$pid[8],$pid[9],'$datetime',$season,'$now')";
-	if($error==0) $result = mysql_query($request);// OR die("Error: $request <br>".mysql_error());
-	if($error==0 and !$result) $error = 18;
 }
 if($error==0) // @TODO : calculate the new score with step4 also in controlpanel
 {

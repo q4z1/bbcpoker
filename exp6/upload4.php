@@ -55,6 +55,7 @@ if($auth1==1)
 		if($step<1 or $step>4) $error=410;
 		if($gameno==0) $gameno=(int)$_POST["gs$step"];
 		if($gameno<=0 or $gameno>40000) $error=410;
+		
 
 		$fname2="exp6/lf3/g$gameno" . "s$step";
 		$fname3=$fname2 . ".html";
@@ -89,10 +90,13 @@ if($error==0)
 		$row = mysql_fetch_array($result);
 		if($gameno == $row[0] +1) $cont1=1;
 		if(!file_exists($fname3)) $error=417;
+		if($gameno == $row[0]) $cont1 = 2;
 }
+//die("gameno=$gameno");
+//die("cont1=$cont1");
 if($error==0 and $cont1==0) print "<p><a href=\"exp5/gameslist3.php?step=$step&amp;g=$gameno\">You can check here how it looks</a></p>";
 
-if($error==0 and $cont1==1)
+if($error==0 )
 {
 		// show last uploaded game
 		print "<h1> Results Input</h1>";
@@ -104,6 +108,7 @@ if($error==0 and $cont1==1)
 		$c=0;
 		while($row = mysql_fetch_object($result))
 		{
+		
 			$c++;
 			$gameno = $row->gameno;
 			$gstep=$row->step;
@@ -141,9 +146,15 @@ if($error==0 and $cont1==1)
 		}
 			
 		
-		
-		print '<h2>New Game Input</h2><p> (with some error detection)</p><p> if less than 10 players participated, enter "0" as name </p>'
-			. '<form action="/exp2/test3.php" method="post"><p>Game start, Date:'; 
+		if($cont1 == 0){
+			print '<h2>New Game Input</h2><p> (with some error detection)</p>'
+				. '<form action="/exp2/test3.php" method="post"><p>Game start, Date:'; 
+		}else if($cont1 == 2){
+			print '<h2>Re-Upload of game '.$gameno.'</h2><p> (with some error detection)</p>'
+				. '<form action="/exp2/test3.php" method="post"><p>Game start, Date:'
+				. '<input type="hidden" name="reupload" value="'.$gameno.'"/>';
+		}
+
 		
 		$dateval = date("Y-m-d");
 		print "<input type=\"Text\" name=\"date\" value=\"$dateval\" maxlength=10 size=10>";
