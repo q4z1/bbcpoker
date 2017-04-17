@@ -90,7 +90,7 @@ if($error==0)
 		$row = mysql_fetch_array($result);
 		if($gameno == $row[0] +1) $cont1=1;
 		if(!file_exists($fname3)) $error=417;
-		if($gameno == $row[0]) $cont1 = 2;
+		if($gameno == $row[0]) $cont1 = 0;
 }
 //die("gameno=$gameno");
 //die("cont1=$cont1");
