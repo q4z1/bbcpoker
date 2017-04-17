@@ -37,8 +37,8 @@ Log-Link Url: <input type="text" name="loglink" value=""><br />
 <span style="font-size: smaller">(with UniqueGameID if it is not the 1st game!)</span>
 </p>
 <table border=1>
-<tr><td colspan=10>This is the Logfile for:</td></tr>
-<tr><td colspan=3>Step 1</td><td colspan=3>Step 2</td><td colspan=2>Step 3</td><td colspan=2>Step 4 </td></tr>
+<tr><td colspan=8>This is the Logfile for:</td></tr>
+<tr><td colspan=2>Step 1</td><td colspan=2>Step 2</td><td colspan=2>Step 3</td><td colspan=2>Step 4 </td></tr>
 
 E;
 // blockedgamenumbers
@@ -83,16 +83,16 @@ function isalready($step,$gameno,$blockedarray)
 
 
 print "<tr>";
-for($i1=0;$i1<10;$i1++)
+for($i1=0;$i1<8;$i1++)
 {	
 	print "<td>Game $gn[$i1]</td>";
 }
 print "</tr>\n<tr>";
-for($i1=0;$i1<10;$i1++) print "<td>" . isalready($sn[$i1],(int)$gn[$i1],$blockedarray) . "</td>";
+for($i1=0;$i1<8;$i1++) print "<td>" . isalready($sn[$i1],(int)$gn[$i1],$blockedarray) . "</td>";
 print "</tr>\n<tr>";
 //$sendva=array(10000,0,0,20000,0,0,30000,0);	
 //for($i1=0;$i1<8;$i1++)
-for($i1=0;$i1<10;$i1++) 
+for($i1=0;$i1<8;$i1++) 
 {	
 	$i2=100000*$sn[$i1] + (int)$gn[$i1]; // beware of bug in 4 years
 	//if(isblocked($blockedarray,$sn[$i1],(int)$gn[$i1])==0)
