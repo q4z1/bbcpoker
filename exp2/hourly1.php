@@ -201,6 +201,14 @@ function daily8am()
   createdates(3,"21:30:00",2,40,45);
   createdates(5,"21:30:00",2,40,45); // 3rd step2 friday 21:30
   createdates(5,"19:30:00",3,40,45,1,2); 
+  // 17:30 schedule: wed and sat = step 2 - rest step 1
+  createdates(1,"17:30:00",1,40,45);
+  createdates(2,"17:30:00",1,40,45);
+  createdates(3,"17:30:00",2,40,45);
+  createdates(4,"17:30:00",1,40,45);
+  createdates(5,"17:30:00",1,40,45);
+  createdates(6,"17:30:00",2,40,45);
+  createdates(0,"17:30:00",1,40,45);
   // start HUSC part
   include_once "husc/huscfun1.php";
   dailyhusc(); 
