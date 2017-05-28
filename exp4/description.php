@@ -74,8 +74,8 @@ include "exp5/nav1.php";
 		<figure>
 			<img src="exp1/s4awards/bbcwinnerS4v2.png" alt="ElmoEGO" title="ElmoEGO" width=100 height=100 />
 			<img src="exp1/s4awards/joyinkoS4Feb15.png" alt="joyinko" title="joyinko" width=100 height=100 />
-			<img src="exp1/s4awards/*Fobbe86*S4.png" alt="*Fobbe86*" title="*Fobbe86*" width=100 height=100 />
-			<img src="exp1/s4awards/*Fobbe86*July.png" alt="*Fobbe86*" title="*Fobbe86*" width=100 height=100 />
+			<img src="exp1/s4awards/Fobbe86S4.png" alt="*Fobbe86*" title="*Fobbe86*" width=100 height=100 />
+			<img src="exp1/s4awards/Fobbe86July.png" alt="*Fobbe86*" title="*Fobbe86*" width=100 height=100 />
 			<img src="exp1/s4awards/JackTenSept15.png" alt="JackTen" title="JackTen" width=100 height=100 />
 			<img src="exp1/s4awards/M311oDoct15.png" alt="M311oD" title="M311oD" width=100 height=100 />
 			<img src="exp1/s4awards/yagielloFeb16.png" alt="yagiello" title="yagiello" width=100 height=100 />
@@ -83,6 +83,7 @@ include "exp5/nav1.php";
 			<img src="exp1/s4awards/HerDudernesMay16.png" alt="HerDudernes" title="HerDudernes" width=100 height=100 />
 			<img src="exp1/s4awards/S4ElmoEGO916.png" alt="ElmoEGO" title="ElmoEGO" width=100 height=100 />
 			<img src="exp5/awards/pics/award64.png" alt="Saufi" title="Saufi" width=100 height=100 />
+			<img src="exp5/awards/pics/award67.png" alt="RATAPALIDA" title="RATAPALIDA" width=100 height=100 />
 
 
 	

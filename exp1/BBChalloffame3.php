@@ -21,7 +21,7 @@ include "exp5/nav1.php";
 
 <tr>
 <td> <a href="http://bbcpoker.bplaced.net/exp5/players1.php?nick=*Fobbe86*"><font color="#000000"><b> *Fobbe86*</b></font></a><br></td>
-<td><img src="exp1/s4awards/*Fobbe86*July.png"/></td><td><img src="exp1/s4awards/*Fobbe86*S4.png"/></td><td><img src="exp1/NavBBC/images2/bbcwinner1407S3.png"/></td></tr>
+<td><img src="exp1/s4awards/Fobbe86July.png"/></td><td><img src="exp1/s4awards/Fobbe86S4.png"/></td><td><img src="exp1/NavBBC/images2/bbcwinner1407S3.png"/></td></tr>
 
 <tr>
 <td><a href="http://bbcpoker.bplaced.net/exp5/players1.php?nick=joyinko"> <font color="#000000"><b> joyinko</b></font></a><br></td>
@@ -49,6 +49,10 @@ include "exp5/nav1.php";
 <tr>
 <td><a href="http://bbcpoker.bplaced.net/exp5/players1.php?nick=Saufi"> <font color="#000000"><b> Saufi</b></font></a><br></td>
 <td><img src="exp5/awards/pics/award64.png"/></td></tr>
+
+<tr>
+<td><a href="http://bbcpoker.bplaced.net/exp5/players1.php?nick=RATAPALIDA"> <font color="#000000"><b> RATAPALIDA</b></font></a><br></td>
+<td><img src="exp5/awards/pics/award67.png"/></td></tr>
 
 <tr>
 <td><a href="http://bbcpoker.bplaced.net/exp5/players1.php?nick=supernoob"> <font color="#000000"><b> supernoob</b></font></a><br></td>
