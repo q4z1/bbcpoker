@@ -35,7 +35,8 @@ include "exp5/nav1.php";
 <tr><td><img src="exp1/images2/Saufi.png" alt="Saufi" title="Saufi" width=50 height=50 /></td><td>Saufi</td><td>yes</td><td>yes</td><td>no</td><td></td></tr>
 <tr><td><img src="exp1/images2/Victor_mpt.gif" alt="Victor_mpt" title="Victor_mpt" width=50 height=50 /></td><td>Victor_mpt</td><td>yes</td><td>yes</td><td>no</td><td></td></tr>
 <tr><td><img src="exp1/images2/fantomas75.jpg" alt="FantomAS" title="FantomAS" width=50 height=50 /></td><td>FantomAS</td><td>yes</td><td>yes</td><td>no</td><td></td></tr>
-<tr><td><img src="exp1/images2/Jro.gif" alt="Jro" title="Jro" width=50 height=50 /></td><td>Jro</td><td>yes</td><td>yes</td><td>no</td><td></td></tr>
+<!-- <tr><td><img src="exp1/images2/Jro.gif" alt="Jro" title="Jro" width=50 height=50 /></td><td>Jro</td><td>yes</td><td>yes</td><td>no</td><td></td></tr>
+-->
 </table>
 
 <h2>Former Admins</h2>
@@ -57,7 +58,7 @@ Long-time superadmin...
 <tr><td><img src="exp1/images2/SchlumpfineX.jpg" alt="SchlumpfineX" title="SchlumpfineX" width=50 height=50 /></td><td>SchlumpfineX</td></tr>
 <tr><td><img src="exp1/images2/akia.png" alt="akia" title="akia" width=50 height=50 /></td><td>akia</td></tr>
 <tr><td><img src="exp1/images2/Pagol.png" alt="Pagol" title="Pagol" width=50 height=50 /></td><td>Pagol</td></tr>
-<!--<tr><td><img src="exp1/images2/Jro.gif" alt="Jro" title="Jro" width=50 height=50 /></td><td>Jro</td></tr>-->
+<tr><td><img src="exp1/images2/Jro.gif" alt="Jro" title="Jro" width=50 height=50 /></td><td>Jro</td></tr>
 </table>
 
 <p>Former Admins who want to become active admins again, should send a PM to supernoob in pokerth forum</p>
