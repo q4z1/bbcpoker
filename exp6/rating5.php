@@ -118,7 +118,7 @@ while($row=mysql_fetch_object($result))
 
 include "exp6/func3.php";
 
-calcrating2(0,$to="2017-05-01 00:00:00",0,0,1,$spid1,$spid2,
+calcrating2(0,$to="2017-10-01 00:00:00",0,0,1,$spid1,$spid2,
 $probdiff,$startspeed,$minspeed,$mingames,$winbonus,$startrating);
 
 
