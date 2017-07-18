@@ -328,13 +328,6 @@ print <<<E
 <h1> Communication / Feedback </h1>
 
 <hr />
-<h3>NEWS (2017-05-24)</h3>
-<p style="margin-left: 25%; width: 50%; text-align: center;"><strong style="color: red">Hi bbc rats</strong>, thx to Jro daily 17:30  (CEST) bbc games are now officially integrated and will be automatically created for registration.<br />
-There will be 17:30 step 1 games on Mo, Tu, Th, Fr, Sun - and 17:30 step 2 games on Wed and Sat.<br />
-Please keep in mind, that even if no admin has time to signup, there is still a good chance that a co-admin will open and admin the game:
-<a href="http://bbc.pokerth.net/exp1/coadmin1.php">Check this if you want to become a Co-Admin</a><p>
-<h4>Have fun and enjoy official 17:30 games ;)</h4>
-<hr />
 E;
 
 print <<<E

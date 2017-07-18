@@ -253,7 +253,7 @@ if($error==0) //write in game result
 							and $row->p8 == $pid[7] and $row->p9 == $pid[8] and $row->p10 == $pid[9]) $error=9;
 				}	
 				$errorinfo1="$i, $gameno";
-				if($error==0 and $c==0) $error = 23;
+				//if($error==0 and $c==0) $error = 23; // seems to have no effect and is useless for deleted games (missing gameno)???
 			}
 
 			$datetime = "$date2 $time2";
