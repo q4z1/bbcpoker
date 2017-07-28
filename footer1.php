@@ -22,8 +22,8 @@ print "Server Time: $t ";
 </p>
 
 <div style="text-align:center;">
-	<a href="http://www.pokerth.net/live/" target="_blank" style="font-size:25px; font-weight:bold;">&gt;&gt; SPECTATE BBC &lt;&lt;</a>
+	<a href="http://live.pokerth.net" target="_blank" style="font-size:25px; font-weight:bold;">&gt;&gt; SPECTATE BBC &lt;&lt;</a>
 </div>
-<!--<a href="http://www.pokerth.net/pokerth-live/index.html">Watch live!!</a>-->
+
 
 
