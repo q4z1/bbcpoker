@@ -210,7 +210,7 @@ case 430:
 case 431:
 	print 'an empty playername was found';break;
 case 432:
-	print 'the name of a player looks like a number';break;
+	print 'we think the logfile is broken (the name of a player looks weird). please contact an experienced admin';break;
 case 501:
 	print 'the programmer made a super noob mistake';break;
 case 502:
