@@ -77,6 +77,32 @@ if($error==0)
 		$log = pthlog::process_log($url);
 		file_put_contents($fname3, $log["html"]);
 		// @TODO: complete results are in array - html code is saved with base64 encoded images - no more seperate pic files needed
+
+        if(count($log["result"])!=10)
+        {
+            $error=430;
+            $errorinfo1="count=" . count($log["result"]);
+        }
+        // TODO: look for player names that indicate broken log
+		foreach($log["result"] as $pos => $player)
+		{
+            if($error!=0) break;
+            $playername=$player["player"];
+            if($playername=="") $error=431;
+            $errorinfo1=$playername;
+            if(3<strlen($playername) && $playername[0]=="#")
+            {
+              $c1=ord($playername[1]);
+              $c2=ord($playername[2]);
+              $c3=ord($playername[3]);
+              // check if chars at position 1,2,3 are digits
+              if($c1<58 && $c2<58 && $c3<58 && $c1>47 && $c2>47 && $c3>47)
+              {
+                $error=432;
+              }
+            }
+		}      
+
 }
 if($error==0) print "<p>It looks like there was no error with the Logfile Analysis Link</p>";
  
