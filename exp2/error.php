@@ -205,8 +205,12 @@ case 419:
 	print 'an error with reading the logfile occured';break;
 case 420:
 	print 'an error with reading the logfile occured';break;
-case 420:
-	print 'an error with reading the logfile occured';break;
+case 430:
+	print 'we could not find exactly 10 players';break;
+case 431:
+	print 'an empty playername was found';break;
+case 432:
+	print 'we think the logfile is broken (the name of a player looks weird). please contact an experienced admin';break;
 case 501:
 	print 'the programmer made a super noob mistake';break;
 case 502:

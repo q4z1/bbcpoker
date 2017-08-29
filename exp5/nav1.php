@@ -37,6 +37,7 @@ if($p=="bbcbotmanual")$current1=2;
 if($p=="players1")$current1=6;
 if($p=="admin1")$current1=2;
 if($p=="coadmin1")$current1=2;
+if($p=="schedule")$current1=2;
 if($p=="event1")$current1=7;
 if($p=="event2")$current1=7;
 if($p=="event3")$current1=7;
@@ -96,10 +97,11 @@ if($p=="ranking9")$current2=4;
 if($p=="ranking10")$current2=5;
 if($p=="formula1")$current2=6;
 if($p=="players1")$current2=7;
-if($p=="admin1")$current2=2;
-if($p=="coadmin1")$current2=3;
 if($p=="description")$current2=1;
-if($p=="bbcbotmanual")$current2=4;
+if($p=="schedule")$current2=2;
+if($p=="admin1")$current2=3;
+if($p=="coadmin1")$current2=4;
+if($p=="bbcbotmanual")$current2=5;
 if($p=="event1")$current2=9;
 if($p=="event2")$current2=8;
 if($p=="event3")$current2=7;
@@ -118,9 +120,10 @@ if($current1==2)
 <nav class="nav">
 <ul>
 	<li$t[1]><a href="exp4/description.php">Description and Settings</a></li>
-	<li$t[2]><a href="exp4/admin1.php">Admins</a></li>
-	<li$t[3]><a href="exp1/coadmin1.php">Co-Admins</a></li>
-	<li$t[4]><a href="exp3/bbcbotmanual.php">bbcbot</a></li>
+	<li$t[2]><a href="exp4/schedule.php">Schedule</a></li>
+	<li$t[3]><a href="exp4/admin1.php">Admins</a></li>
+	<li$t[4]><a href="exp1/coadmin1.php">Co-Admins</a></li>
+	<li$t[5]><a href="exp3/bbcbotmanual.php">bbcbot</a></li>
 </ul>
 </nav>
 EOF;
