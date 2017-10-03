@@ -84,8 +84,7 @@ include "exp5/nav1.php";
 			<img src="exp1/s4awards/S4ElmoEGO916.png" alt="ElmoEGO" title="ElmoEGO" width=100 height=100 />
 			<img src="exp5/awards/pics/award64.png" alt="Saufi" title="Saufi" width=100 height=100 />
 			<img src="exp5/awards/pics/award67.png" alt="RATAPALIDA" title="RATAPALIDA" width=100 height=100 />
-
-
+			<img src="exp5/awards/pics/award68.png" alt="ElmoEGO" title="ElmoEGO" width=100 height=100 />
 	
 		</figure><br>
 	
