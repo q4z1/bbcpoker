@@ -14,10 +14,11 @@ include "exp5/nav1.php";
 
 	<h1>Hall of Fame</h1>
 	<table cellpadding="5">
+	<table cellpadding="5">
 
 <tr>
 <td><a href="http://bbcpoker.bplaced.net/exp5/players1.php?nick=ElmoEGO"><font color="#000000"><b> ElmoEGO </b></font></a><br></td>
-<td><img src="exp1/s4awards/bbcwinnerS4v2.png"/></td><td><img src="exp1/s4awards/S4ElmoEGO916.png"/></td><td><img src="exp1/HUSCawards/huscElmoEGOs1.png"/></td><td><img src="exp1/NavBBC/images2/bbcwinner1409S3.png"/></td><td><img src="exp1/NavBBC/images2/bbcwinner140228S3.png"/></td><td><img src="exp5/awards/pics/award48.png"/></td></tr>
+<td><img src="exp1/s4awards/bbcwinnerS4v2.png"/></td><td><img src="exp1/s4awards/S4ElmoEGO916.png"/></td><td><img src="exp1/HUSCawards/huscElmoEGOs1.png"/></td><td><img src="exp1/NavBBC/images2/bbcwinner1409S3.png"/></td><td><img src="exp1/NavBBC/images2/bbcwinner140228S3.png"/></td><td><img src="exp5/awards/pics/award48.png"/></td><td><img src="exp5/awards/pics/award68.png"/></td></tr>
 
 <tr>
 <td> <a href="http://bbcpoker.bplaced.net/exp5/players1.php?nick=*Fobbe86*"><font color="#000000"><b> *Fobbe86*</b></font></a><br></td>
@@ -80,7 +81,7 @@ include "exp5/nav1.php";
 
 <tr>
 <td><a href="http://bbcpoker.bplaced.net/exp5/players1.php?nick=Doc Ijiwaru"><font color="#000000"><b> Doc Ijiwaru</b></font></font></a><br></td>
-<td><img src="exp1/NavBBC/images2/bbcwinner12S3.png"/></td></tr>
+<td><img src="exp1/NavBBC/images2/bbcwinner12S3.png"/></td><td><img src="exp5/awards/pics/award51.png"/></td></tr>
 
 <tr>
 <td><a href="http://bbcpoker.bplaced.net/exp5/players1.php?nick=israelac"> <font color="#000000"><b> israelac</b></font></a><br></td>
@@ -150,7 +151,7 @@ include "exp5/nav1.php";
 
 <tr>
 <td><a href="http://bbcpoker.bplaced.net/exp5/players1.php?nick=joanna1"> <font color="#000000"><b> joanna1</b></font></a><br></td>
-<td><img src="exp1/images2/BBCdino.png"/></td></tr>
+<td><img src="exp1/images2/BBCdino.png"/></td><td><img src="exp5/awards/pics/award69.png"/></td></tr>
 
 <tr>
 <td><a href="http://bbcpoker.bplaced.net/exp5/players1.php?nick=sp0ck"> <font color="#000000"><b> sp0ck</b></font></a><br></td>
@@ -163,7 +164,12 @@ include "exp5/nav1.php";
 <tr>
 <td><a href="http://bbcpoker.bplaced.net/exp5/players1.php?nick=POLLOPOKER"> <font color="#000000"><b> POLLOPOKER</b></font></a><br></td>
 <td><img src="exp1/images2/BBCdino.png"/></td></tr>
-
+<tr>
+<td><a href="http://bbcpoker.bplaced.net/exp5/players1.php?nick=Joe_East"> <font color="#000000"><b> Joe_East</b></font></a><br></td>
+<td><img src="exp5/awards/pics/award45.png"/></td></tr>
+<tr>
+<td><a href="http://bbcpoker.bplaced.net/exp5/players1.php?nick=brak"> <font color="#000000"><b> brak</b></font></a><br></td>
+<td><img src="exp5/awards/pics/award45.png"/></td></tr>
 </table> 
 
 

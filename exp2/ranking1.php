@@ -81,14 +81,14 @@ if (!is_null($result)) {
   $pagination_links .= "<tr><th colspan=\"8\" style=\"font-weight: normal;\">Page:&nbsp;&nbsp;";
   if ($page > 1) {
     $pagination_links .= "<a href=\"{$url}?page=1&sort={$sort1}\">«</a>&nbsp;";
-    $pagination_links .= "<a href=\"{$url}?page=" . ($page - 1) . "&sort={$sort1}\">«</a>&nbsp;";
+    $pagination_links .= "<a href=\"{$url}?page=" . ($page - 1) . "&sort={$sort1}\">‹</a>&nbsp;";
   } //$page > 1
   else {
     $pagination_links .= "«&nbsp;";
   }
   $pagination_links .= "&nbsp;{$page}/{$max_page}&nbsp;&nbsp;";
   if ($page < $max_page) {
-    $pagination_links .= "<a href=\"{$url}?page=" . ($page + 1) . "&sort={$sort1}\">»</a>&nbsp;";
+    $pagination_links .= "<a href=\"{$url}?page=" . ($page + 1) . "&sort={$sort1}\">›</a>&nbsp;";
     $pagination_links .= "<a href=\"{$url}?page={$max_page}&sort={$sort1}\">»</a>";
   } //$page < $max_page
   else {

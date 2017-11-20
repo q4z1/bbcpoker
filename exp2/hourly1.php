@@ -1,7 +1,9 @@
 <?php
 //This script is include only. 
 // it is meant for hourly, weekly, and daily tasks
-
+// debug:
+//daily8am();
+//die("daily 8am executed.");
 
 function bbcbotmakeminidb()
 {
@@ -166,9 +168,6 @@ function asynchourly()
     $then2=$now;
   }
 
-// debug:
-//daily8am();
-
   $ft1=date("Y-m-d H:i:s",$now) . "\n" . date("Y-m-d H:i:s",$then2) . "\n" ;
   $file=fopen("exp2/rtaskdata.txt","w");
   fwrite($file,$ft1);
@@ -191,7 +190,7 @@ function daily8am()
   createdates(4,"19:30:00",1,40,45);
   createdates(5,"19:30:00",1,40,45);
   createdates(6,"19:30:00",1,40,45);
-  createdates(1,"21:30:00",1,40,45);
+  createdates(1,"21:30:00",2,40,45); // monday step 2 21:30
   createdates(2,"21:30:00",1,40,45);
   createdates(4,"21:30:00",1,40,45);
   //createdates(5,"21:30:00",1,40,45);
@@ -201,14 +200,14 @@ function daily8am()
   createdates(3,"21:30:00",2,40,45);
   createdates(5,"21:30:00",2,40,45); // 3rd step2 friday 21:30
   createdates(5,"19:30:00",3,40,45,1,2); 
-  // 17:30 schedule: wed and sat = step 2 - rest step 1
-  createdates(1,"17:30:00",1,40,45);
-  createdates(2,"17:30:00",1,40,45);
-  createdates(3,"17:30:00",2,40,45);
-  createdates(4,"17:30:00",1,40,45);
-  createdates(5,"17:30:00",1,40,45);
-  createdates(6,"17:30:00",2,40,45);
-  createdates(0,"17:30:00",1,40,45);
+  // 23:15 schedule: sat = step 2 - rest step 1
+  createdates(1,"23:15:00",1,40,45);
+  createdates(2,"23:15:00",1,40,45);
+  createdates(3,"23:15:00",1,40,45);
+  createdates(4,"23:15:00",1,40,45);
+  createdates(5,"23:15:00",1,40,45);
+  createdates(6,"23:15:00",2,40,45);
+  createdates(0,"23:15:00",1,40,45);
   // start HUSC part
   include_once "husc/huscfun1.php";
   dailyhusc(); 
