@@ -8,7 +8,12 @@ include "head.php";
 $regulartaskcount=1;
 include "exp2/regulartasks.php";
 print "<body>";
-include "header1.php"; ?>
+include "header1.php";
+
+session_start();
+
+?>
+
 <h1>Manipulate Tickets</h1>
 <p>this page is only for admins</p>
 
@@ -25,7 +30,7 @@ Action:
 <li><input type="radio" name="action" value=30>Take away one ticket to step 4</li>
 </ul>
 <p>Please add a SHORT reason: <input type="text" name="reason" size=37 maxlength=160></p>
-<p>Password:<input type="password" name="pass"> 
+<p>
 <input type="submit" value="Submit">
 </p>
 </form>

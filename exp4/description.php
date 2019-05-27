@@ -36,8 +36,8 @@ include "exp5/nav1.php";
 		<input class="spoilerbutton" onclick="this.value=this.value=='Show Settings'?'Hide':'Show Settings';" type="button" value="Show Settings" />
 		<div class="spoiler"><div>
 		<p style="font-size: 80%; text-align:center; color:#999">Type Game : Only invited Players<br>
-		Start Cash = 3 500 $<br>
-		Start Blind = 15/30<br>
+		Start Cash = 4 000 $<br>
+		Start Blind = 20/40<br>
 		Blinds = 5 minutes<br>
 		Manual Blind List : 20, 25, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 800, 1000, 1200, 1500, 2000, 2500, 3000, 4000, 5000, 6000, 8000, 10000, 12000, 15000, afterwards blinds are doubled.<br>
 		Player action = 10 s. Delay bw hands 7 s</p>
@@ -50,8 +50,8 @@ include "exp5/nav1.php";
 		<div class="spoiler"><div>
 		<p style="font-size: 80%; text-align:center; color:#999">Type Game : Only invited Players<br>
 		Start Cash = 5 000 $<br>
-		Start Blind = 15/30<br>
-		Blinds = 6 minutes<br>
+		Start Blind = 25/50<br>
+		Blinds = 5 minutes<br>
 		Manual Blind List : 20, 25, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 800, 1000, 1200, 1500, 2000, 2500, 3000, 4000, 5000, 6000, 8000, 10000, 12000, 15000, afterwards blinds are doubled.<br>
 		Player action = 10 s. Delay bw hands 7 s</p>
 		</div></div><br>
@@ -62,8 +62,8 @@ include "exp5/nav1.php";
 		<div class="spoiler"><div>
 		<p style="font-size: 80%; text-align:center; color:#999">Type Game : Only invited Players<br>
 		Start Cash = 10 000 $<br>
-		Start Blind = 60/120<br>
-		Blinds = 7 minutes<br>
+		Start Blind = 50/100<br>
+		Blinds = 5 minutes<br>
 		Manual Blind List : 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 800, 1000, 1200, 1500, 2000, 2500, 3000, 4000, 5000, 6000, 8000, 10000, 12000, 15000, afterwards blinds are doubled.<br>
 		Player action = 10 s. Delay bw hands 7 s</p>
 		</div></div><br>
@@ -85,7 +85,10 @@ include "exp5/nav1.php";
 			<img src="exp5/awards/pics/award64.png" alt="Saufi" title="Saufi" width=100 height=100 />
 			<img src="exp5/awards/pics/award67.png" alt="RATAPALIDA" title="RATAPALIDA" width=100 height=100 />
 			<img src="exp5/awards/pics/award68.png" alt="ElmoEGO" title="ElmoEGO" width=100 height=100 />
-	
+			<img src="exp5/awards/pics/award70.png" alt="827" title="827" width=100 height=100 />
+			<img src="exp5/awards/pics/perkunas_s4_2018-03.png" alt="Perkunas" title="Perkunas" width=100 height=100 />
+			<img src="exp5/awards/pics/s4_july_2018.png" alt="Mr. Fixit" title="Mr. Fixit" width=100 height=100 />
+			<img src="exp5/awards/pics/s4_2018-12_tripitaka.png" alt="tripitaka" title="tripitaka" width=100 height=100 />
 		</figure><br>
 	
 	<h2>HUSC Winners</h2>

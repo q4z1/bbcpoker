@@ -109,6 +109,7 @@ print "<input type=\"hidden\" name=\"plan$i1\" value=\"$retarray[0]\"></td></tr>
 </form>
 <p>Registration will open 36 hours(for step 1) or 7 days(for step 2) before the game. Registration will close 10 minutes before game.</p>
 <p><font color="red">Please be in lobby about 5 minutes before the game. If NO player is missing and the table is full the game might start before :30 - if a player is missing the game will start exactly at :30 - admins may decide to wait a few minutes for a missing player though - but that is not guaranteed!</font></p>
+<p><i>If you are sharing Internet with another player, please give a short info in shoutbox about possible repetetive same IP registrations.</i></p>
 <p>Step 1, 2, 3 and 4 start with 10 players, including an admin (or co-admin). </p>
 <p>Please: if admins or co-admins ask you to quit the game because of not having enough players on the table (players disconnected at the start or wrong start) do it ... the game won't be reported and so no tickets for the winners. </p>
 

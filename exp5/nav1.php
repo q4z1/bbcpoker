@@ -38,6 +38,7 @@ if($p=="players1")$current1=6;
 if($p=="admin1")$current1=2;
 if($p=="coadmin1")$current1=2;
 if($p=="schedule")$current1=2;
+if($p=="admin-manual")$current1=2;
 if($p=="event1")$current1=7;
 if($p=="event2")$current1=7;
 if($p=="event3")$current1=7;
@@ -47,6 +48,12 @@ if($p=="event6")$current1=7;
 if($p=="event7")$current1=7;
 if($p=="event8")$current1=7;
 if($p=="results")$current1=7;
+
+$sbadmin = '';
+if(!isset($_SESSION)) session_start();
+if(isset($_SESSION['user3']) && $_SESSION['user3'] == 'sp0ck'){
+	$sbadmin = "?admin=1";
+}
 
 $now=(int)time();
 $now= (1<<17) & $now;
@@ -65,7 +72,7 @@ print <<<EOF
 	<li$t[6]><a href="exp6/rating6.php?g=30">Rankings</a></li>
 	<li$t[7]><a href="exp1/event8.php">Events</a></li>
 	<li$t[8]><a href="husc/index1.php">HUSC</a></li>
-	<li$t[9]><a href="exp4/shoutbox1.php">$chorfb</a></li>
+	<li$t[9]><a href="exp4/shoutbox1.php$sbadmin">$chorfb</a></li>
 </ul>
 </nav>
 EOF;
@@ -101,7 +108,8 @@ if($p=="description")$current2=1;
 if($p=="schedule")$current2=2;
 if($p=="admin1")$current2=3;
 if($p=="coadmin1")$current2=4;
-if($p=="bbcbotmanual")$current2=5;
+if($p=="admin-manual")$current2=5;
+if($p=="bbcbotmanual")$current2=6;
 if($p=="event1")$current2=9;
 if($p=="event2")$current2=8;
 if($p=="event3")$current2=7;
@@ -123,7 +131,8 @@ if($current1==2)
 	<li$t[2]><a href="exp4/schedule.php">Schedule</a></li>
 	<li$t[3]><a href="exp4/admin1.php">Admins</a></li>
 	<li$t[4]><a href="exp1/coadmin1.php">Co-Admins</a></li>
-	<li$t[5]><a href="exp3/bbcbotmanual.php">bbcbot</a></li>
+	<li$t[5]><a href="exp4/admin-manual.php">Admin-Manual</a></li>
+	<li$t[6]><a href="exp3/bbcbotmanual.php">bbcbot</a></li>
 </ul>
 </nav>
 EOF;

@@ -20,6 +20,8 @@ you have to correct the tickets individually <a href="exp4/input22.php">here</a>
 //die("this script is currently disabled");
 
 if($userpass=="nelly" or $userpass=="supernoob" or $userpass=="sp0ck")
+//session_start();
+//if($_SESSION && array_key_exists("upc", $_SESSION) && $_SESSION["upc"] != 1)
 {
 
 $error=0;

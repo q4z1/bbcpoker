@@ -32,7 +32,7 @@ function bbcbotmakepermissions()
   if(file_exists("exp3/bbcbot/manual_permissions.txt"));
   $out.=file_get_contents("exp3/bbcbot/manual_permissions.txt")."\n";
   $out.="#0#admin\n"; // maybe "bbcadmin" ?, 0 means whitelist
-  $out.="+joanna1\n+creeper\n"; // hardcode joanna1 as admin, so she can open games
+  $out.="+joanna1\n+creeper\n+Mr. Fixit\n"; // hardcode joanna1 as admin, so she can open games
   $request="SELECT name FROM admins WHERE class=1 OR class=2 OR class=3";
   $result=mysql_query($request);
   while($row=mysql_fetch_object($result))
@@ -199,7 +199,7 @@ function daily8am()
   createdates(0,"19:30:00",2,40,45);
   createdates(3,"21:30:00",2,40,45);
   createdates(5,"21:30:00",2,40,45); // 3rd step2 friday 21:30
-  createdates(5,"19:30:00",3,40,45,1,2); 
+  createdates(5,"19:30:00",3,40,45); 
   // 23:15 schedule: sat = step 2 - rest step 1
   createdates(1,"23:15:00",1,40,45);
   createdates(2,"23:15:00",1,40,45);

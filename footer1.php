@@ -18,7 +18,7 @@ if(file_exists("exp2/visitorcount.txt"))
 $t=date("Y-m-d H").":".date("i:s");
 print "Server Time: $t ";
 ?>
-<br><a href="login.php">login</a>
+<br><a href="login.php">Login (Admin Tools)</a>
 </p>
 
 <div style="text-align:center;">

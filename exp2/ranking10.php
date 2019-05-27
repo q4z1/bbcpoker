@@ -50,7 +50,7 @@ $request          = "
 	FROM table2
 	WHERE
 	playerid > 1024 AND
-  alltimegames > 100
+  alltimegames > 99
 	ORDER BY
 	$sort DESC 
 	{$limit};

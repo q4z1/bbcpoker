@@ -24,7 +24,7 @@ $actiontext = array(3=>"wins a ticket to Step2 in ", 4=>"wins a ticket (but had 
 23=>"loses a ticket to Step2 by admin. Reason:",24=>"loses a ticket to Step3 by admin. Reason: ",
 25=>"gets new tickets to Step2 by admin. Reason: ",26=>"gets new tickets to Step3 by admin. Reason:",
 27=>"gets new ammount of tickets to Step2 by automated input. ",28=>"gets new ammount of tickets to Step3 by automated input. ",
-29=>"gets new tickets to Step4 by admin. Reason: ",30=>"loses a ticket to Step3 by admin. Reason:");
+29=>"gets new tickets to Step4 by admin. Reason: ",30=>"loses a ticket to Step4 by admin. Reason:");
 $shorttext = array(3=>"[Ts2+1]",4=>"[Ts2+0]",5=>"[Ts2-1]",6=>"[Ts2+0]",7=>"[Ts2-1]",
 8=>"[Ts2-1]",9=>"[Ts3+1]",10=>"[Ts3+0]",11=>"[Ts3-1]",12=>"[Ts3-1]",13=>"[Ts3+0]",
 14=>"[Ts4+1]",15=>"[Ts4+0]",16=>"[Ts4-1]",17=>"[Ts4-1]",
@@ -99,7 +99,7 @@ $pps
 <td></td>
 <th>Player</th>
 <td>Action</td>
-<td>Game</td>
+<td>Game/Reason</td>
 <td>Result</td>
 </tr>
 E;

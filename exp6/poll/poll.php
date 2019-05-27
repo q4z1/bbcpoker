@@ -24,6 +24,7 @@ if($_POST['submit']!="")
     "d39bfa71ca4a502b6d7d11b842c0d94c",
     "11f0e936a54e65a22491576019b22201",
     "7a031391001a50a5f3ff8c0aade82bc7",
+	/*
     "0627adb889f17d406ed5689bce39eb1c", // Rezos
     "0aa6f14746a83d92c2e0312d32f1f3a0", // Rezos
     "0bb58d54df45a7dba8612e87cb5e1659", // Rezos
@@ -48,6 +49,7 @@ if($_POST['submit']!="")
     "e71c5c7fc0683a2ba0fe9b462e86ffdb", // Rezos
     "e950363819f117cfedf6153c9086c2c6", // Rezos
 	"6370f1156b1d4e79ff81fab545ba1493", // Rezos
+	*/
   );
   if(in_array($_POST['fp'], $blocked)){
     die('IP blocked.');

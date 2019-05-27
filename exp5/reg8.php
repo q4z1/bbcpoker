@@ -34,7 +34,10 @@ while($row = mysql_fetch_object($result))
 if($c>0) $adminmode=2;
 if($c>0) $needconfirm=1;
 else $needconfirm=0;
-if($userpass == "nelly" or $userpass=="supernoob" or $userpass=="sp0ck") 
+
+session_start();
+if($_SESSION['upc'] == 1)
+//if($userpass == "nelly" or $userpass=="supernoob" or $userpass=="sp0ck") 
 {	
 	if($adminmode==2) $adminmode=3;
 	if($_POST['mm7'] != "") $adminmode =7;
@@ -61,9 +64,7 @@ if($adminmode==0 or $adminmode==1)
 		print "<input type=\"radio\" name=\"step\" value=\"$i\"$ctext>$i";
 	}		
 	print ' &nbsp;&nbsp;or <a href="exp5/reg8.php">refresh this page</a>';
-	print '<p>Password: <input type="password" name="pass" value="';
-	print $_POST['pass']; print '">
-<input type="Submit" name="mm1" value="See Games"></p>
+	print '<p><input type="Submit" name="mm1" value="See Games"></p>
 </form>';
 	
 }

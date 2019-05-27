@@ -47,7 +47,7 @@ if($auth1==1)
 {
 		// @check if loglink is valid
 		$url = $_POST['loglink'];
-		if($url == "" || strpos($url, "log-file-analysis/?ID=") === false) $error = 900;
+		if($url == "" || strpos($url, "log-file-analysis") === false) $error = 900;
         
 		$gametemp=(int)$_POST['game'];
 		$step=floor($gametemp/100000);
@@ -213,7 +213,7 @@ if($error==0 )
 				print "</table>\n";
 				foreach($log["result"] as $pos => $player) print "<input type=\"hidden\" name=\"pl[]\" value=\"".$player["player"]."\">\n";
 				//if($step > 1){ // @XXX maybe another time - onchange step radio above!
-					print '<p>Players that where reserved but missing and should loose tickets (<span style="color: red">Only if step > 1</span>):<br>'
+					print '<p>Players that were reserved but missing and should loose tickets (<span style="color: red">Only if step > 1</span>):<br>'
 						. '<input type="Text" name="punish[]">'
 						. '<input type="Text" name="punish[]"><input type="Text" name="punish[]"><input type="Text" name="punish[]"></p>';
 				//}

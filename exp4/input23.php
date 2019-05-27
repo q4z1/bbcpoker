@@ -10,6 +10,7 @@ print "<body>";
 include "header1.php"; 
 include "exp5/nav1.php";
 include "exp6/func2.php";
+
 ?>
 <h1>Manipulate Tickets - second page</h1>
 <p>this page is only for admins</p>
@@ -89,11 +90,13 @@ if(($action < 21 or $action>30) and ($action>28 or $action<25))$error=124;
 
 $pname = trim($pname);
 
-if($userpass!="nelly" and $userpass != "supernoob" and $userpass !="sp0ck")
+session_start();
+if(!$_SESSION || !array_key_exists("upc", $_SESSION) || $_SESSION["upc"] != 1)
 { 	//if password is wrong
 	$error = 121;
 	$errorinfo1 = " ";
 }
+
 
 if($error==0) // get playerid
 {

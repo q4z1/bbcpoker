@@ -5,7 +5,7 @@ ini_set('session.use_only_cookies','1 ');
 ini_set('session.gc_maxlifetime', 60 * 60 * 24 * 13);
 //ini_set('session.save_path', '/home/yoursite/sessions');
 session_start();
-
+//die(var_export($_SESSION,true));
 require_once($_SERVER['DOCUMENT_ROOT'].'/defines.php');
 ini_set('include_path', ROOT_DIR);
 
@@ -75,7 +75,7 @@ if($wrongpassword==1) print "<h2>Wrong password (or user name)</h2>";
 if($logoutattempt>=1) print "<h2>You should be logged out now</h2>";
 
 if($goodlogin==0)
-print '<h1>Login</h1>
+print '<h1>Login (Admin Tools)</h1>
 <form action="login.php?loginattempt=1" method="post">
 <p>
 Username:<input type="text" name="nick" value=""> <br>
@@ -84,8 +84,9 @@ Password:<input id="password" type="password" name="thepassword"><br>
 </form>
 <p>Note: you need to have a bbc account to login here. if you have no BBC account yet, you can
 <a href="exp4/createaccount.php">click here to create a bbc account</a></p>
-<p>If you fail to login then send a pm or mail to supernoob.<br>
-Do not tell supernoob your password in that case.
+<p>If you fail to login then send a pm or mail to sp0ck / webmaster@pokerth.net.<br>
+Do not tell sp0ck your password in that case.<br /><br />
+<span style="color: red">This login is mostly used by BBC-Admins and/or to let your username be highlighted in a different color in BBC Shoutbox, so that everybody knows it\'s really you ;)</span>
 </p>
 ';
 

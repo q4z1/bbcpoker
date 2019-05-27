@@ -328,6 +328,15 @@ print <<<E
 <h1> Communication / Feedback </h1>
 
 <hr />
+<!--
+<div style="width: 70%; margin-left: auto; margin-right: auto;">
+<p style="color: #4f2100"><strong>Here is the 2nd round poll about BBC game settings - open until 2018-11-30:</strong><br /><br />
+<a href="http://bbc.pokerth.net/exp6/poll/poll.php?r=0&p=19" target="_blank">Click here for the Poll</a><br />
+(Only players who voted 1st round will be able to vote 2nd round)
+</p>
+</div>
+<hr />
+-->
 E;
 
 print <<<E

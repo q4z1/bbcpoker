@@ -56,12 +56,33 @@ include "exp5/nav1.php";
 <td><img src="exp5/awards/pics/award67.png"/></td></tr>
 
 <tr>
+<td><a href="http://bbcpoker.bplaced.net/exp5/players1.php?nick=827"> <font color="#000000"><b> 827</b></font></a><br></td>
+<td><img src="exp5/awards/pics/award70.png"/></td>
+<td><img src="exp1/1K_games.png"/></td></tr>
+
+<tr>
+<td><a href="http://bbcpoker.bplaced.net/exp5/players1.php?nick=Perkunas"> <font color="#000000"><b> Perkunas</b></font></a><br></td>
+<td><img src="exp5/awards/pics/perkunas_s4_2018-03.png"/></td></tr>
+
+<tr>
+<td><a href="http://bbcpoker.bplaced.net/exp5/players1.php?nick=Mr.%20Fixit"> <font color="#000000"><b> Mr. Fixit</b></font></a><br></td>
+<td><img src="exp5/awards/pics/s4_july_2018.png"/></td></tr>
+
+<tr>
+<td><a href="http://bbcpoker.bplaced.net/exp5/players1.php?nick=tripitaka"> <font color="#000000"><b> tripitaka</b></font></a><br></td>
+<td><img src="exp1/images2/s4_2018-12_tripitaka.png"/></td></tr>
+
+<tr>
+<td><a href="http://bbcpoker.bplaced.net/exp5/players1.php?nick=ollika"> <font color="#000000"><b> ollika</b></font></a><br></td>
+<td><img src="exp1/s4awards/olika_s4_201903.png"/></td></tr>
+
+<tr>
 <td><a href="http://bbcpoker.bplaced.net/exp5/players1.php?nick=supernoob"> <font color="#000000"><b> supernoob</b></font></a><br></td>
 <td><img src="exp1/HUSCawards/huscsupernoob.png"/></td></tr>
 
 <tr>
 <td><a href="http://bbcpoker.bplaced.net/exp5/players1.php?nick=Rezos"> <font color="#000000"><b> Rezos</b></font></a><br></td>
-<td><img src="exp1/NavBBC/images2/bbcwinner140926S3.png"/></td><td><img src="exp1/NavBBC/images2/bbcwinner1408S3.png"/></td><td><img src="exp1/NavBBC/images2/bbcwinner140131S3.png"/></td><td><img src="exp1/NavBBC/images2/bbcwinner10s3.png"/></td></tr>
+<td><img src="exp1/NavBBC/images2/bbcwinner140926S3.png"/></td><td><img src="exp1/NavBBC/images2/bbcwinner1408S3.png"/></td><td><img src="exp1/NavBBC/images2/bbcwinner140131S3.png"/></td><td><img src="exp1/NavBBC/images2/bbcwinner10s3.png"/></td><td><img src="exp1/1K_games.png"/></td></tr>
 
 <tr>
 <td><a href="http://bbcpoker.bplaced.net/exp5/players1.php?nick=Nervenarzt"> <font color="#000000"><b> Nervenarzt</b></font></a><br></td>
@@ -151,7 +172,7 @@ include "exp5/nav1.php";
 
 <tr>
 <td><a href="http://bbcpoker.bplaced.net/exp5/players1.php?nick=joanna1"> <font color="#000000"><b> joanna1</b></font></a><br></td>
-<td><img src="exp1/images2/BBCdino.png"/></td><td><img src="exp5/awards/pics/award69.png"/></td></tr>
+<td><img src="exp1/images2/BBCdino.png"/></td><td><img src="exp5/awards/pics/award69.png"/></td><td><img src="exp5/awards/pics/co-admin_joanna1.png"/></td></tr>
 
 <tr>
 <td><a href="http://bbcpoker.bplaced.net/exp5/players1.php?nick=sp0ck"> <font color="#000000"><b> sp0ck</b></font></a><br></td>
@@ -166,10 +187,14 @@ include "exp5/nav1.php";
 <td><img src="exp1/images2/BBCdino.png"/></td></tr>
 <tr>
 <td><a href="http://bbcpoker.bplaced.net/exp5/players1.php?nick=Joe_East"> <font color="#000000"><b> Joe_East</b></font></a><br></td>
-<td><img src="exp5/awards/pics/award45.png"/></td></tr>
+<td><img src="exp1/1K_games.png"/></td></tr>
 <tr>
 <td><a href="http://bbcpoker.bplaced.net/exp5/players1.php?nick=brak"> <font color="#000000"><b> brak</b></font></a><br></td>
 <td><img src="exp5/awards/pics/award45.png"/></td></tr>
+<tr>
+<td><a href="http://bbcpoker.bplaced.net/exp5/players1.php?nick=Mr. Fixit"> <font color="#000000"><b> Mr. Fixit</b></font></a><br></td>
+<td><img src="exp1/1K_games.png"/></td></tr>
+<tr>
 </table> 
 
 
