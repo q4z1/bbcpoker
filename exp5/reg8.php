@@ -52,7 +52,7 @@ else if($userpass!="0") print "<h2>Wrong Password</h2>";
 if($adminmode==0 or $adminmode==1)
 {
 	print '<p>Choose a Game and check registrations:</p>
-	<form action="exp5/reg8.php" method="post">';
+	<form action="/exp5/reg8.php" method="post">';
 
 	$step=(int)$_POST['step'];
 	if($step != 2 and $step != 3 and $step != 4) $step = 1; //add $step != 4
@@ -63,13 +63,13 @@ if($adminmode==0 or $adminmode==1)
 		if($step==$i) $ctext=" checked=\"true\"";
 		print "<input type=\"radio\" name=\"step\" value=\"$i\"$ctext>$i";
 	}		
-	print ' &nbsp;&nbsp;or <a href="exp5/reg8.php">refresh this page</a>';
+	print ' &nbsp;&nbsp;or <a href="/exp5/reg8.php">refresh this page</a>';
 	print '<p><input type="Submit" name="mm1" value="See Games"></p>
 </form>';
 	
 }
 if($adminmode==1 and $needconfirm==1) 
-{	print '<form action="exp5/reg8.php" method="post">';
+{	print '<form action="/exp5/reg8.php" method="post">';
 	print '<p>Password: <input type="password" name="pass" value="';
 	print $_POST['pass']; print '">
 <input type="Submit" name="mm3" value="Check confirmations"></p>
@@ -78,7 +78,7 @@ if($adminmode==1 and $needconfirm==1)
 if($adminmode==2)
 {
 	print '<h2>Dear Admin, please check the player confirmations</h2>
-<form action="exp5/reg8.php" method="post">';
+<form action="/exp5/reg8.php" method="post">';
 	print '<p>Password: <input type="password" name="pass" value="';
 	print $_POST['pass']; print '">
 <input type="Submit" name="mm3" value="Log In"></p>
@@ -132,7 +132,7 @@ if($adminmode==7)
 		if($aca[$i1]==3) print "<td>Failed - error :(</td></tr>";
 	}
 	print "</table>";
-	print '<form action="exp5/reg8.php" method="post">';
+	print '<form action="/exp5/reg8.php" method="post">';
 	print '<p>Password: <input type="password" name="pass" value="';
 	print $_POST['pass']; print '">
 <input type="Submit" name="mm0" value="Continue"></p>
@@ -143,7 +143,7 @@ if($adminmode==3)
 {
 	print '<h2>Confirmation of new Players</h2>
 <p>Please check the following table and decide for each player, if she/he can play:</p>
-<form action="exp5/reg8.php" method="post">
+<form action="/exp5/reg8.php" method="post">
 <table border=1>
 <tr><th>#</th><th>Name</th><th>PokerTh</th><th>IP</th><th>Confirm</th><th>Reject</th></tr>
 ';
@@ -180,7 +180,7 @@ if($adminmode==1)
 	$result = mysql_query($request);
 	$row = mysql_fetch_array($result);
 	$i2 = (int)$row[0];
-	print '<form action="exp5/reg8.php" method="post">';
+	print '<form action="/exp5/reg8.php" method="post">';
 	for($i1=1;$i1*10< $i2+10 or $i1==1;$i1++)
 	{	
 		$cs = 4;
@@ -211,9 +211,10 @@ if($adminmode==1)
 				if($settings==1 or $settings==3) print"<span style=\"color:#FF00FF\">new player</span>";
 				if($step==1)print "</td><td>";
 				print "$pname</td><td>";
+        $pname = rawurlencode($pname);
 				print "<small>$ip</small>";
 				print "</td>";
-				print "<td><a href=\"http://poker-heroes.com/profile.html?user=$pname\">Poker-Heroes profile</a>";
+				print "<td><a href=\"https://www.pokerth.net/component/pthranking/?view=pthranking&layout=profile&username=$pname\" target=\"blank\">Ranking-Page</a>";
 				print "</td><td><input type=\"checkbox\" name=\"remove[]\" value=\"$id\"></td>";
 			}
 			print "<!--<td><input type=\"checkbox\" name=\"rotate[]\" value=\"$id\"></td>--></tr>";
@@ -310,7 +311,7 @@ you were successful.</p>';
 	}
 	print "</table>";
 	
-	print '<form action="exp5/reg8.php" method="post">';
+	print '<form action="/exp5/reg8.php" method="post">';
 	print '<p>Password: <input type="password" name="pass" value="';
 	print $_POST['pass']; print '">
 <input type="Submit" name="mm0" value="Continue"></p>

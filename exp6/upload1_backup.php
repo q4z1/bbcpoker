@@ -16,7 +16,7 @@ include "exp5/nav1.php";
 <p>Dear Admin, only use the following stuff if you know what you are doing and have the permissions to do so.
 If you have questions, problems, etc. ask!<br>
 It would be nice, if you keep the original file on your local Computer</p>
-<form action="exp6/upload2.php" enctype="multipart/form-data" method="post">
+<form action="/exp6/upload2.php" enctype="multipart/form-data" method="post">
 <input type="hidden" name="MAX_FILE_SIZE" value="200000" />
 <p>
 HTML file: <input type="file" name="uf1"><br>

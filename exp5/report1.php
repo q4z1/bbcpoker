@@ -28,7 +28,7 @@ while($row = mysql_fetch_object($result))
 	$step=$row->step;
 	print "<hr>";
 	print "<h2>BBC Game $gameno of Step $step</h2>";
-	print "<p><a href=\"exp5/gameslist3.php?step=$step&amp;g=$gameno\">Click here for the logfile analysis</a></p>";
+	print "<p><a href=\"/exp5/gameslist3.php?step=$step&amp;g=$gameno\">Click here for the logfile analysis</a></p>";
 	$pids = array($row->p1,$row->p2,$row->p3,$row->p4,$row->p5,$row->p6,$row->p7,$row->p8,$row->p9,$row->p10);
 	print "<table border=1><tr><th>Winner</th>";
 	for($i1=2;$i1<11;$i1++) print "<td>Place $i1</td>";

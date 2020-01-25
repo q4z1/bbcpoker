@@ -119,16 +119,16 @@ if (!is_null($result)) {
   $max_page = ceil($num_rows->num / $site_rows);
   $pagination_links .= "<tr><th colspan=\"5\" style=\"font-weight: normal;\">Page:&nbsp;&nbsp;";
   if ($page > 1) {
-    $pagination_links .= "<a href=\"{$url}?page=1&sort={$sort1}\">«</a>&nbsp;";
-    $pagination_links .= "<a href=\"{$url}?page=" . ($page - 1) . "&sort={$sort1}\">«</a>&nbsp;";
+    $pagination_links .= "<a href=\"/{$url}?page=1&sort={$sort1}\">«</a>&nbsp;";
+    $pagination_links .= "<a href=\"/{$url}?page=" . ($page - 1) . "&sort={$sort1}\">«</a>&nbsp;";
   } //$page > 1
   else {
     $pagination_links .= "«&nbsp;";
   }
   $pagination_links .= "&nbsp;{$page}/{$max_page}&nbsp;&nbsp;";
   if ($page < $max_page) {
-    $pagination_links .= "<a href=\"{$url}?page=" . ($page + 1) . "&sort={$sort1}\">»</a>&nbsp;";
-    $pagination_links .= "<a href=\"{$url}?page={$max_page}&sort={$sort1}\">»</a>";
+    $pagination_links .= "<a href=\"/{$url}?page=" . ($page + 1) . "&sort={$sort1}\">»</a>&nbsp;";
+    $pagination_links .= "<a href=\"/{$url}?page={$max_page}&sort={$sort1}\">»</a>";
   } //$page < $max_page
   else {
     $pagination_links .= "»";
@@ -146,17 +146,17 @@ if ($sa) {
 // @XXX: end pagination code here
 ?>
 <h2>Table of Players </h2>
-<p><a href="<?= $url ?>?sa=1">Show all</a> entries on one site
-		or divided into <a href="<?= $url ?>">pages</a>.</p>
+<p><a href="/<?= $url ?>?sa=1">Show all</a> entries on one site
+		or divided into <a href="/<?= $url ?>">pages</a>.</p>
 <table border=1>
 <?= $pagination_links ?>
 <tr><th rowspan=2>Pos.</th>
-<th rowspan=2><a href="<?= $url ?>?sort=4<?= $sa2 ?>">Playername</a></th>
+<th rowspan=2><a href="/<?= $url ?>?sort=4<?= $sa2 ?>">Playername</a></th>
 <th colspan=3>Tickets to</th>
 <tr> 
-<th><a href="<?= $url ?>?sort=1<?= $sa2 ?>">Step 2</a></th>
-<th><a href="<?= $url ?>?sort=2<?= $sa2 ?>">Step 3</a></th>
-<th><a href="<?= $url ?>?sort=6<?= $sa2 ?>">Step 4</a></th>
+<th><a href="/<?= $url ?>?sort=1<?= $sa2 ?>">Step 2</a></th>
+<th><a href="/<?= $url ?>?sort=2<?= $sa2 ?>">Step 3</a></th>
+<th><a href="/<?= $url ?>?sort=6<?= $sa2 ?>">Step 4</a></th>
 </tr>
 <?php
 

@@ -20,13 +20,13 @@ $sort4 = array("","Season Points","Season Games","Season Score","All-Time Points
 print "<b>$sort4</b>";
 print ". You can choose another ranking:<br>\n";
 if ($sort2 != 1)
-  print " <a href=\"exp2/ranking1.php?sort=1\">Sort by Season Points</a> ";
+  print " <a href=\"/exp2/ranking1.php?sort=1\">Sort by Season Points</a> ";
 if ($sort2 != 3)
-  print " <a href=\"exp2/ranking1.php?sort=3\">Sort by Season Score</a> ";
+  print " <a href=\"/exp2/ranking1.php?sort=3\">Sort by Season Score</a> ";
 if ($sort2 != 4)
-  print " <a href=\"exp2/ranking1.php?sort=4\">Sort by All-Time Points</a> ";
+  print " <a href=\"/exp2/ranking1.php?sort=4\">Sort by All-Time Points</a> ";
 if ($sort2 != 6)
-  print " <a href=\"exp2/ranking1.php?sort=6\">Sort by All-Time Score</a> ";
+  print " <a href=\"/exp2/ranking1.php?sort=6\">Sort by All-Time Score</a> ";
 // @XXX: old code :
 /*
 $sort3 = array("","saisonpoints","saisongames","saisonscore","alltimepoints","alltimegames","alltimescore")[$sort2];
@@ -80,16 +80,16 @@ if (!is_null($result)) {
   $max_page = ceil($num_rows->num / $site_rows);
   $pagination_links .= "<tr><th colspan=\"8\" style=\"font-weight: normal;\">Page:&nbsp;&nbsp;";
   if ($page > 1) {
-    $pagination_links .= "<a href=\"{$url}?page=1&sort={$sort1}\">«</a>&nbsp;";
-    $pagination_links .= "<a href=\"{$url}?page=" . ($page - 1) . "&sort={$sort1}\">‹</a>&nbsp;";
+    $pagination_links .= "<a href=\"/{$url}?page=1&sort={$sort1}\">«</a>&nbsp;";
+    $pagination_links .= "<a href=\"/{$url}?page=" . ($page - 1) . "&sort={$sort1}\">‹</a>&nbsp;";
   } //$page > 1
   else {
     $pagination_links .= "«&nbsp;";
   }
   $pagination_links .= "&nbsp;{$page}/{$max_page}&nbsp;&nbsp;";
   if ($page < $max_page) {
-    $pagination_links .= "<a href=\"{$url}?page=" . ($page + 1) . "&sort={$sort1}\">›</a>&nbsp;";
-    $pagination_links .= "<a href=\"{$url}?page={$max_page}&sort={$sort1}\">»</a>";
+    $pagination_links .= "<a href=\"/{$url}?page=" . ($page + 1) . "&sort={$sort1}\">›</a>&nbsp;";
+    $pagination_links .= "<a href=\"/{$url}?page={$max_page}&sort={$sort1}\">»</a>";
   } //$page < $max_page
   else {
     $pagination_links .= "»";
@@ -107,10 +107,10 @@ if ($sa) {
 // @XXX: end pagination code here 
 ?>
 </p>
-<p>Do you want to know how points and score is calculated? <a href="exp4/formula1.php">Then click here.</a></p>
+<p>Do you want to know how points and score is calculated? <a href="/exp4/formula1.php">Then click here.</a></p>
 <h2>Table of Players </h2>
-<p><a href="<?= $url ?>?sa=1&sort=<?= $sort1 ?>">Show all</a> entries on one site
-		or divided into <a href="<?= $url ?>?sort=<?= $sort1 ?>">pages</a>.</p>
+<p><a href="/<?= $url ?>?sa=1&sort=<?= $sort1 ?>">Show all</a> entries on one site
+		or divided into <a href="/<?= $url ?>?sort=<?= $sort1 ?>">pages</a>.</p>
 <table border=1>
 <?= $pagination_links ?>
 <tr><th rowspan=2>Pos.</th>
@@ -118,12 +118,12 @@ if ($sa) {
 <th colspan=3>Current Season</th>
 <th colspan=3>All-Time</th></tr>
 <tr> 
-<th><a href="<?= $url ?>?sort=1<?= $sa2 ?>">Points</a></th>
-<th><a href="<?= $url ?>?sort=2<?= $sa2 ?>">Games</a></th>
-<th><a href="<?= $url ?>?sort=3<?= $sa2 ?>">Score</a></th>
-<th><a href="<?= $url ?>?sort=4<?= $sa2 ?>">Points</a></th>
-<th><a href="<?= $url ?>?sort=5<?= $sa2 ?>">Games</a></th>
-<th><a href="<?= $url ?>?sort=6<?= $sa2 ?>">Score</a></th>
+<th><a href="/<?= $url ?>?sort=1<?= $sa2 ?>">Points</a></th>
+<th><a href="/<?= $url ?>?sort=2<?= $sa2 ?>">Games</a></th>
+<th><a href="/<?= $url ?>?sort=3<?= $sa2 ?>">Score</a></th>
+<th><a href="/<?= $url ?>?sort=4<?= $sa2 ?>">Points</a></th>
+<th><a href="/<?= $url ?>?sort=5<?= $sa2 ?>">Games</a></th>
+<th><a href="/<?= $url ?>?sort=6<?= $sa2 ?>">Score</a></th>
 </tr>
 <?php
 $i = 0;
@@ -144,7 +144,7 @@ while ($row = mysql_fetch_object($result)) {
   $ss1     = floor($ss3 / 10);
   $ss2     = $ss3 - $ss1 * 10;
   print "<tr><td>" . ($i + (($page - 1) * 50)) . "</td>"; // @XXX: aktuelle Zeile muss mit pagination berücksichtigt werden
-  print "<td><a href=\"exp5/players1.php?id=$pid\">$pname</a></td>";
+  print "<td><a href=\"/exp5/players1.php?id=$pid\">$pname</a></td>";
   print "<td>$spoints</td>";
   print "<td>$sgames</td>";
   printf("<td>%d.%d</td>", $ss1, $ss2);

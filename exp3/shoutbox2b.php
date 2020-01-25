@@ -46,16 +46,16 @@ if (!$search) {
     $max_page = ceil($num_rows->num / $site_rows);
     $pagination_links .= "<div id=\"pagination\" style=\"font-weight: normal;\">Page:&nbsp;&nbsp;";
     if ($page > 1) {
-      $pagination_links .= "<a href=\"{$url}?page=1\">«</a>&nbsp;";
-      $pagination_links .= "<a href=\"{$url}?page=" . ($page - 1) . "\"></a>&nbsp;";
+      $pagination_links .= "<a href=\"/{$url}?page=1\">«</a>&nbsp;";
+      $pagination_links .= "<a href=\"/{$url}?page=" . ($page - 1) . "\"></a>&nbsp;";
     } //$page > 1
     else {
       $pagination_links .= "«&nbsp;";
     }
     $pagination_links .= "&nbsp;{$page}/{$max_page}&nbsp;&nbsp;";
     if ($page < $max_page) {
-      $pagination_links .= "<a href=\"{$url}?page=" . ($page + 1) . "\"></a>&nbsp;";
-      $pagination_links .= "<a href=\"{$url}?page={$max_page}\">»</a>";
+      $pagination_links .= "<a href=\"/{$url}?page=" . ($page + 1) . "\"></a>&nbsp;";
+      $pagination_links .= "<a href=\"/{$url}?page={$max_page}\">»</a>";
     } //$page < $max_page
     else {
       $pagination_links .= "»";
@@ -110,7 +110,7 @@ while ($row = mysql_fetch_object($result)) {
     if ($i2 === false)
       $i2 = strlen($msg);
     $url = substr($msg, $i3, $i2 - $i3);
-    $msg = substr($msg, 0, $i3) . "<a href=\"$url\" target=\"_blank\">$url</a>" . substr($msg, $i2, strlen($msg) - 1);
+    $msg = substr($msg, 0, $i3) . "<a href=\"/$url\" target=\"_blank\">$url</a>" . substr($msg, $i2, strlen($msg) - 1);
     $i2  = $i2 + 30;
   } //$i1 = 0; $i1 < 6; $i1++
   if ($setting == 4) {
@@ -141,9 +141,9 @@ while ($row = mysql_fetch_object($result)) {
 } //$row = mysql_fetch_object($result)
 if (!$search && !$json) {
   if ($GET_['sa'] != 1 and $amode == 1)
-    $out .= '<p style="text-align:center"><a href="exp4/shoutbox2.php?admin=1&sa=1">Show all Messages</a></p>';
+    $out .= '<p style="text-align:center"><a href="/exp4/shoutbox2.php?admin=1&sa=1">Show all Messages</a></p>';
   if ($GET_['sa'] != 1 and $amode != 1)
-    $out .= '<p style="text-align:center"><a href="exp4/shoutbox2.php?sa=1">Show all Messages</a></p>';
+    $out .= '<p style="text-align:center"><a href="/exp4/shoutbox2.php?sa=1">Show all Messages</a></p>';
 } //!$search && !$json
 if ($json) {
   // ausgabe im json-format

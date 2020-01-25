@@ -56,7 +56,7 @@ if($step<4)
 		if($i3==-1)$text1="last game";
 		if($i3==0)$text1="next game";
 		if($i3<-1)$text1="old game";
-		print "<li$tc[$i3]><a href=\"exp5/reg3.php?s=$step&g=$i3\">$text1</a></li>\n";
+		print "<li$tc[$i3]><a href=\"/exp5/reg3.php?s=$step&g=$i3\">$text1</a></li>\n";
 	
 	}
 	print "\n</ul></nav>\n";
@@ -71,8 +71,8 @@ if($step<4)
 	if($pgame==2) $t2=" class=\"current\"";
 	$t2="";
 	print "<nav class=\"nav\">
-	<ul><li$t1><a href=\"exp5/reg3.php?s=3&amp;g=1\">Next Game</a></li>
-	<li$t2><a href=\"exp5/reg3.php?s=3&amp;g=2\">Old Game</a></li>
+	<ul><li$t1><a href=\"/exp5/reg3.php?s=3&amp;g=1\">Next Game</a></li>
+	<li$t2><a href=\"/exp5/reg3.php?s=3&amp;g=2\">Old Game</a></li>
 	</ul></nav>";
 	if($pgame==1) $dtarr=calcnextdate($step);
 	else $dtarr=calcnextdate($step,$pgame-1);
@@ -85,8 +85,8 @@ if($step==4)
 	if($pgame==0) $t1=" class=\"current\"";
 	if($pgame==-1) $t2=" class=\"current\"";
 	print "<nav class=\"nav\">
-	<ul><li$t1><a href=\"exp5/reg3.php?s=4&amp;g=0\">Next Game</a></li>
-	<li$t2><a href=\"exp5/reg3.php?s=4&amp;g=-1\">Last Game</a></li>
+	<ul><li$t1><a href=\"/exp5/reg3.php?s=4&amp;g=0\">Next Game</a></li>
+	<li$t2><a href=\"/exp5/reg3.php?s=4&amp;g=-1\">Last Game</a></li>
 	</ul></nav>";
 	if($pgame==0)
 	{
@@ -193,7 +193,7 @@ for($i1=1;$i1*10< $i2+11 or $i1==1;$i1++) // $i1 is the table number
 		}
 		if($settings==32) print "<span style=\"color:#ff00ff\">admin</span>";
 		print "</td><td>";
-		if($pid!=999) print "<a href=\"exp5/players1.php?id=$pid\">$pname</a>";
+		if($pid!=999) print "<a href=\"/exp5/players1.php?id=$pid\">$pname</a>";
 		if($pid==999) print "<a href=\"https://www.pokerth.net/leaderboard/$pname\">$pname</a>";
 		//print "<td><a href=\"http://poker-heroes.com/profile.html?user=$pname\">Poker-Heroes profile</a>";
 		print "</td></tr>";
@@ -204,7 +204,7 @@ print "<p>if your table isnt full, we try to find new players in the lobby direc
 You also can become a substitute for another table</p>";
 if($step==1) print "<p>Games start only with 10 players</p>";
 if($step==2 or $step==3 or $step==4) print "<p>Important for Step 2, 3, and 4: <br>you can cancel until 18:00 (that means 90 minutes before the game starts) 
-without losing your ticket, by posting <a href=\"exp4/shoutbox1.php\">in our Shoutbox</a></p>";
+without losing your ticket, by posting <a href=\"/exp4/shoutbox1.php\">in our Shoutbox</a></p>";
 
 ?>
 

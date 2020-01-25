@@ -17,15 +17,15 @@ if($season<=0 or !file_exists("husc/s$season/status.txt")) $season=(int)file_get
 print <<<EOF
 <nav class="nav">
 <ul>
-	<li><a href="index.php">Home</a></li>
-	<li><a href="exp4/description.php">Description</a></li>
-	<li><a href="exp5/reg3.php">Registration</a></li>
-	<li><a href="exp5/report1.php">Results</a></li>
-	<li><a href="exp4/tickets2.php">Tickets</a></li>
-	<li><a href="exp6/rating6.php?g=30">Rankings</a></li>
-	<li><a href="exp1/event7.php">Events</a></li>
+	<li><a href="/index.php">Home</a></li>
+	<li><a href="/exp4/description.php">Description</a></li>
+	<li><a href="/exp5/reg3.php">Registration</a></li>
+	<li><a href="/exp5/report1.php">Results</a></li>
+	<li><a href="/exp4/tickets2.php">Tickets</a></li>
+	<li><a href="/exp6/rating6.php?g=30">Rankings</a></li>
+	<li><a href="/exp1/event7.php">Events</a></li>
 	<li class="current"><a href="husc/index1.php">HUSC</a></li>
-	<li><a href="exp4/shoutbox1.php">Shoutbox</a></li>
+	<li><a href="/exp4/shoutbox1.php">Shoutbox</a></li>
 </ul>
 </nav>
 EOF;

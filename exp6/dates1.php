@@ -39,10 +39,10 @@ Please note that the specified time is for the BBC Time Zone
 </p>
 <p>
 Before you create dates, you should take a look at the 
-<a href="exp6/dates3.php?d=0">games that are already planned</a>
+<a href="/exp6/dates3.php?d=0">games that are already planned</a>
 </p>
 
-<form action="exp6/dates2.php" enctype="multipart/form-data" method="post">
+<form action="/exp6/dates2.php" enctype="multipart/form-data" method="post">
 <p>
 <input type="radio" name="step" value="1">Step 1<br>
 <input type="radio" name="step" value="2">Step 2<br>
@@ -61,7 +61,7 @@ E;
 
 } // end Admin part
 else
-print "<p>Hello, if you are an admin, you could visit that page: <a href=\"login.php\">(click here)</a></p>";
+print "<p>Hello, if you are an admin, you could visit that page: <a href=\"/login.php\">(click here)</a></p>";
 
 
 ?>

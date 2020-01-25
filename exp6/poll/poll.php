@@ -109,9 +109,9 @@ $fname1="exp6/poll/questions$p.txt";
 $fname2="exp6/poll/answers$p.txt";
 $fname3="exp6/poll/fp$p.txt";
 
-$ris0link="<a href=\"exp6/poll/poll.php?p=$p&amp;r=0\">here is the poll</a>";
-$ris2link="<a href=\"exp6/poll/poll.php?p=$p&amp;r=2\">here are the results</a>";
-$ris3link="<a href=\"exp6/poll/poll.php?p=$p&amp;r=3\">here is the raw data of results</a>";
+$ris0link="<a href=\"/exp6/poll/poll.php?p=$p&amp;r=0\">here is the poll</a>";
+$ris2link="<a href=\"/exp6/poll/poll.php?p=$p&amp;r=2\">here are the results</a>";
+$ris3link="<a href=\"/exp6/poll/poll.php?p=$p&amp;r=3\">here is the raw data of results</a>";
 	
 
 
@@ -309,7 +309,7 @@ E2;
 		fwrite($file,$savetext . "|fp:".$_REQUEST['fp']);
 		fclose($file);
 		print <<<E3
-		<p>Thank you for your participation! <a href="exp6/poll/poll.php?p=$p&r=2">Click here to see the results</a></p>
+		<p>Thank you for your participation! <a href="/exp6/poll/poll.php?p=$p&r=2">Click here to see the results</a></p>
 E3;
 	}
 	if($r==1 and $error!=0)
@@ -330,7 +330,7 @@ E4;
 	$printtext1= <<<E5
 	<p><small>Note: In this Poll, everybody can see what you choose as answers. that way you can check if your vote is counted correctly.</small></p>
 	
-	<form method="post" action="exp6/poll/poll.php?p=$p&r=1">
+	<form method="post" action="/exp6/poll/poll.php?p=$p&r=1">
   <input type="hidden" name="fp" id="fp" value="" />
 	<p>Enter your Name $bbconlytext: <input type="text" name="pname" value="$user"></p>
 	

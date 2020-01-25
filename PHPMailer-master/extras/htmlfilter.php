@@ -175,11 +175,11 @@ function tln_getnxtag($body, $offset)
     /**
      * There are 3 kinds of tags:
      * 1. Opening tag, e.g.:
-     *	  <a href="blah">
+     *	  <a href="/blah">
      * 2. Closing tag, e.g.:
      *	  </a>
      * 3. XHTML-style content-less tag, e.g.:
-     *	  <img src="blah"/>
+     *	  <img src="/blah"/>
      */
     switch (substr($body, $pos, 1)) {
     case '/':
@@ -234,7 +234,7 @@ function tln_getnxtag($body, $offset)
     case '/':
         /**
          * This is an xhtml-style tag with a closing / at the
-         * end, like so: <img src="blah"/>. Check if it's followed
+         * end, like so: <img src="/blah"/>. Check if it's followed
          * by the closing bracket. If not, then this tag is invalid
          */
         if (substr($body, $pos, 2) == '/>') {
@@ -335,7 +335,7 @@ function tln_getnxtag($body, $offset)
         case '/':
             /**
              * This is an xhtml-style tag with a closing / at the
-             * end, like so: <img src="blah"/>. Check if it's followed
+             * end, like so: <img src="/blah"/>. Check if it's followed
              * by the closing bracket. If not, then this tag is invalid
              */
             if (substr($body, $pos, 2) == '/>') {

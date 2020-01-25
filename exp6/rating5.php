@@ -73,7 +73,7 @@ $n2=$_GET['pl2'];
 
 print <<<E
 <h2> Parameters</h2>
-<form action="exp6/rating5.php" method=get>
+<form action="/exp6/rating5.php" method=get>
 Start Rating:<input type="text" name="startrating" value=$startrating><br>
 difference between players  <input type="text" name="dif" value=$probdiff><br>
 Speed at Start: <input type="text" name="start" value=$startspeed>
@@ -210,9 +210,9 @@ if($spid1!=998 and $spid2!=998)
 	$n2=$_GET['pl2'];
 	print "<p>you selected the players $n1 and $n2</p><br>\n";
 	print <<<E
-	<img src="exp6/temppic1.png" alt="t"><br>
-	<img src="exp6/temppic2.png" alt="t"><br>
-	<img src="exp6/temppic3.png" alt="t"><br>
+	<img src="/exp6/temppic1.png" alt="t"><br>
+	<img src="/exp6/temppic2.png" alt="t"><br>
+	<img src="/exp6/temppic3.png" alt="t"><br>
 	
 E;
 */
@@ -239,7 +239,7 @@ if($spid1!=0 or $spid2!=0)
 	$n2=$_GET['pl2'];
 	print "<p>you selected the players $n1 and $n2</p><br>\n";
 	print <<<E
-	<img src="exp6/temppic5.png" alt="t"><br>
+	<img src="/exp6/temppic5.png" alt="t"><br>
 	
 E;
 

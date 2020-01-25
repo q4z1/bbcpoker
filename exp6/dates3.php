@@ -34,7 +34,7 @@ print <<<E
 <h1>Control Dates of BBC games</h1>
 <p>Dear Admin, this is a list of all planned bbc games for step 1,2, and 3.
 You can create new dates 
-<a href="exp6/dates1.php">here</a>
+<a href="/exp6/dates1.php">here</a>
 The time zone in the following table will be the BBC time zone
 (Central Europe, Paris, Berlin, CET/CEST).
 Most of the games will be auto-generated 40-45 days in advance.
@@ -44,10 +44,10 @@ Deletion of games is only possible in the next 35 days.
 E;
 
 if($d==0) print "<p>You are in normal mode. you can just see a list of planned games</p>";
-if($d==0) print "<p><a href=\"exp6/dates3.php?d=1\">Go to Delete Mode - Delete Dates!</a></p>\n";
+if($d==0) print "<p><a href=\"/exp6/dates3.php?d=1\">Go to Delete Mode - Delete Dates!</a></p>\n";
 if($d==1) print "<p>You are in \"Delete Mode\", be careful what you are doing, because you
 have the power to delete dates here!.</p>
-<p><a href=\"exp6/dates3.php?d=0\">Go to normal mode</a></p>
+<p><a href=\"/exp6/dates3.php?d=0\">Go to normal mode</a></p>
 
 <form method=\"post\" action=\"exp6/dates4.php\">
 ";
@@ -86,7 +86,7 @@ print "<br><input type=\"submit\" value=\"Delete Game\">
 
 } // end Admin part
 else
-print "<p>Hello, if you are an admin, you could visit that page: <a href=\"login.php\">(click here)</a></p>";
+print "<p>Hello, if you are an admin, you could visit that page: <a href=\"/login.php\">(click here)</a></p>";
 
 
 ?>

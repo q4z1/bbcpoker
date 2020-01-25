@@ -28,9 +28,9 @@ $url2 = "exp3/shoutbox2b.php";
 $url1 = "exp3/shoutbox1b.php";
 ?>
 <!-- @XXX: paging etc. - include jquery & featherlight: -->
-<link href="exp3/featherlight.min.css" type="text/css" rel="stylesheet" title="Featherlight Styles" />
-<script type="text/javascript" src="exp3/jquery-1.11.1.min.js"></script>
-<script type="text/javascript" src="exp3/featherlight.min.js"></script>
+<link href="/exp3/featherlight.min.css" type="text/css" rel="stylesheet" title="Featherlight Styles" />
+<script type="text/javascript" src="/exp3/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="/exp3/featherlight.min.js"></script>
 <!-- @xxx: paging etc. - JavaScript Code (depends on jquery!) -->
 <script type='text/javascript'>
 	
@@ -152,7 +152,7 @@ $url1 = "exp3/shoutbox1b.php";
 	{
 		var obj = json.responseJSON;
 		if (showall == 0) {
-			$('#showall').html("<a href=\"#\" id=\"show_all\">Show All Messages</a>");
+			$('#showall').html("<a href=\"/#\" id=\"show_all\">Show All Messages</a>");
 			$('#show_all').click(function(){
 				showall = 1;
 				msg_refresh();
@@ -163,7 +163,7 @@ $url1 = "exp3/shoutbox1b.php";
 		else
 		{
 			$('#paging').html("");
-			$('#showall').html("<a href=\"#\" id=\"show_paging\">Show Pages</a>");
+			$('#showall').html("<a href=\"/#\" id=\"show_paging\">Show Pages</a>");
 			$('#show_paging').click(function(){
 				showall = 0;
 				msg_refresh();
@@ -187,16 +187,16 @@ $url1 = "exp3/shoutbox1b.php";
 		
 		var pagination_links = "Page:&nbsp;&nbsp;";
 		if (actPage > 1) {
-			pagination_links += "<a href=\"#\" class=\"page\" _data_page_=\"1\">«</a>&nbsp;";
-			pagination_links += "<a href=\"#\" class=\"page\" _data_page_=\"" + (actPage - 1) + "\"></a>&nbsp;";
+			pagination_links += "<a href=\"/#\" class=\"page\" _data_page_=\"1\">«</a>&nbsp;";
+			pagination_links += "<a href=\"/#\" class=\"page\" _data_page_=\"" + (actPage - 1) + "\"></a>&nbsp;";
 		} //$page > 1
 		else {
 			pagination_links += "«&nbsp;";
 		}
 		pagination_links += "&nbsp;" + actPage +"/" + max_page + "&nbsp;&nbsp;";
 		if (actPage < max_page) {
-			pagination_links += "<a href=\"#\" class=\"page\" _data_page_=\"" + (actPage + 1) + "\"></a>&nbsp;";
-			pagination_links += "<a href=\"#\" class=\"page\" _data_page_=\"" + max_page + "\">»</a>";
+			pagination_links += "<a href=\"/#\" class=\"page\" _data_page_=\"" + (actPage + 1) + "\"></a>&nbsp;";
+			pagination_links += "<a href=\"/#\" class=\"page\" _data_page_=\"" + max_page + "\">»</a>";
 		} //$page < $max_page
 		else {
 			pagination_links += "»";
@@ -265,9 +265,9 @@ VALUES
     print "<h2>an error occured</h2>";
 } //$_POST['send'] != ""
 if ($amode == 1)
-  print '<p><a href="exp4/shoutbox1.php">Switch to normal mode</a></p>';
+  print '<p><a href="/exp4/shoutbox1.php">Switch to normal mode</a></p>';
 if ($amode == 2)
-  print '<p><a href="exp4/shoutbox1.php?admin=1">Switch to admin mode</a></p>';
+  print '<p><a href="/exp4/shoutbox1.php?admin=1">Switch to admin mode</a></p>';
 $url1 = "exp4/shoutbox1.php";
 if ($amode == 1)
   $url1 = "exp4/shoutbox1.php?admin=1";
@@ -275,11 +275,11 @@ print <<<E
 <h1> Chat / Feedback </h1>
 
 <p><!---stuff you can discuss here: <a href="http://bbcpoker.bplaced.net/exp6/poll/poll.php?p=4">CLICK HERE</a><br>
-&gt;&gt;&gt; Participate in our <a href="exp6/poll/poll.php?p=4">POLL</a> &lt;&lt;&lt;<br><small>until monday 21:40</small>---></p>
-<p><!--<big><a href="exp6/poll/poll.php?p=5">NEW POLL HERE</a></big>--></p>
+&gt;&gt;&gt; Participate in our <a href="/exp6/poll/poll.php?p=4">POLL</a> &lt;&lt;&lt;<br><small>until monday 21:40</small>---></p>
+<p><!--<big><a href="/exp6/poll/poll.php?p=5">NEW POLL HERE</a></big>--></p>
 <br> 
 <h3> Make a New Message </h3>
-<form action="$url1" method="post" >
+<form action="/$url1" method="post" >
 E;
 if ($user == "")
   $user = $_COOKIE['user1'];
@@ -302,7 +302,7 @@ print <<<E
 <input type="Submit" name="send" value="Send Message">
 </form>
 <hr>
-<p><a href="#" id="msg_refresh">Refresh Messages</a> (will be done automatically every 30 seconds)</p>
+<p><a href="/#" id="msg_refresh">Refresh Messages</a> (will be done automatically every 30 seconds)</p>
 <div style="margin: 5px auto; width: 80%;">
 <div id="showall" style="text-align: left; float: left; width: 20%"></div>
 <div id="paging" style="text-align: left; display: none; float: left;"></div>

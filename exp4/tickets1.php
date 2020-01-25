@@ -78,10 +78,10 @@ if(file_exists("exp4/ticketlog1.txt"))
 	for($i2=1;$i2<=$pages;$i2++)
 	{
 		if($page==$i2 and $showall!=1) $pps.="$i2\n";
-		else $pps.="<a href=\"exp4/tickets1.php?page=$i2\">$i2</a>\n";
+		else $pps.="<a href=\"/exp4/tickets1.php?page=$i2\">$i2</a>\n";
 	}
 	if($showall==1) $pps.="show all";
-	else $pps.="<a href=\"exp4/tickets1.php?showall=1\">show all</a></p>";
+	else $pps.="<a href=\"/exp4/tickets1.php?showall=1\">show all</a></p>";
 	
 	print <<<E
 $pps

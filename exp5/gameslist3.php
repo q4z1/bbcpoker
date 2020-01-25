@@ -89,7 +89,7 @@ else
 	require_once $_SERVER['DOCUMENT_ROOT'].'/defines.php';
 chdir(ROOT_DIR);
 	if(!file_exists($lfname))$lfname="exp6/lf3/g$gameno"."s$step.html";
-	if(file_exists($lfname)) print "<iframe src=\"$lfname\" height=600 style=\"width:90%; \"></iframe>";
+	if(file_exists($lfname)) print "<iframe src=\"/$lfname\" height=600 style=\"width:90%; \"></iframe>";
 	else print "<p>We could not find the Logfile Analysis</p>";
 }
 

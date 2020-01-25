@@ -60,9 +60,9 @@ Please join the BBC Hello World Cup !
 	<h2> Hello World Cup Awards</h2>
 	<h4>Thanks to GnomeHole for Supercool Medals</h4>	
 		<figure>
-			<img src="exp1/images2/HelloWorldmedals/Supgoldgr175.png" alt="GoldMedal" title="GoldMedal" />
-			<img src="exp1/images2/HelloWorldmedals/Supsilvergr175.png" alt="SilverMedal" title="SilverMedal"/>
-			<img src="exp1/images2/HelloWorldmedals/Supbronzegr175.png" alt="BronzeMedal" title="BronzeMedal" />
+			<img src="/exp1/images2/HelloWorldmedals/Supgoldgr175.png" alt="GoldMedal" title="GoldMedal" />
+			<img src="/exp1/images2/HelloWorldmedals/Supsilvergr175.png" alt="SilverMedal" title="SilverMedal"/>
+			<img src="/exp1/images2/HelloWorldmedals/Supbronzegr175.png" alt="BronzeMedal" title="BronzeMedal" />
 			
 			</figure><br>
 	<h2>Registration</h2>
@@ -84,7 +84,7 @@ Gottesknecht, LeftBrain, Graye, nj082324, fojo, Acabi
 </p><br>
 
 <h2>Seeding</h2>
-<p>by https://www.random.org/lists : <a href="exp1/images2/SupCapture2.png"> SCREENSHOT1</a>, <a href="exp1/images2/SupCapture1.png"> SCREENSHOT2</a>
+<p>by https://www.random.org/lists : <a href="/exp1/images2/SupCapture2.png"> SCREENSHOT1</a>, <a href="/exp1/images2/SupCapture1.png"> SCREENSHOT2</a>
 <table border=1>
 <tr><th>HelloWorldCup T1</th><th>HelloWorldCup T2</th><th>HelloWorldCup T3</th><th>HelloWorldCup T4</th><th>HelloWorldCup T5</th></tr>
 <tr><th>Saufi</th><th>sp0ck</th><th>ganja</th><th>joe4135</th><th>joanna1</th></tr>

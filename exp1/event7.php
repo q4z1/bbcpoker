@@ -54,9 +54,9 @@ Event open to everyone,
 		<h2>Valentine's Day Cup Awards</h2>
 	
 		<figure>
-			<img src="exp1/images2/Valentine/ValOr.png" alt="GoldMedal" title="GoldMedal" />
-			<img src="exp1/images2/Valentine/ValArg.png" alt="SilverMedal" title="SilverMedal" />
-			<img src="exp1/images2/Valentine/ValBronze.png" alt="BronzeMedal" title="BronzeMedal"  />
+			<img src="/exp1/images2/Valentine/ValOr.png" alt="GoldMedal" title="GoldMedal" />
+			<img src="/exp1/images2/Valentine/ValArg.png" alt="SilverMedal" title="SilverMedal" />
+			<img src="/exp1/images2/Valentine/ValBronze.png" alt="BronzeMedal" title="BronzeMedal"  />
 		</figure><br>
 		
 <h2>Seeding </h2>

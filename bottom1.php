@@ -1,6 +1,6 @@
 <br><hr><br>
 <p>
-<a href="exp4/shoutbox1.php">Please give Feedback here! (or chat :) ) </a>
+<a href="/exp4/shoutbox1.php">Please give Feedback here! (or chat :) ) </a>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 <?php

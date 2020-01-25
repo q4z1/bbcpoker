@@ -24,8 +24,8 @@ include "header1.php";
 include "exp5/nav1.php";
 // @XXX: debug div:
 // echo '<div id="debug" style="display:none"></div>';
-$url2 = "exp4/shoutbox2.php";
-$url1 = "exp4/shoutbox1.php";
+$url2 = "/exp4/shoutbox2.php";
+$url1 = "/exp4/shoutbox1.php";
 ?>
 <!-- @XXX: paging etc. - include jquery & featherlight: -->
 <link href="/exp4/featherlight.min.css" type="text/css" rel="stylesheet" title="Featherlight Styles" />
@@ -183,32 +183,36 @@ function fp()
 	
 	function fill_msg_box(json)
 	{
-		var obj = json.responseJSON;
-		if (showall == 0) {
-			$('#showall').html("<a href=\"#\" id=\"show_all\">Show All Messages</a>");
-			$('#show_all').click(function(){
-				showall = 1;
-				msg_refresh();
-				return false;
-			});
-			build_paging(obj.page, obj.max_page);
-		}
-		else
-		{
-			$('#paging').html("");
-			$('#showall').html("<a href=\"#\" id=\"show_paging\">Show Pages</a>");
-			$('#show_paging').click(function(){
-				showall = 0;
-				msg_refresh();
-				return false;
-			});
-		}
-		
+		try{
+			var obj = json.responseJSON;
+			if (showall == 0) {
+				$('#showall').html("<a href=\"/#\" id=\"show_all\">Show All Messages</a>");
+				$('#show_all').click(function(){
+					showall = 1;
+					msg_refresh();
+					return false;
+				});
+				build_paging(obj.page, obj.max_page);
+			}
+			else
+			{
+				$('#paging').html("");
+				$('#showall').html("<a href=\"/#\" id=\"show_paging\">Show Pages</a>");
+				$('#show_paging').click(function(){
+					showall = 0;
+					msg_refresh();
+					return false;
+				});
+			}
+
+			//$( '#msg_box' ).html( obj.html  );
+			// @XXX: added utf-8 support with decoding any html-entities except for html-tags
+			var decoded = Encoder.htmlDecode(obj.html);
+			$( '#msg_box' ).html( decoded  );
 		//$( '#msg_box' ).html( obj.html  );
-		// @XXX: added utf-8 support with decoding any html-entities except for html-tags
-		var decoded = Encoder.htmlDecode(obj.html);
-		$( '#msg_box' ).html( decoded  );
-		//$( '#msg_box' ).html( obj.html  );
+		}catch(e){
+			console.log(e);
+		}
 	}
 	
 	function build_paging(actPage, max_page)
@@ -225,16 +229,16 @@ function fp()
 		
 		var pagination_links = "Page:&nbsp;&nbsp;";
 		if (actPage > 1) {
-			pagination_links += "<a href=\"#\" class=\"page\" _data_page_=\"1\">«</a>&nbsp;";
-			pagination_links += "<a href=\"#\" class=\"page\" _data_page_=\"" + (actPage - 1) + "\">«</a>&nbsp;";
+			pagination_links += "<a href=\"/#\" class=\"page\" _data_page_=\"1\">«</a>&nbsp;";
+			pagination_links += "<a href=\"/#\" class=\"page\" _data_page_=\"" + (actPage - 1) + "\">«</a>&nbsp;";
 		} //$page > 1
 		else {
 			pagination_links += "«&nbsp;";
 		}
 		pagination_links += "&nbsp;" + actPage +"/" + max_page + "&nbsp;&nbsp;";
 		if (actPage < max_page) {
-			pagination_links += "<a href=\"#\" class=\"page\" _data_page_=\"" + (actPage + 1) + "\">»</a>&nbsp;";
-			pagination_links += "<a href=\"#\" class=\"page\" _data_page_=\"" + max_page + "\">»</a>";
+			pagination_links += "<a href=\"/#\" class=\"page\" _data_page_=\"" + (actPage + 1) + "\">»</a>&nbsp;";
+			pagination_links += "<a href=\"/#\" class=\"page\" _data_page_=\"" + max_page + "\">»</a>";
 		} //$page < $max_page
 		else {
 			pagination_links += "»";
@@ -318,12 +322,12 @@ VALUES
     print "<h2>an error occured</h2>";
 } //$_POST['send'] != ""
 if ($amode == 1)
-  print '<p><a href="exp4/shoutbox1.php">Switch to normal mode</a></p>';
+  print '<p><a href="/exp4/shoutbox1.php">Switch to normal mode</a></p>';
 if ($amode == 2)
-  print '<p><a href="exp4/shoutbox1.php?admin=1">Switch to admin mode</a></p>';
-$url1 = "exp4/shoutbox1.php";
+  print '<p><a href="/exp4/shoutbox1.php?admin=1">Switch to admin mode</a></p>';
+$url1 = "/exp4/shoutbox1.php";
 if ($amode == 1)
-  $url1 = "exp4/shoutbox1.php?admin=1";
+  $url1 = "/exp4/shoutbox1.php?admin=1";
 print <<<E
 <h1> Communication / Feedback </h1>
 
@@ -357,16 +361,16 @@ if ($amode == 1)
   print '<input type="radio" name="aopt" value=1 checked>Only for Admins<br>
 <input type="radio" name="aopt" value=3>Message to all<br>';
 if ($amode == 1)
-  $url2 = "exp4/shoutbox2.php?admin=1";
+  $url2 = "/exp4/shoutbox2.php?admin=1";
 if ($amode == 1)
-  $url1 = "exp4/shoutbox1.php?admin=1";
+  $url1 = "/exp4/shoutbox1.php?admin=1";
 print <<<E
 <textarea name="message" rows=5 cols=50 maxlength=999 hidden></textarea><br>
 <textarea name="gtfo" rows=5 cols=50 maxlength=999></textarea><br>
 <input type="Submit" name="send" value="Send Message">
 </form>
 <hr>
-<p><a href="#" id="msg_refresh">Refresh Messages</a> (will be done automatically every 30 seconds)</p>
+<p><a href="/#" id="msg_refresh">Refresh Messages</a> (will be done automatically every 30 seconds)</p>
 <div style="margin: 5px auto; width: 80%;">
 <div id="showall" style="text-align: left; float: left; width: 20%"></div>
 <div id="paging" style="text-align: left; display: none; float: left;"></div>

@@ -84,7 +84,7 @@ while($row=mysql_fetch_object($result))
 		if($i2===false) $i2=strlen($msg);
 		$url = substr($msg,$i3,$i2-$i3);
 		
-		$msg = substr($msg,0,$i3) . "<a href=\"$url\" target=\"_blank\">$url</a>" . substr($msg,$i2,strlen($msg)-1);
+		$msg = substr($msg,0,$i3) . "<a href=\"/$url\" target=\"_blank\">$url</a>" . substr($msg,$i2,strlen($msg)-1);
 		$i2 = $i2+30;
 	}
 	if($setting==4)
@@ -112,7 +112,7 @@ while($row=mysql_fetch_object($result))
 	if($setting==1) print "<span style=\"background-color:#99ffcc\">$msg</span></p>\n";
 	else print "$msg </p>\n";
 }
-if($GET_['sa']!=1 and $amode==1) print '<p style="text-align:center"><a href="exp4/shoutbox2.php?admin=1&sa=1">Show all Messages</a></p>';
-if($GET_['sa']!=1 and $amode!=1) print '<p style="text-align:center"><a href="exp4/shoutbox2.php?sa=1">Show all Messages</a></p>';
+if($GET_['sa']!=1 and $amode==1) print '<p style="text-align:center"><a href="/exp4/shoutbox2.php?admin=1&sa=1">Show all Messages</a></p>';
+if($GET_['sa']!=1 and $amode!=1) print '<p style="text-align:center"><a href="/exp4/shoutbox2.php?sa=1">Show all Messages</a></p>';
 
 ?>

@@ -14,7 +14,7 @@ include "exp5/nav1.php";
 
 <h2>Awards input</h2>
 
-<form method="post" enctype="multipart/form-data" action="exp5/awards/awinput2.php">
+<form method="post" enctype="multipart/form-data" action="/exp5/awards/awinput2.php">
 <input type="hidden" name="MAX_FILE_SIZE" value="200000"/>
 <p>Player:<input type="text" name="player" size=12></p>
 <p>Select a picture for award: <input type="file" name="pic"></p>

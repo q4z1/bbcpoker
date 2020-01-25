@@ -46,10 +46,10 @@ print "<br>
 $url = $_SERVER['REQUEST_URI'];
 
 print "<h1> Season $season - Statistics</h1>";
-print "<p><a href=\"$url#r1\">Ranking</a><br>
-<a href=\"$url#s1\">Games of Step 1</a><br>
-<a href=\"$url#s2\">Games of Step 2</a><br>
-<a href=\"$url#s3\">Games of Step 3</a></p>
+print "<p><a href=\"/$url#r1\">Ranking</a><br>
+<a href=\"/$url#s1\">Games of Step 1</a><br>
+<a href=\"/$url#s2\">Games of Step 2</a><br>
+<a href=\"/$url#s3\">Games of Step 3</a></p>
 ";
 $sort1=$_GET['sort'];
 $sort2=3;
@@ -58,9 +58,9 @@ $sort3 = array("","Points","Games","Score")[$sort2];
 
 print "<p>The following table is sorted by <b>$sort3</b>. You can choose another ranking:</p>";
 print "<p>";
-if ($sort2 !=1) print " <a href=\"exp5/sstats1.php?season=$season&amp;sort=1\">Sort by Points</a> ";
-if ($sort2 !=2) print " <a href=\"exp5/sstats1.php?season=$season&amp;sort=2\">Sort by Games</a> ";
-if ($sort2 !=3) print " <a href=\"exp5/sstats1.php?season=$season&amp;sort=3\">Sort by Score</a> ";
+if ($sort2 !=1) print " <a href=\"/exp5/sstats1.php?season=$season&amp;sort=1\">Sort by Points</a> ";
+if ($sort2 !=2) print " <a href=\"/exp5/sstats1.php?season=$season&amp;sort=2\">Sort by Games</a> ";
+if ($sort2 !=3) print " <a href=\"/exp5/sstats1.php?season=$season&amp;sort=3\">Sort by Score</a> ";
 print "</p>";
 
 ?>
@@ -72,9 +72,9 @@ print "</p>";
 <th rowspan=2>Step</th>
 <th colspan="10"><b>Positions</b></th>
 <?php
-print "<th rowspan=2><a href=\"exp5/sstats1.php?season=$season&amp;sort=2\">Games</a></th>
-<th rowspan=2><a href=\"exp5/sstats1.php?season=$season&amp;sort=1\">Points</a></th>
-<th rowspan=2><a href=\"exp5/sstats1.php?season=$season&amp;sort=3\">Score</a></th>";
+print "<th rowspan=2><a href=\"/exp5/sstats1.php?season=$season&amp;sort=2\">Games</a></th>
+<th rowspan=2><a href=\"/exp5/sstats1.php?season=$season&amp;sort=1\">Points</a></th>
+<th rowspan=2><a href=\"/exp5/sstats1.php?season=$season&amp;sort=3\">Score</a></th>";
 ?>
 </tr>
 <tr>
@@ -251,7 +251,7 @@ for($i1 = 0;$i1<count($db2);$i1++)
 }
 
 print "</table>";
-print "<p id=\"s1\"><a href=\"$url#\">Back to Top</a></p>";
+print "<p id=\"s1\"><a href=\"/$url#\">Back to Top</a></p>";
 
 $step=1;
 for($step=1;$step<4;$step++)
@@ -294,7 +294,7 @@ while($row = mysql_fetch_object($result))
 print "</table>";
 
 $s = $step+1;
-if($step<3)print "<p id=\"s$s\"><a href=\"$url#\">Back to Top</a></p>";
+if($step<3)print "<p id=\"s$s\"><a href=\"/$url#\">Back to Top</a></p>";
 }
 ?>
 

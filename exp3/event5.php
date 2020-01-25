@@ -52,9 +52,9 @@ Please join the BBC 3000 games Cup !
 		<h2>Cup Awards</h2>
 	<h4>Thanks again to LiLaLux for Creations</h4>	
 		<figure>
-			<img src="exp3/gold-gr.png" alt="GoldMedal" title="GoldMedal" width="175" height="175" />
-			<img src="exp3/silver-gr.png" alt="SilverMedal" title="SilverMedal" width="175" height="175" />
-			<img src="exp3/bronze-gr.png" alt="BronzeMedal" title="BronzeMedal" width="175" height="175" />
+			<img src="/exp3/gold-gr.png" alt="GoldMedal" title="GoldMedal" width="175" height="175" />
+			<img src="/exp3/silver-gr.png" alt="SilverMedal" title="SilverMedal" width="175" height="175" />
+			<img src="/exp3/bronze-gr.png" alt="BronzeMedal" title="BronzeMedal" width="175" height="175" />
 		</figure><br>
 -->
 

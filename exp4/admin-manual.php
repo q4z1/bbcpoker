@@ -24,7 +24,7 @@ else $upc=0;
 //die(var_export($_SESSION, true));
 
 if($upc === 0){
-	die("For admins only.</div>");
+	//die("For admins only.</div>");
 }
 
 ?>
@@ -47,22 +47,25 @@ if($upc === 0){
 
 	1.2 Usual Procedure:
 
-		1.Open the game around 19:20 with bbcbot command or via stored settings. 
+		1.Open the game latest 5 minutes before game starts with bbcbot command or via stored settings. 
 		(How to store them http://bbc.pokerth.net/exp1/StoreSettings.php  )
   
 		2.Invite registered players from list.
   
-		3.If players are missing at 19:30.59, invite substitutes(subs), then players of 
+		3.If players are missing after official game start time, admin may decide to wait a few minutes before inviting substitutes(subs), then players of 
 		 your choice from lobby.
+     
+		A good direction for waiting can be (but in the end it's game admin decision - e.g. if a player asks for longer waiting time and players do agree): 
+		- Step 1/2 : 2 - max 5 minutes
+		- Step 3/4 : 5 - max 10 minutes
+     
 		 additional: 
+     
 		-bbcbot commands will help: http://bbc.pokerth.net/exp3/bbcbotmanual.php 
-		-admins may decide to wait a few minutes for a missing player 
-		-players from lobby that aren't reg subs: BBC players with high rank should have 
-		 priority
-		-dont invite players with very bad stats or behavior
+		-try to not invite players with very bad stats or behavior
 			
-		If a player is missing at the very beginning of the game, please ask all players 
-		to leave (make sure all left)the game and RESTART. 
+		If a player get's lost at the very beginning of the game, please ask all players 
+		to leave (make sure all left) the game and RESTART. 
   
 		4.Only BBC games with 10 players are valid (exception: S4 games, which can start 
 		  with 9 players if 10 were registered).
@@ -78,6 +81,8 @@ if($upc === 0){
    
 	  How to obtain a loglink:
 	  http://bbc.pokerth.net/exp1/LogfileAnalysis.php
+    
+	  short screencast for how to obtain a log-link http://bbc.pokerth.net/How_to_obtain_loglink.mp4
    
 	  Example of a log link:
 	  https://www.pokerth.net/log-file-analysis/?ID=6829c00ba...2889413a76ee9&UniqueGameID=1
@@ -86,14 +91,16 @@ if($upc === 0){
 
 2. UPLOADING(REPORTING) GAMES
 
-	2.1 For standard upload:
+	short screencast for new introduced admins: http://bbc.pokerth.net/bbc_upload_20190321.ogv
+
+2.1 For standard upload:
 		Use "Log-Link only upload (!)" http://bbc.pokerth.net/exp6/upload3.php
 		Copy paste liglink url, select right game step and click on "upload files" button.
 		
 		On next page: 
 		enter game start date and time (use only round times even if real start time may 
 		differ a little),check whether players names and order are correct,
-		if players were registered and didnt provide a valid (90 min prior) deregistration 
+		if players were registered and didnt provide a valid (30 min prior) deregistration 
 		in BBC chat:
 		enter names of those missed players (only S2 upwards), and click on upload.
 		On next page: get and copy BBcode 
@@ -127,32 +134,10 @@ if($upc === 0){
 	
 	3.1 Cases in which players lose ticket:
 		
-		If a player registers himself, do not appear* and provide no valid dereg.
-		Applies to all:
-			-players reg to T1 (in both cases: full set and not), regardlessly of 
-			 anything else
-			-reg sub players, which would be invited to T1 (in case T2 is not full set)
-			-players reg to T2 (in case T2 is full set) 
-		
-		*appearance: 
-		It is NOT sufficient only to be logged on 
-		Playing a game, leaving lobby prior the start of a BBC game, no reaction to 
-		invitation will be handled as "not appeared".
-		Players have to be available for an admin.
-			
-	
-		
-	3.2 Cases in which players keep tickets: /Exceptions:
-	
-	   -if registered to BBC game and plays at MC tables
-	   -if a player plays in BBC game which takes longer and overlaps with a later game
-	   -if a player registered to a game, and in between used/lost his ticket (ticket count=0), 
-	    so he cannot be invited
-	   -if a player, reg for T1, was missing, and if he appears with delay to a T2 game of same 
-	    step, if this table will start.
-	   -if an admin (reg to f.e. T1) resigns and decides to open another (f.e. T2) table 
-	    (info in lobby needed)
-	   -if a game cannot be started due lack of admins 
+		A player loses a ticket if not de-regged, not left a note in sb (latest 30 min before game starts) and did not show up for a game (Step2,3,4)
+		that REALLY took place! Being in Lobby and declining a game that takes place will lose a ticket too.
+    
+    ... an exception are games > S2 that cannot take place only because of missing registered players. S3/S4 are special - admin can demand a ticket loss then.
 		
 4. BEHAVIORAL/NETIQUETTE:
 
@@ -164,13 +149,10 @@ if($upc === 0){
 5. Possible cases of non-compliance or violation of the rules "Admins Manual" have to be reported to
    BBC-host (sp0ck) and will be examined by him.
 
-EDIT: 2018-11-26:
-
 6. Poll votes and playing with multiple accounts from same IP/PC/Computer is not tolerated and might lead to deleting accounts, ticket removal or other appropriate actions.
 	6.1. If you share Internet with another player, please inform about possible same IP registration/playing/voting in BBC Shoutbox.
 
 7. If you are admin, please login and always post as admin in shoutbox and do not abuse shoutbox ("anonymously") for trolling and spamming.
-	Admin state can be removed if shoutbox will be abused.
 </pre>
 </div>
 <?php

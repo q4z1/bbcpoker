@@ -15,7 +15,7 @@ include "exp5/nav1.php";
 <h1> Control Panel </h1>
 <p> This is only for admins. if the following options are used wrong, you can damage the database. it is password protected.</p>
 <p> Information: it doesnt check tickets. Also, if you delete the last game, 
-you have to correct the tickets individually <a href="exp4/input22.php">here</a></p>
+you have to correct the tickets individually <a href="/exp4/input22.php">here</a></p>
 <?php
 //die("this script is currently disabled");
 

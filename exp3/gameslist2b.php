@@ -31,16 +31,16 @@ if ($_GET["step"] == 1 or $_GET["step"] == 2 or $_GET["step"] == 3 or $_GET["ste
     $max_page = ceil($num_rows->num / $site_rows);
     $pagination_links .= "<tr><th colspan=\"12\" style=\"font-weight: normal;\">Page:&nbsp;&nbsp;";
     if ($page > 1) {
-      $pagination_links .= "<a href=\"{$url}?page=1&step={$step}\">«</a>&nbsp;";
-      $pagination_links .= "<a href=\"{$url}?page=" . ($page - 1) . "&step={$step}\"></a>&nbsp;";
+      $pagination_links .= "<a href=\"/{$url}?page=1&step={$step}\">«</a>&nbsp;";
+      $pagination_links .= "<a href=\"/{$url}?page=" . ($page - 1) . "&step={$step}\"></a>&nbsp;";
     } //$page > 1
     else {
       $pagination_links .= "«&nbsp;";
     }
     $pagination_links .= "&nbsp;{$page}/{$max_page}&nbsp;&nbsp;";
     if ($page < $max_page) {
-      $pagination_links .= "<a href=\"{$url}?page=" . ($page + 1) . "&step={$step}\"></a>&nbsp;";
-      $pagination_links .= "<a href=\"{$url}?page={$max_page}&step={$step}\">»</a>";
+      $pagination_links .= "<a href=\"/{$url}?page=" . ($page + 1) . "&step={$step}\"></a>&nbsp;";
+      $pagination_links .= "<a href=\"/{$url}?page={$max_page}&step={$step}\">»</a>";
     } //$page < $max_page
     else {
       $pagination_links .= "»";
@@ -59,8 +59,8 @@ if ($_GET["step"] == 1 or $_GET["step"] == 2 or $_GET["step"] == 3 or $_GET["ste
   //$i=0;
   $trans = array();
 ?>
-<p><a href="<?= $url ?>?sa=1&step=<?= $step ?>">Show all</a> entries on one site
-		or divided into <a href="<?= $url ?>?step=<?= $step ?>">pages</a>.</p>
+<p><a href="/<?= $url ?>?sa=1&step=<?= $step ?>">Show all</a> entries on one site
+		or divided into <a href="/<?= $url ?>?step=<?= $step ?>">pages</a>.</p>
 <?
   print "<table border=1>";
   print $pagination_links;
@@ -85,7 +85,7 @@ if ($_GET["step"] == 1 or $_GET["step"] == 2 or $_GET["step"] == 3 or $_GET["ste
     );
     $gameno = $row->gameno;
     $season = $row->season;
-    print "<tr><td><a href=\"exp5/gameslist3.php?step=$step&amp;g=$gameno\">$gameno</a></td>";
+    print "<tr><td><a href=\"/exp5/gameslist3.php?step=$step&amp;g=$gameno\">$gameno</a></td>";
     print "<td>$season</td>";
     for ($i = 0; $i < 10; $i++) {
       if ($trans[$pid[$i]] == "") {

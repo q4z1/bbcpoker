@@ -20,9 +20,9 @@ $sort4 = array("","Current Season Points","Current Season Games","Current Season
 print "<b>$sort4</b>";
 print ". You can choose another ranking:<br>\n";
 if ($sort2 != 1)
-  print " <a href=\"exp2/ranking8.php?sort=1\">Sort by Points</a> ";
+  print " <a href=\"/exp2/ranking8.php?sort=1\">Sort by Points</a> ";
 if ($sort2 != 3)
-  print " <a href=\"exp2/ranking8.php?sort=3\">Sort by Score</a> ";
+  print " <a href=\"/exp2/ranking8.php?sort=3\">Sort by Score</a> ";
 $sort3 = array("","saisonpoints","saisongames","saisonscore")[$sort2];
 // showall
 $sa               = (array_key_exists("sa", $_GET) && isset($_GET['sa']) && is_numeric($_GET['sa']) && $_GET['sa'] == 1) ? true : false;
@@ -76,16 +76,16 @@ if (!is_null($result)) {
   if (!$sa) {
     $pagination_links .= "<tr><th colspan=\"16\" style=\"font-weight: normal;\">Page:&nbsp;&nbsp;";
     if ($page > 1) {
-      $pagination_links .= "<a href=\"{$url}?page=1&sort={$sort1}\">«</a>&nbsp;";
-      $pagination_links .= "<a href=\"{$url}?page=" . ($page - 1) . "&sort={$sort1}\"></a>&nbsp;";
+      $pagination_links .= "<a href=\"/{$url}?page=1&sort={$sort1}\">«</a>&nbsp;";
+      $pagination_links .= "<a href=\"/{$url}?page=" . ($page - 1) . "&sort={$sort1}\"></a>&nbsp;";
     } //$page > 1
     else {
       $pagination_links .= "«&nbsp;";
     }
     $pagination_links .= "&nbsp;{$page}/{$max_page}&nbsp;&nbsp;";
     if ($page < $max_page) {
-      $pagination_links .= "<a href=\"{$url}?page=" . ($page + 1) . "&sort={$sort1}\"></a>&nbsp;";
-      $pagination_links .= "<a href=\"{$url}?page={$max_page}&sort={$sort1}\">»</a>";
+      $pagination_links .= "<a href=\"/{$url}?page=" . ($page + 1) . "&sort={$sort1}\"></a>&nbsp;";
+      $pagination_links .= "<a href=\"/{$url}?page={$max_page}&sort={$sort1}\">»</a>";
     } //$page < $max_page
     else {
       $pagination_links .= "»";
@@ -104,19 +104,19 @@ if ($sa) {
 // @XXX: end pagination code here 
 ?>
 </p>
-<p>Do you want to know how points and score are calculated? <a href="exp4/formula1.php">Then click here.</a></p>
+<p>Do you want to know how points and score are calculated? <a href="/exp4/formula1.php">Then click here.</a></p>
 <h2>Table of Players - Detailed Current Season Ranking </h2>
-<p><a href="<?= $url ?>?sa=1&sort=<?= $sort1 ?>">Show all</a> entries on one site
-		or divided into <a href="<?= $url ?>?sort=<?= $sort1 ?>">pages</a>.</p>
+<p><a href="/<?= $url ?>?sa=1&sort=<?= $sort1 ?>">Show all</a> entries on one site
+		or divided into <a href="/<?= $url ?>?sort=<?= $sort1 ?>">pages</a>.</p>
 <table border=1>
 <?= $pagination_links ?>	
 <tr><th rowspan=2>Pos.</th>
 <th rowspan=2>Playername</th>
 <th rowspan=2>Step</th>
 <th colspan="10"><b>Positions</b></th>
-<th rowspan=2><a href="<?= $url ?>?sort=2<?= $sa2 ?>">Games</a></th>
-<th rowspan=2><a href="<?= $url ?>?sort=1<?= $sa2 ?>">Points</a></th>
-<th rowspan=2><a href="<?= $url ?>?sort=3<?= $sa2 ?>">Score</a></th>
+<th rowspan=2><a href="/<?= $url ?>?sort=2<?= $sa2 ?>">Games</a></th>
+<th rowspan=2><a href="/<?= $url ?>?sort=1<?= $sa2 ?>">Points</a></th>
+<th rowspan=2><a href="/<?= $url ?>?sort=3<?= $sa2 ?>">Score</a></th>
 </tr>
 <tr>
 <?php
@@ -150,7 +150,7 @@ while ($row = mysql_fetch_object($result)) {
   $ss2          = $sscore - $ss1 * 1000;
   $ss3          = sprintf("%d.%03d", $ss1, $ss2);
   $endofthisrow = "<td$s>$sgames</td><td$s>$spoints</td><td$s>$ss3</td></tr>\n";
-  print "<tr><td$s>" . ($i + (($page - 1) * 50)) . "</td><th$s><a href=\"exp5/players1.php?id=$pid\">$pname</a></th>";
+  print "<tr><td$s>" . ($i + (($page - 1) * 50)) . "</td><th$s><a href=\"/exp5/players1.php?id=$pid\">$pname</a></th>";
   if ($s1pc != $keinspiel) {
     print "<td>1</td>";
     $pcarray = explode(",", $s1pc);

@@ -110,7 +110,7 @@ function msg_substitute($msg)
     if ($i2 === false)
       $i2 = strlen($msg);
     $url = substr($msg, $i3, $i2 - $i3);
-    $msg = substr($msg, 0, $i3) . "<a href=\"$url\" target=\"_blank\">$url</a>" . substr($msg, $i2, strlen($msg) - 1);
+    $msg = substr($msg, 0, $i3) . "<a href=\"/$url\" target=\"_blank\">$url</a>" . substr($msg, $i2, strlen($msg) - 1);
     $i2  = $i2 + 30;
   } //$i1 = 0; $i1 < 6; $i1++
   return $msg;
@@ -120,6 +120,9 @@ function msg_substitute($msg)
 
 function message2html($msg,$user,$timestamp,$setting,$id,$amode)
 {
+    
+   $deletelink="/exp4/shoutbox4.php?action=1&msgid=$id";
+   $delete2="<a href=\"$deletelink\" target=\"_blank\">delete</a>";
   //print "<p> ($setting , $amode ) </p>";
   if ($amode != 1 and $setting == 1) {
     return  "<p><small>#$id | $timestamp | </small>[Hidden Admin Message]</p>";
@@ -152,14 +155,18 @@ function message2html($msg,$user,$timestamp,$setting,$id,$amode)
     $userprint = "<span style=\"color:#ee1155\"><b>$user</b></span> wrote:";
   if ($setting == 1)
     $userprint = "<span style=\"color:#ee1155\"><b>$user</b></span> wrote (only for admins):";
-  if (($setting >= 1 and $setting <=4 and $amode!=1 )or ($amode==1 and $setting!=2))
-    $out .= "<p><small>#$id | $timestamp | </small> $userprint<br>";
+    //$userprint = "<span style=\"color:#ee1155\"><b>><small>#$id | $timestamp | $delete2 |</small> $userprint";
+  if (($setting >= 1 and $setting <=4 and $amode!=1 )){
+    $out .= "<p><small>#$id | $timestamp</small> $userprint<br>";
+  }elseif(($amode==1 and $setting!=2)){
+    $out .= "<p><small>#$id | $timestamp | $delete2</small> $userprint<br>";
+  }
   if ($setting == 2 and $amode==1)
   {
     $ip="0.0.0.0"; // TODO
     $ss1=spamscore($msg,$user,$ip);
-    $deletelink="/exp4/shoutbox4.php?action=1&msgid=$id";
-    $delete2="<a href=\"$deletelink\" target=\"_blank\">delete</a>";
+    //$deletelink="/exp4/shoutbox4.php?action=1&msgid=$id";
+    //$delete2="<a href=\"/$deletelink\" target=\"_blank\">delete</a>";
     $out .= "<p><small>#$id | $timestamp | score=$ss1 | $delete2 |</small> $userprint<br>";
   }
   if ($setting == -1 and $amode==3)
@@ -167,16 +174,21 @@ function message2html($msg,$user,$timestamp,$setting,$id,$amode)
     $ip="0.0.0.0";
     $ss1=spamscore($msg,$user,$ip);
     $restorelink="/exp4/shoutbox4.php?action=3&msgid=$id";
-    $restore2="<a href=\"$restorelink\" target=\"_blank\">restore</a>";
+    $restore2="<a href=\"/$restorelink\" target=\"_blank\">restore</a>";
     $userprint = "<b>$user</b> wrote [DELETED]:";
-    $out .= "<p><small>#$id | $timestamp | score=$ss1 | $restore2 |</small> $userprint<br>";
+    $out .= "<p><small>#$id | $timestamp | score=$ss1 | $restore2 | $delete2 |</small> $userprint<br>";
     $out .= "$msg </p>\n";
     return $out;
   }
   if ($setting == 1)
+    //$out .= "<span style=\"background-color:#99ffcc\">$msg</span></p>\n";
+    //$out .= "<p><small>#$id | $timestamp | $delete2 |</small> $userprint<br>";
+    //$out .= "$msg </p>\n";
     $out .= "<span style=\"background-color:#99ffcc\">$msg</span></p>\n";
   if ($setting ==2 or $setting==3 or $setting==4)
     $out .= "$msg </p>\n";
+  
+  $out .= "<div style='display:none'>$setting / $amode</div>";
   return $out;
 }
 
@@ -204,7 +216,7 @@ function deletionguidelines()
 <p>Remember, the primary purpose of the shoutbox is that users can find relevant information quickly, can ask questions about BBC,
 and that admins can help each other with their job and discuss administrative policies.</p>
 
-<p>To view and restore deleted messages, <a href="exp4/shoutbox3.php">go here</a>.
+<p>To view and restore deleted messages, <a href="/exp4/shoutbox3.php">go here</a>.
 E;
 
 }

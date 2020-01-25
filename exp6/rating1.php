@@ -52,7 +52,7 @@ if($mingames==0)$mingames=30;
 
 print <<<E
 <h2> Parameters</h2>
-<form action="exp6/rating1.php" method=get>
+<form action="/exp6/rating1.php" method=get>
 Start Rating:<input type="text" name="cr0" value=$startrating><br>
 difference between players (: <input type="text" name="cd" value=$probdiff><br>
 Speed at Start: <input type="text" name="cs1" value=$startspeed>

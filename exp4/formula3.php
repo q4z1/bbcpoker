@@ -21,7 +21,7 @@ This page uses the glicko rating (not glicko 2), you can check it here: <a href=
 
 <h2>Example calculation</h2>
 <h3>Input</h3>
-<form action="exp4/formula3.php" method="get">
+<form action="/exp4/formula3.php" method="get">
 <b>System parameters:</b><br>
 <?php
 $q=(float)$_GET['q'];

@@ -31,7 +31,7 @@ include "exp5/nav1.php";
 <h3>Calculation of Score</h3>
 <p>If P is the Number of Points you got and G is the Number of Games you played, 
 the score is calculated with the following formula:</p>
-<img src="exp4/formula2.gif" width=110 height=36 alt="formula">
+<img src="/exp4/formula2.gif" width=110 height=36 alt="formula">
 <p>So its "Points per Game" multiplied with a coefficient. 
 This coefficient is 1 in the first game, and increases by 1 if you play twice as much games
 (for instance it is 2 after 2 games, 3 after 4 games, 4 after 8 games, 5 after 16 games etc.).

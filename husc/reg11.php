@@ -37,15 +37,15 @@ if($phase != 2) print "<p>Before wasting your time: you cannot register right no
 print "<p>This is the page where you can register for the season $season of HUSC. In order to register, you need to do the following things:</p>\n";
 print <<<E
 <ol>
-<li>Create a BBC Account <a href="exp4/createaccount.php">HERE</a> <small>If you have already a bbc account, skip this Step</small></li>
-<li>Login <a href="login.php">HERE</a></li>
+<li>Create a BBC Account <a href="/exp4/createaccount.php">HERE</a> <small>If you have already a bbc account, skip this Step</small></li>
+<li>Login <a href="/login.php">HERE</a></li>
 <li>Read this page</li>
 <li>Register for HUSC Season $season at the bottom of the page</li>
 </ol>
 
 
 E;
-//if($auth==0) print "Before you register, you need a BBC account, you can get one <a href=\"exp4/createaccount.php\">here</a> or <a href=\"login.php\">login here</a>.</p>";
+//if($auth==0) print "Before you register, you need a BBC account, you can get one <a href=\"/exp4/createaccount.php\">here</a> or <a href=\"/login.php\">login here</a>.</p>";
 
 
 
@@ -77,7 +77,7 @@ E;
   }
 }
 if($phase!=2) print "<p>Sorry, registration is not open right now.</p>";
-if($phase==2 and $auth!=1) print "<p>You cannot register now, because you are not logged in. You can <a href=\"login.php\">login here</a>.</p>";
+if($phase==2 and $auth!=1) print "<p>You cannot register now, because you are not logged in. You can <a href=\"/login.php\">login here</a>.</p>";
 
 ?>
 

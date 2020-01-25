@@ -14,10 +14,10 @@ include "exp5/nav1.php";
 
 	<h1>BBC New Year Cup 2015</h1>
 	<h2>Saturday 3th January 2015 - 19:30 CET</h2><br>
-	<p><a href="http://www.123contactform.com/form-1227673/BBCNewYearCup2015" title="Signup here!" ><img src="exp1/NavBBC/images2/BBClogo25.png" alt="Registration" /></a><p>
+	<p><a href="http://www.123contactform.com/form-1227673/BBCNewYearCup2015" title="Signup here!" ><img src="/exp1/NavBBC/images2/BBClogo25.png" alt="Registration" /></a><p>
 	
 <!-- introduction Creeper  -->
-<img src="exp1/images2/nyc.png" />
+<img src="/exp1/images2/nyc.png" />
 <p><strong> Dear BBC players<br><br>
 welcome to a new year of competition & fun !<br>
 All BBC team wish you @ll the best in life... and BBC results ;-)<br>
@@ -60,9 +60,9 @@ Creeper<br><br>
 
 	<h2>BBCNewYearCup Awards</h2>	
 		<figure>
-			<img src="exp1/images2/NYCeventTel/BBCnycOr.png" alt="GoldMedal" title="GoldMedal" width=100 height=100 />
-			<img src="exp1/images2/NYCeventTel/BBCnycArg.png" alt="SilverMedal" title="SilverMedal" width=100 height=100 />
-			<img src="exp1/images2/NYCeventTel/BBCnycbronz.png" alt="BronzeMedal" title="BronzeMedal" width=100 height=100 />
+			<img src="/exp1/images2/NYCeventTel/BBCnycOr.png" alt="GoldMedal" title="GoldMedal" width=100 height=100 />
+			<img src="/exp1/images2/NYCeventTel/BBCnycArg.png" alt="SilverMedal" title="SilverMedal" width=100 height=100 />
+			<img src="/exp1/images2/NYCeventTel/BBCnycbronz.png" alt="BronzeMedal" title="BronzeMedal" width=100 height=100 />
 			
 			</figure><br>
 	<h2>Registered Players</h2>
@@ -79,7 +79,7 @@ Creeper<br><br>
 			G_Gip, AndCh, GAVIOES, Jongleur, wnoxalh, Don King<br><br>
 			*admin substitut<br>
 			<p>Seeding by https://www.random.org/lists/ when all 50 registrations are reached<br>
-			<a href="exp1/images2/NYC2015liste.png"> SCREENSHOT</a></p><br>
+			<a href="/exp1/images2/NYC2015liste.png"> SCREENSHOT</a></p><br>
 			
 
 <!-- Seeding -->

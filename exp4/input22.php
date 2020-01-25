@@ -17,7 +17,7 @@ session_start();
 <h1>Manipulate Tickets</h1>
 <p>this page is only for admins</p>
 
-<form action="exp4/input23.php" method="post">
+<form action="/exp4/input23.php" method="post">
 <p>Player: <input type="text" name="player"></p>
 
 Action: 

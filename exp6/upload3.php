@@ -29,7 +29,7 @@ print <<<E
 <p>Dear Admin, only use the following stuff if you know what you are doing and have the permissions to do so.
 If you have questions, problems, etc. ask!<br>
 It would be nice, if you keep the original file on your local Computer</p>
-<form action="exp6/upload4.php" enctype="multipart/form-data" method="post">
+<form action="/exp6/upload4.php" enctype="multipart/form-data" method="post">
 
 <p>
 Log-Link Url: <input type="text" name="loglink" value=""><br />
@@ -77,7 +77,8 @@ function isalready($step,$gameno,$blockedarray)
 	$filename1="logfiles/BBC$gameno" . "Step$step.html";
 	$filename2="exp6/lf3/g$gameno" . "s$step.html";
 	if(file_exists($filename1)) return "(no need)";
-	if(file_exists($filename2)) return "(reupload)"; // TODO
+	if(file_exists($filename2)) return "(reupload)";
+ // TODO
 	return "(new)";
 }
 
@@ -123,7 +124,7 @@ E;
 
 } // end Admin part
 else
-print "<p>Hello, if you are an admin, you could visit that page: <a href=\"login.php\">(click here)</a></p>";
+print "<p>Hello, if you are an admin, you could visit that page: <a href=\"/login.php\">(click here)</a></p>";
 
 
 ?>

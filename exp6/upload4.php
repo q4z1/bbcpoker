@@ -120,7 +120,7 @@ if($error==0)
 }
 //die("gameno=$gameno");
 //die("cont1=$cont1");
-if($error==0 and $cont1==0) print "<p><a href=\"exp5/gameslist3.php?step=$step&amp;g=$gameno\">You can check here how it looks</a></p>";
+if($error==0 and $cont1==0) print "<p><a href=\"/exp5/gameslist3.php?step=$step&amp;g=$gameno\">You can check here how it looks</a></p>";
 
 if($error==0 )
 {

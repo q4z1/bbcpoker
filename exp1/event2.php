@@ -17,7 +17,7 @@ include "exp5/nav1.php";
 	<p> 1000 ways to hit the nail on the Best Brain! </p>
 	<h2>Friday 1st August 2014 - 19:30 cest</h2>
 <br>
-	<p><a href="http://survs.com/survey/udmjrx6rdn" title="Signup here!" ><img src="exp1/NavBBC/images2/BBClogo25.png" alt="Registration" /></a><p>
+	<p><a href="http://survs.com/survey/udmjrx6rdn" title="Signup here!" ><img src="/exp1/NavBBC/images2/BBClogo25.png" alt="Registration" /></a><p>
 	
 <!-- introduction Creeper  -->
 
@@ -79,9 +79,9 @@ Creeper<br><br>
 
 	<h2>1000BBCup Awards</h2>	
 		<figure>
-			<img src="exp1/images2/1000BBCup/BBC1000or.png" alt="GoldMedal" title="GoldMedal" width=100 height=100 />
-			<img src="exp1/images2/1000BBCup/BBC1000arg.png" alt="SilverMedal" title="SilverMedal" width=100 height=100 />
-			<img src="exp1/images2/1000BBCup/BBC1000bronz.png" alt="BronzeMedal" title="BronzeMedal" width=100 height=100 />
+			<img src="/exp1/images2/1000BBCup/BBC1000or.png" alt="GoldMedal" title="GoldMedal" width=100 height=100 />
+			<img src="/exp1/images2/1000BBCup/BBC1000arg.png" alt="SilverMedal" title="SilverMedal" width=100 height=100 />
+			<img src="/exp1/images2/1000BBCup/BBC1000bronz.png" alt="BronzeMedal" title="BronzeMedal" width=100 height=100 />
 			
 			</figure><br>
 			
@@ -89,7 +89,7 @@ Creeper<br><br>
 <!-- Seeding -->
 <h2>Seeding </h2>
 <p>	by https://www.random.org/lists/ when all 50 registrations are reached<br>
-<a href="exp1/images2/Capture140801141415.png"> SCREENSHOT</a>
+<a href="/exp1/images2/Capture140801141415.png"> SCREENSHOT</a>
 </p>
 <table border=1>
 <tr><th>1000BBCup T1</th><th>1000BBCup T2</th><th>1000BBCup T3</th><th>1000BBCup T4</th><th>1000BBCup T5</th></tr>

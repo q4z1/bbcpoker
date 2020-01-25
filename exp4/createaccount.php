@@ -19,7 +19,7 @@ if($_POST['submit']=="")
 {
   print <<<E
 <h1>Create a BBC account</h1>
-<form action="exp4/createaccount.php" method="post">
+<form action="/exp4/createaccount.php" method="post">
 <br>
 <b>BBC-ID</b>: <input type="text" name="bbcid"><br>
 <b>Name</b> (in game): <input type="text" name="nick"><br>

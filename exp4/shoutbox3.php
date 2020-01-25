@@ -171,7 +171,7 @@ E;
 ?>
 		var obj = json.responseJSON;
 		if (showall == 0) {
-			$('#showall').html("<a href=\"#\" id=\"show_all\">Show All Messages</a>");
+			$('#showall').html("<a href=\"/#\" id=\"show_all\">Show All Messages</a>");
 			$('#show_all').click(function(){
 				showall = 1;
 				msg_refresh();
@@ -182,7 +182,7 @@ E;
 		else
 		{
 			$('#paging').html("");
-			$('#showall').html("<a href=\"#\" id=\"show_paging\">Show Pages</a>");
+			$('#showall').html("<a href=\"/#\" id=\"show_paging\">Show Pages</a>");
 			$('#show_paging').click(function(){
 				showall = 0;
 				msg_refresh();
@@ -210,16 +210,16 @@ E;
 		
 		var pagination_links = "Page:&nbsp;&nbsp;";
 		if (actPage > 1) {
-			pagination_links += "<a href=\"#\" class=\"page\" _data_page_=\"1\">«</a>&nbsp;";
-			pagination_links += "<a href=\"#\" class=\"page\" _data_page_=\"" + (actPage - 1) + "\"></a>&nbsp;";
+			pagination_links += "<a href=\"/#\" class=\"page\" _data_page_=\"1\">«</a>&nbsp;";
+			pagination_links += "<a href=\"/#\" class=\"page\" _data_page_=\"" + (actPage - 1) + "\"></a>&nbsp;";
 		} //$page > 1
 		else {
 			pagination_links += "«&nbsp;";
 		}
 		pagination_links += "&nbsp;" + actPage +"/" + max_page + "&nbsp;&nbsp;";
 		if (actPage < max_page) {
-			pagination_links += "<a href=\"#\" class=\"page\" _data_page_=\"" + (actPage + 1) + "\"></a>&nbsp;";
-			pagination_links += "<a href=\"#\" class=\"page\" _data_page_=\"" + max_page + "\">»</a>";
+			pagination_links += "<a href=\"/#\" class=\"page\" _data_page_=\"" + (actPage + 1) + "\"></a>&nbsp;";
+			pagination_links += "<a href=\"/#\" class=\"page\" _data_page_=\"" + max_page + "\">»</a>";
 		} //$page < $max_page
 		else {
 			pagination_links += "»";
@@ -247,9 +247,9 @@ E;
 </script>
 <?php
 // if ($amode == 1)
-//   print '<p><a href="exp4/shoutbox1.php">Switch to normal mode</a></p>';
+//   print '<p><a href="/exp4/shoutbox1.php">Switch to normal mode</a></p>';
 // if ($amode == 2)
-//   print '<p><a href="exp4/shoutbox1.php?admin=1">Switch to admin mode</a></p>';
+//   print '<p><a href="/exp4/shoutbox1.php?admin=1">Switch to admin mode</a></p>';
 $url1 = "exp4/shoutbox1.php";
 if ($amode == 1)
   $url1 = "exp4/shoutbox1.php?admin=1";
@@ -263,7 +263,7 @@ E;
 }
 
 print <<<E
-<p><a href="#" id="msg_refresh">Refresh Messages</a> (will be done automatically every 30 seconds)</p>
+<p><a href="/#" id="msg_refresh">Refresh Messages</a> (will be done automatically every 30 seconds)</p>
 <div style="margin: 5px auto; width: 80%;">
 <div id="showall" style="text-align: left; float: left; width: 20%"></div>
 <div id="paging" style="text-align: left; display: none; float: left;"></div>

@@ -23,7 +23,7 @@ $hash</p><br><br>";
 	
 }
 ?>
-<form action="exp6/logintest1.php" method="post">
+<form action="/exp6/logintest1.php" method="post">
 <input type="password" name="inputpass">
 <input type="submit" value="Get md5 value">
 </form>

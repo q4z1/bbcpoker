@@ -23,7 +23,7 @@ include "exp5/nav1.php";
 
 <?php
 if($adminmode==0)
-  print "<p><a href=\"login.php\">login</a></p>";
+  print "<p><a href=\"/login.php\">login</a></p>";
 if($adminmode==1)
 {
   print <<<E
@@ -58,7 +58,7 @@ E;
       }
     }
     print <<<E
-    <form action="exp4/admin2.php?edit=$edit" method="post">
+    <form action="/exp4/admin2.php?edit=$edit" method="post">
 E;
     
     $request="SELECT name,class FROM admins WHERE id=$edit";
@@ -86,7 +86,7 @@ E;
     print <<<E
     <input type="submit" name="submit" value="submit changes!">
     </form>
-    <p><a href="exp4/admin2.php"> Leave the edit mode </a></b>
+    <p><a href="/exp4/admin2.php"> Leave the edit mode </a></b>
 E;
   }
   if($edit==0)

@@ -65,16 +65,16 @@ if (!is_null($result)) {
   if (!$sa) {
     $pagination_links .= "<tr><th colspan=\"16\" style=\"font-weight: normal;\">Page:&nbsp;&nbsp;";
     if ($page > 1) {
-      $pagination_links .= "<a href=\"{$url}?page=1&sort=$sortp\">«</a>&nbsp;";
-      $pagination_links .= "<a href=\"{$url}?page=" . ($page - 1) . "&sort=$sortp\">‹</a>&nbsp;";
+      $pagination_links .= "<a href=\"/{$url}?page=1&sort=$sortp\">«</a>&nbsp;";
+      $pagination_links .= "<a href=\"/{$url}?page=" . ($page - 1) . "&sort=$sortp\">‹</a>&nbsp;";
     } //$page > 1
     else {
       $pagination_links .= "«&nbsp;";
     }
     $pagination_links .= "&nbsp;{$page}/{$max_page}&nbsp;&nbsp;";
     if ($page < $max_page) {
-      $pagination_links .= "<a href=\"{$url}?page=" . ($page + 1) . "&sort=$sortp\">›</a>&nbsp;";
-      $pagination_links .= "<a href=\"{$url}?page={$max_page}&sort=$sortp\">»</a>";
+      $pagination_links .= "<a href=\"/{$url}?page=" . ($page + 1) . "&sort=$sortp\">›</a>&nbsp;";
+      $pagination_links .= "<a href=\"/{$url}?page={$max_page}&sort=$sortp\">»</a>";
     } //$page < $max_page
     else {
       $pagination_links .= "»";
@@ -94,18 +94,18 @@ if ($sa) {
 ?>
 </p>
 <!--
-<p>Do you want to know how points and score are calculated? <a href="exp4/formula1.php">Then click here.</a></p>
+<p>Do you want to know how points and score are calculated? <a href="/exp4/formula1.php">Then click here.</a></p>
 <h2>Table of Players - Detailed Current Season Ranking </h2>
 -->
-<p><a href="<?= $url ?>?sa=1<?="&sort=$sortp"?>">Show all</a> entries on one site
-		or divided into <a href="<?= $url ?><?="?sort=$sortp"?>">pages</a>.</p>
+<p><a href="/<?= $url ?>?sa=1<?="&sort=$sortp"?>">Show all</a> entries on one site
+		or divided into <a href="/<?= $url ?><?="?sort=$sortp"?>">pages</a>.</p>
 <table border=1>
 <?= $pagination_links ?>	
 <tr><th>Pos.</th>
 <th>Playername</th>
 <th>All-Time Games</th>
-<th><a href="<?= $url ?>?sort=0<?= $sa2 ?>">ROI (All-Time)</a></th>
-<th><a href="<?= $url ?>?sort=1<?= $sa2 ?>">ROI (last 100 games)</a></th>
+<th><a href="/<?= $url ?>?sort=0<?= $sa2 ?>">ROI (All-Time)</a></th>
+<th><a href="/<?= $url ?>?sort=1<?= $sa2 ?>">ROI (last 100 games)</a></th>
 </tr>
 <?php
 $i = $start_row;
@@ -116,7 +116,7 @@ while ($row = mysql_fetch_object($result)) {
   $roi100 = $row->hundredroi / 100;
   $roia = $row->alltimeroi / 100;
   $i++;
-  $td = "<tr><td>$i</td><td><a href=\"exp5/players1.php?id=$pid\">$pname</a></td><td>$agames</td><td>".sprintf("%0.2f",$roia)." %</td><td>".sprintf("%0.2f",$roi100)." %</td></tr>";
+  $td = "<tr><td>$i</td><td><a href=\"/exp5/players1.php?id=$pid\">$pname</a></td><td>$agames</td><td>".sprintf("%0.2f",$roia)." %</td><td>".sprintf("%0.2f",$roi100)." %</td></tr>";
   echo $td;
 } //$row = mysql_fetch_object($result)
 //@XXX: old code

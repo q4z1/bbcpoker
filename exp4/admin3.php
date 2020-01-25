@@ -23,7 +23,7 @@ include "exp5/nav1.php";
 
 <?php
 if($adminmode==0)
-  print "<p><a href=\"login.php\">login</a></p>";
+  print "<p><a href=\"/login.php\">login</a></p>";
 if($adminmode==1)
 {
     print <<<E

@@ -236,7 +236,7 @@ if($error==0)
 		if($gameno == $row[0] +1) $cont1=1;
 		if(!file_exists($fname3)) $error=417;
 }
-if($error==0 and $cont1==0) print "<p><a href=\"exp5/gameslist3.php?step=$step&amp;g=$gameno\">You can check here how it looks</a></p>";
+if($error==0 and $cont1==0) print "<p><a href=\"/exp5/gameslist3.php?step=$step&amp;g=$gameno\">You can check here how it looks</a></p>";
  
 if($error==0 and $cont1==1)
 {

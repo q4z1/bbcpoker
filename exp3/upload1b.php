@@ -12,7 +12,7 @@ include "exp5/nav1.php";
 
 ?>
 <!-- @XXX: jquery include -->
-<script type="text/javascript" src="exp3/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="/exp3/jquery-1.11.1.min.js"></script>
 <!-- @xxx: upload - dateinamen prüfen und ggf. fehlende Dateien finden - JavaScript Code (depends on jquery!) -->
 <script type='text/javascript'>
 
@@ -38,7 +38,7 @@ include "exp5/nav1.php";
 <p>Dear Admin, only use the following stuff if you know what you are doing and have the permissions to do so.
 If you have questions, problems, etc. ask!<br>
 It would be nice, if you keep the original file on your local Computer</p>
-<form action="exp6/upload2.php" enctype="multipart/form-data" method="post">
+<form action="/exp6/upload2.php" enctype="multipart/form-data" method="post">
 <input type="hidden" name="MAX_FILE_SIZE" value="200000" />
 <p>
 HTML file: <input type="file" name="uf1"><br>

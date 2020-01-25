@@ -79,7 +79,7 @@ include "exp5/nav1.php";
 	<p>Saturday, November 21st 2015<br>
 	<a href="http://pokerth.net/community/bbc/12565-bbc-hello-world-cup.html">Forum thread for all results</a> </p>
 	<table >
-	<tr><td><img src="exp1/images2/HelloWorldmedals/Supgold72.png" alt="GoldMedal" title="GoldMedal" width="94%" height="94%"  /></td><td></td><td><img src="exp1/images2/HelloWorldmedals/Supsilver72.png" alt="SilverMedal" title="SilverMedal" width="94%" height="94%"   /></td><td></td><td><img src="exp1/images2/HelloWorldmedals/Supbronze72.png" alt="BronzeMedal" title="BronzeMedal"  width="94%" height="94%" /></td></tr>
+	<tr><td><img src="/exp1/images2/HelloWorldmedals/Supgold72.png" alt="GoldMedal" title="GoldMedal" width="94%" height="94%"  /></td><td></td><td><img src="/exp1/images2/HelloWorldmedals/Supsilver72.png" alt="SilverMedal" title="SilverMedal" width="94%" height="94%"   /></td><td></td><td><img src="/exp1/images2/HelloWorldmedals/Supbronze72.png" alt="BronzeMedal" title="BronzeMedal"  width="94%" height="94%" /></td></tr>
 	<tr><td><a href="/exp5/players1.php?nick=ElmoEGO"><span style="font-size:large;color:#bb8800"><b>ElmoEGO</b></span></a></td><td></td><td><a href="/exp5/players1.php?nick=Ghost__"><span style="font-size:large;color:#999999"><b>Ghost__</b></span></a></td><td></td><td><a href="/exp5/players1.php?nick=Creeper"><span style="font-size:large;color:#996633"><b>Creeper</b></span></a></td></tr>
 	</table>
 	<p>*****</p>

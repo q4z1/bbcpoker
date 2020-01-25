@@ -34,7 +34,7 @@ it uses all BBC games in 2013. you can even get a graph of players of their rati
 
 <h2>Example calculation</h2>
 <h3>Input</h3>
-<form action="exp4/formula5.php" method="get">
+<form action="/exp4/formula5.php" method="get">
 <b>System parameters:</b><br>
 <?php
 //$startrating=(int)$_GET['startrating'];

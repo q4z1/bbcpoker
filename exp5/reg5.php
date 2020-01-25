@@ -12,7 +12,7 @@ include "exp5/nav1.php";
 ?>
 
 <h1> Remove your registration </h1>
-<form action="exp5/reg6.php" method="post">
+<form action="/exp5/reg6.php" method="post">
 <table>
 <tr><td>Enter your poker-heroes Nickname: </td><td>
 <?php
@@ -63,8 +63,8 @@ print "<input type=\"hidden\" name=\"plan$i1\" value=\"$retarray[0]\"></td></tr>
 </table>
 <input type="submit" name="submit" value="remove registration!">
 </form>
-<p>Deregistration is possible until 90 minutes before the game in step 2, 3 and 4, and 10 minutes in step1.</p>
-<p><a href="exp4/shoutbox1.php">If you forgot your deregistration code, no problem, you can still ask us here to remove the registration</a></p>
+<p>Deregistration is possible until 90 minutes before the game in step 2, 3 and 4 - no need to de-reg for step1</p>
+<p><a href="/exp4/shoutbox1.php">If you forgot your deregistration code, no problem, you can still ask us here latest 30 minutes before game starts</a></p>
 
 <?php
 include "footer1.php";

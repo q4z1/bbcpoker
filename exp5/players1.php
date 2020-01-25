@@ -11,7 +11,7 @@ include "header1.php";
 include "exp5/nav1.php";
 ?>
 
-<form action="exp5/players1.php" method="get">
+<form action="/exp5/players1.php" method="get">
 Input a Player Name: <input type="text" name="nick" maxlength="20">
 <input type="submit" value="Get Player Statistics">
 </form>
@@ -47,7 +47,7 @@ if($found==0)
 if($found==1)
 {
 	print "<h1> Statistics of $pname </h1>";
-	//print "<h2><!--<a href=\"exp5/players1.php?id=$pid\">-->$pname</h2>";
+	//print "<h2><!--<a href=\"/exp5/players1.php?id=$pid\">-->$pname</h2>";
 	//print "<br><br>";
 	$request="SELECT * FROM table2 WHERE playerid=$pid";
 	$result=mysql_query($request);
@@ -81,10 +81,10 @@ if($found==1)
 		$pcpa[10]=$sum3;
 		
 		$ret="<table><tr><th colspan=13>$title</th></tr>
-		<tr><td rowspan=4><img src=\"exp5/pic1.php?d=$pctext\" width=120 height=120 alt=\"pie\"></td>";
+		<tr><td rowspan=4><img src=\"/exp5/pic1.php?d=$pctext\" width=120 height=120 alt=\"pie\"></td>";
 		for($i1=1;$i1<11;$i1++) $ret .= "<td>Place $i1</td>";
 		$ret.="<td>Total</td>
-		<td rowspan=4><img src=\"exp5/pic1.php?t=1&amp;d=$pctext\" width=160 height=120 alt=\"bar\"></td></tr>
+		<td rowspan=4><img src=\"/exp5/pic1.php?t=1&amp;d=$pctext\" width=160 height=120 alt=\"bar\"></td></tr>
 		<tr>";
 		
 		for($i1=0;$i1<11;$i1++) $ret.="<td>$pcia[$i1]</td>";
@@ -147,14 +147,14 @@ OR (alltimegames=$ascore AND alltimegames=$agames AND (saisonscore>$sscore OR (s
 	print <<<E
 <table>
 <tr><td>PokerTh Nickname:</td><td>$pname</td></tr>
-<tr><td>PokerTH Ranking Profile:</td><td><a href="https:/www.pokerth.net/leaderboard/$pname" target="_blank">Click Here</a></td></tr>
+<tr><td>PokerTH Ranking Profile:</td><td><a href="https://www.pokerth.net/leaderboard/$pname" target="_blank">Click Here</a></td></tr>
 <tr><td>Tickets to Step 2:</td><td>$ts2</td></tr>
 <tr><td>Tickets to Step 3:</td><td>$ts3</td></tr>
 <tr><td>Tickets to Step 4:</td><td>$ts4</td></tr>
 <tr><th>RATING:</th><th>$rating</th></tr>
 <tr><th>ROI (All-Time):</th><th>$roia %</th></tr>
 <tr><th>ROI (last 100 games):</th><th>$roi100 %</th></tr>
-<tr><td>BBC-ID:</td><td><a href="exp5/players1.php?id=$pid">$pid</a></td></tr>
+<tr><td>BBC-ID:</td><td><a href="/exp5/players1.php?id=$pid">$pid</a></td></tr>
 </table>
 E;
 	if($row['settings']==1)
@@ -170,7 +170,7 @@ E;
 			if($hasawards==0) print "<h2>AWARDS</h2>\n";
 			if($hasawards==0) $hasawards=1;
 			print <<<E
-			<p style="display: inline-block"><img src="exp5/awards/pics/$data1[1]" alt="award" title="award"> $data1[2] </p>		
+			<p style="display: inline-block"><img src="/exp5/awards/pics/$data1[1]" alt="award" title="award"> $data1[2] </p>		
 E;
 		}
 	}
@@ -230,7 +230,7 @@ while($row = mysql_fetch_object($result))
 	$gameno=$row->gameno;
 	$season = $row->season;
 	$step=$cstep+1;
-	print "<tr><td><a href=\"exp5/gameslist3.php?step=$step&amp;g=$gameno\">$gameno</a></td>";
+	print "<tr><td><a href=\"/exp5/gameslist3.php?step=$step&amp;g=$gameno\">$gameno</a></td>";
 	print "<td>$season</td>";
 	for($i=0;$i<10;$i++)
 	{

@@ -34,12 +34,12 @@ if($loginattempt>=1)
   $result=mysql_query($request);
   while($row=mysql_fetch_object($result))
   {
-	$salt=$row->salt;
-	$hash3=$row->hash;
-	$_SESSION['upc']=(int)$row->class;
-	$_SESSION['user3']=$row->name;
-	$upc=(int)$_SESSION['upc'];
-	$user3=$_SESSION['user3'];
+    $salt=$row->salt;
+    $hash3=$row->hash;
+    $_SESSION['upc']=(int)$row->class;
+    $_SESSION['user3']=$row->name;
+    $upc=(int)$_SESSION['upc'];
+    $user3=$_SESSION['user3'];
   }
   $hash5=md5($salt . $hash1);
   if($hash3 === $hash5 and $upc!=9) $goodlogin=1;
@@ -76,14 +76,14 @@ if($logoutattempt>=1) print "<h2>You should be logged out now</h2>";
 
 if($goodlogin==0)
 print '<h1>Login (Admin Tools)</h1>
-<form action="login.php?loginattempt=1" method="post">
+<form action="/login.php?loginattempt=1" method="post">
 <p>
 Username:<input type="text" name="nick" value=""> <br>
 Password:<input id="password" type="password" name="thepassword"><br>
 <input type="submit" name="login" value="Login"></p>
 </form>
 <p>Note: you need to have a bbc account to login here. if you have no BBC account yet, you can
-<a href="exp4/createaccount.php">click here to create a bbc account</a></p>
+<a href="/exp4/createaccount.php">click here to create a bbc account</a></p>
 <p>If you fail to login then send a pm or mail to sp0ck / webmaster@pokerth.net.<br>
 Do not tell sp0ck your password in that case.<br /><br />
 <span style="color: red">This login is mostly used by BBC-Admins and/or to let your username be highlighted in a different color in BBC Shoutbox, so that everybody knows it\'s really you ;)</span>
@@ -95,39 +95,39 @@ if($goodlogin==1)
   $li="";
   if($upc==1)
   $li=<<<E
-<li><a href="exp6/upload1.php">Upload and Input a BBC Game</a></li>
-<li><a href="exp6/upload3.php"><span style="color:red">Log-Link only upload (!)</span></a></li>
-<li><a href="exp2/test1.php">Input without logfile</a></li>
-<li><a href="exp4/shoutbox1.php?admin=1">Talk to people</a></li>	
-<li><a href="exp5/reg8.php">Check registrations</a></li>
-<li><a href="exp4/input22.php">Edit Tickets</a></li>
-<li><a href="exp2/controlpanel.php">Check Database (!)</a></li>
-<li><a href="exp5/awards/awinput1.php">Add Awards </a></li>
-<li><a href="exp4/admin2.php">Manage BBC Accounts</a></li>
-<li><a href="exp3/bbcbotmanual.php">View bbcbot commands</a></li>
-<li><a href="exp6/dates1.php">Create dates</a></li>
-<li><a href="exp6/dates3.php?d=0">View dates</a></li>
-<li><a href="exp6/dates3.php?d=1">Delete dates</a></li>
-<li><a href="exp4/shoutbox3.php">View deleted Messages</a></li>
+<li><a href="/exp6/upload1.php">Upload and Input a BBC Game</a></li>
+<li><a href="/exp6/upload3.php"><span style="color:red">Log-Link only upload (!)</span></a></li>
+<li><a href="/exp2/test1.php">Input without logfile</a></li>
+<li><a href="/exp4/shoutbox1.php?admin=1">Talk to people</a></li>	
+<li><a href="/exp5/reg8.php">Check registrations</a></li>
+<li><a href="/exp4/input22.php">Edit Tickets</a></li>
+<li><a href="/exp2/controlpanel.php">Check Database (!)</a></li>
+<li><a href="/exp5/awards/awinput1.php">Add Awards </a></li>
+<li><a href="/exp4/admin2.php">Manage BBC Accounts</a></li>
+<li><a href="/exp3/bbcbotmanual.php">View bbcbot commands</a></li>
+<li><a href="/exp6/dates1.php">Create dates</a></li>
+<li><a href="/exp6/dates3.php?d=0">View dates</a></li>
+<li><a href="/exp6/dates3.php?d=1">Delete dates</a></li>
+<li><a href="/exp4/shoutbox3.php">View deleted Messages</a></li>
 E;
   if($upc==2)
   $li=<<<E
-<li><a href="exp6/upload1.php">Upload and Input a BBC Game</a></li>
-<li><a href="exp6/upload3.php"><span style="color:red">Log-Link only upload (!)</span></a></li>
-<li><a href="exp2/test1.php">Input without logfile</a></li>
-<li><a href="exp4/shoutbox1.php?admin=1">Talk to people</a></li>
-<li><a href="exp6/dates1.php">Create dates</a></li>
-<li><a href="exp6/dates3.php?d=0">View dates</a></li>
-<li><a href="exp6/dates3.php?d=1">Delete dates</a></li>
-<li><a href="exp3/bbcbotmanual.php">View bbcbot commands</a></li>
-<li><a href="exp4/shoutbox3.php">View deleted Messages</a></li>
+<li><a href="/exp6/upload1.php">Upload and Input a BBC Game</a></li>
+<li><a href="/exp6/upload3.php"><span style="color:red">Log-Link only upload (!)</span></a></li>
+<li><a href="/exp2/test1.php">Input without logfile</a></li>
+<li><a href="/exp4/shoutbox1.php?admin=1">Talk to people</a></li>
+<li><a href="/exp6/dates1.php">Create dates</a></li>
+<li><a href="/exp6/dates3.php?d=0">View dates</a></li>
+<li><a href="/exp6/dates3.php?d=1">Delete dates</a></li>
+<li><a href="/exp3/bbcbotmanual.php">View bbcbot commands</a></li>
+<li><a href="/exp4/shoutbox3.php">View deleted Messages</a></li>
 E;
   if($upc==3)
   $li=<<<E
-<li><a href="exp6/upload1.php">Upload and Input a BBC Game</a></li>
-<li><a href="exp6/upload3.php"><span style="color:red">Log-Link only upload (!)</span></a></li>
-<li><a href="exp2/test1.php">Input without logfile</a></li>
-<li><a href="exp3/bbcbotmanual.php">View bbcbot commands</a></li>
+<li><a href="/exp6/upload1.php">Upload and Input a BBC Game</a></li>
+<li><a href="/exp6/upload3.php"><span style="color:red">Log-Link only upload (!)</span></a></li>
+<li><a href="/exp2/test1.php">Input without logfile</a></li>
+<li><a href="/exp3/bbcbotmanual.php">View bbcbot commands</a></li>
 E;
   print <<<E
 	<h1>Login</h1>
@@ -136,7 +136,7 @@ E;
 	<ul>
 	$li
 	<li><a href="/husc/reg11.php?s=2">Register for HUSC</a></li>
-	<li><b><a href="login.php?logoutattempt=1">Logout</a></b></li>
+	<li><b><a href="/login.php?logoutattempt=1">Logout</a></b></li>
 	</ul>
 	</p>
 

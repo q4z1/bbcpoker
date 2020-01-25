@@ -23,7 +23,7 @@ include "exp5/nav1.php";
 	<p> A very interesting game, this poker! </p>
 		<h2>Friday 27 June 2014 - 19:30 cest</h2>
 <br>
-	<p><a href="http://bbcpoker.bplaced.net/exp5/reg1.php" title="Signup here!" ><img src="exp1/NavBBC/images2/BBClogo25.png" alt="Registration" /></a><p>
+	<p><a href="http://bbcpoker.bplaced.net/exp5/reg1.php" title="Signup here!" ><img src="/exp1/NavBBC/images2/BBClogo25.png" alt="Registration" /></a><p>
 	
  introduction Nadja
 	<p style="text-align:left;margin-left:1cm">
@@ -59,9 +59,9 @@ Event Winners
 	<h2>PTH Enterprise Cup Awards</h2>
 	<h4>Thanks to LiLaLux for Flawlessly Logical Creations</h4>	
 		<figure>
-			<img src="exp1/images2/pthenterprisemedals/PthEnterpriseGold.png" alt="GoldMedal" title="GoldMedal" width=175 height=175 />
-			<img src="exp1/images2/pthenterprisemedals/PthEnterpriseSilver.png" alt="SilverMedal" title="SilverMedal" width=175 height=175 />
-			<img src="exp1/images2/pthenterprisemedals/PthEnterpriseBronze.png" alt="BronzeMedal" title="BronzeMedal" width=175 height=175 />
+			<img src="/exp1/images2/pthenterprisemedals/PthEnterpriseGold.png" alt="GoldMedal" title="GoldMedal" width=175 height=175 />
+			<img src="/exp1/images2/pthenterprisemedals/PthEnterpriseSilver.png" alt="SilverMedal" title="SilverMedal" width=175 height=175 />
+			<img src="/exp1/images2/pthenterprisemedals/PthEnterpriseBronze.png" alt="BronzeMedal" title="BronzeMedal" width=175 height=175 />
 			
 			</figure><br>
 Seeding

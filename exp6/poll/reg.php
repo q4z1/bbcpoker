@@ -33,9 +33,9 @@ $r=(int)$_GET['r'];
 $fname1="exp6/poll/questions$p.txt";
 $fname2="exp6/poll/answers$p.txt";
 
-//$ris0link="<a href=\"exp6/poll/reg.php?p=$p&amp;r=0\">here is the poll</a>";
-//$ris2link="<a href=\"exp6/poll/reg.php?p=$p&amp;r=2\">here are the results</a>";
-//$ris3link="<a href=\"exp6/poll/reg.php?p=$p&amp;r=3\">here is the raw data of results</a>";
+//$ris0link="<a href=\"/exp6/poll/reg.php?p=$p&amp;r=0\">here is the poll</a>";
+//$ris2link="<a href=\"/exp6/poll/reg.php?p=$p&amp;r=2\">here are the results</a>";
+//$ris3link="<a href=\"/exp6/poll/reg.php?p=$p&amp;r=3\">here is the raw data of results</a>";
 	
 
 
@@ -251,7 +251,7 @@ E;
 	$printtext1= <<<E
 	
 	
-	<form method="post" action="exp6/poll/reg.php?p=$p&r=1">
+	<form method="post" action="/exp6/poll/reg.php?p=$p&r=1">
 	<p>Saturday, Feb 13st 21:00 CET<br><br>Enter your pokerth nickname $bbconlytext: <input type="text" name="pname" value="$user"></p>
 	
 E;

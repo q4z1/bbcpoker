@@ -43,7 +43,7 @@ $n2=$_GET['pl2'];
 
 print <<<E
 <h3>Input</h3>
-<form action="exp6/rating4.php" method="get">
+<form action="/exp6/rating4.php" method="get">
 <b>System parameters:</b><br>
 <form>
 q:<input type="text" value="$q" name="q" size=8>
@@ -177,7 +177,7 @@ if($spid1!=0 or $spid2!=0)
 	$n2=$_GET['pl2'];
 	print "<p>you selected the players $n1 and $n2</p><br>\n";
 	print <<<E
-	<img src="exp6/temppic4.png" alt="t"><br>
+	<img src="/exp6/temppic4.png" alt="t"><br>
 	
 E;
 

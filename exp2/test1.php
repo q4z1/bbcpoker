@@ -135,7 +135,7 @@ E;
 /* <p>Password: <input type="password" name="pass">  */
 
 }
-else print "<p>Hello, if you are an admin, you could visit that page: <a href=\"login.php\">(click here)</a></p>";
+else print "<p>Hello, if you are an admin, you could visit that page: <a href=\"/login.php\">(click here)</a></p>";
 
 
 ?>

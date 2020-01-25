@@ -53,14 +53,14 @@ else print "<p><b>ERROR</b>".$errmsg."</p>";
 
 print <<<E
 <p>If you want to see a list of planned games
-<a href="exp6/dates3.php?d=0">go here</a>.</p>
+<a href="/exp6/dates3.php?d=0">go here</a>.</p>
 E;
 
 
 
 } // end Admin part
 else
-print "<p>Hello, if you are an admin, you could visit that page: <a href=\"login.php\">(click here)</a></p>";
+print "<p>Hello, if you are an admin, you could visit that page: <a href=\"/login.php\">(click here)</a></p>";
 
 
 ?>

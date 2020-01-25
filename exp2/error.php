@@ -111,36 +111,36 @@ case 300:
 	print "an error with registration occured";break;
 case 301:
 	print "your playername could not be found. If you  play BBC for the first time, 
-	<a href=\"exp5/reg1.php\">GO BACK</a> and mark yourself as new player";break;
+	<a href=\"/exp5/reg1.php\">GO BACK</a> and mark yourself as new player";break;
 case 302:
 	print "you said you are new to BBC, but we found your name in our databse, 
-	<a href=\"exp5/reg1.php\">GO BACK</a> and correct that";break;
+	<a href=\"/exp5/reg1.php\">GO BACK</a> and correct that";break;
 case 303:
 	print "you registered for step 2 without a ticket to step 2,
-	<a href=\"exp5/reg1.php\">GO BACK</a> or <a href=\"exp4/tickets2.php\">See ticket table</a>";break;
+	<a href=\"/exp5/reg1.php\">GO BACK</a> or <a href=\"/exp4/tickets2.php\">See ticket table</a>";break;
 case 304:
 	print "you registered for step 3 without a ticket to step 3,
-	<a href=\"exp5/reg1.php\">GO BACK</a> or <a href=\"exp4/tickets2.php\">See ticket table</a>";break;
+	<a href=\"/exp5/reg1.php\">GO BACK</a> or <a href=\"/exp4/tickets2.php\">See ticket table</a>";break;
 case 305:
 	print "Your input data has wrong format.";break;
 case 306:
 	print "you registered for step 4 without a ticket to step 4,
-	<a href=\"exp5/reg1.php\">GO BACK</a> or <a href=\"exp4/tickets2.php\">See ticket table</a>";break;
+	<a href=\"/exp5/reg1.php\">GO BACK</a> or <a href=\"/exp4/tickets2.php\">See ticket table</a>";break;
 case 307:
 case 308:
-	print "There is a problem with the time of the game. <a href=\"exp5/reg1.php\">Please try again</a>.";break;
+	print "There is a problem with the time of the game. <a href=\"/exp5/reg1.php\">Please try again</a>.";break;
 case 309:
 	print "there is already a registration for this name";break;
 case 310:
-	print "we did not received data from you. <a href=\"exp5/reg1.php\">Please try again</a>.";break;
+	print "we did not received data from you. <a href=\"/exp5/reg1.php\">Please try again</a>.";break;
 case 312:
 	print "there is an error with your name. we are sorry.";break;
 case 311:
 case 313:
 case 314:
-	print 'there is an internal error. we are sorry. <a href="exp5/reg3.php">Please check if you registration succeeded</a>';break;
+	print 'there is an internal error. we are sorry. <a href="/exp5/reg3.php">Please check if you registration succeeded</a>';break;
 case 315:
-	print 'Please <a href="exp5/reg1.php">GO BACK</a> and select the step you want to play (e.g. step 1).';break;
+	print 'Please <a href="/exp5/reg1.php">GO BACK</a> and select the step you want to play (e.g. step 1).';break;
 	
 	
 case 330:

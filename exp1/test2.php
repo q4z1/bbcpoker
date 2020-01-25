@@ -382,7 +382,7 @@ WHERE playerid > 1023";
 
 if($error!=0) include("exp2/error.php");
 else print "<p>It looks like there was no error.<br>
-<a href=\"exp6/getcode1.php?s=$step&amp;g=$gameno\">Click here to get Code for forum Report</a>
+<a href=\"/exp6/getcode1.php?s=$step&amp;g=$gameno\">Click here to get Code for forum Report</a>
 </p>";
 print "<br> <br> ";
 print "Your input was:<br>";
